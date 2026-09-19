@@ -4,7 +4,7 @@
     "Requirement": "None",
     "CharacterID": "EVE",
     "DisplayName": "Full Face Scuba Mask",
-    "Description": "Inner nasal cup can be switched on/off in CNS.\n10% visor, 20% cup, under-chin seal and opaque front valve.",
+    "Description": "Adjust visor and cup opacity in the configuration menu.\nInner nasal cup can be switched on/off.",
     "FitMeshType": "Eyes",
     "OutfitTypes": [],
     "OutfitImage": "/Game/Art/UI/Texture/Item/glasses/Deco_Icon_FaceAccessory_003.Deco_Icon_FaceAccessory_003",
@@ -21,7 +21,58 @@
           "Value": true
         }
       ],
-      "ScalarControls": [],
+      "ScalarControls": [
+        {
+          "DisplayName": "Visor Opacity",
+          "Description": "Opacity: 0.00 = 0%, 1.00 = 100%. Default 10%.",
+          "ParamName": "Opacity Out",
+          "Association": "Global",
+          "LayerIndex": -1,
+          "MaterialIndex": 8,
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.01,
+          "Value": 0.1
+        },
+        {
+          "DisplayName": "Visor Opacity (Inner)",
+          "Description": "Linked inner surface opacity.",
+          "ParamName": "Opacity Inner",
+          "Association": "Global",
+          "LayerIndex": -1,
+          "MaterialIndex": 8,
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.01,
+          "Value": 0.1,
+          "ControlledBy": "Visor Opacity"
+        },
+        {
+          "DisplayName": "Cup Opacity",
+          "Description": "Opacity: 0.00 = 0%, 1.00 = 100%. Default 20%.",
+          "ParamName": "Opacity Out",
+          "Association": "Global",
+          "LayerIndex": -1,
+          "MaterialIndex": 7,
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.01,
+          "Value": 0.2
+        },
+        {
+          "DisplayName": "Cup Opacity (Inner)",
+          "Description": "Linked inner surface opacity.",
+          "ParamName": "Opacity Inner",
+          "Association": "Global",
+          "LayerIndex": -1,
+          "MaterialIndex": 7,
+          "Min": 0.0,
+          "Max": 1.0,
+          "Step": 0.01,
+          "Value": 0.2,
+          "ControlledBy": "Cup Opacity"
+        }
+      ],
       "VectorControls": [],
       "TextureOptions": []
     }
