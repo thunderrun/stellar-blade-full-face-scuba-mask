@@ -4,7 +4,7 @@
     "Requirement": "None",
     "CharacterID": "EVE",
     "DisplayName": "Full Face Scuba Mask",
-    "Description": "Inner nasal cup can be switched on/off in CNS.\n10% visor, 20% cup, under-chin seal and opaque front valve.",
+    "Description": "Reference-inspired oral-nasal cup and internal scuba mouthpiece.\nCup and mouthpiece can be switched independently in CNS.",
     "FitMeshType": "Eyes",
     "OutfitTypes": [],
     "OutfitImage": "/Game/Art/UI/Texture/Item/glasses/Deco_Icon_FaceAccessory_003.Deco_Icon_FaceAccessory_003",
@@ -16,8 +16,14 @@
       "MaterialToggles": [
         {
           "DisplayName": "Inner Nasal Cup",
-          "Description": "Show or hide only the inner nasal cup.",
+          "Description": "Show or hide the transparent oral-nasal cup. The outer shell stays visible.",
           "MaterialIndex": 7,
+          "Value": true
+        },
+        {
+          "DisplayName": "Internal Mouthpiece",
+          "Description": "Show or hide the black internal scuba mouthpiece.",
+          "MaterialIndex": 9,
           "Value": true
         }
       ],

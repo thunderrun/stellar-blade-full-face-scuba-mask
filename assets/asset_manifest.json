@@ -12,23 +12,26 @@
     "M_Scuba_Vent",
     "M_Scuba_RubberDetail",
     "M_Scuba_NasalCup",
-    "M_Scuba_Visor"
+    "M_Scuba_Visor",
+    "M_Scuba_Mouthpiece"
   ],
   "units": "centimetres",
   "bone": "Root",
   "transparent_cup_material": "M_Scuba_NasalCup",
-  "triangle_count": 38966,
-  "change": "Version 1.1.0: isolate the inner cup in section 7; move 1,212 lower exterior triangles to always-visible visor section 8 without changing geometry.",
+  "triangle_count": 49470,
+  "change": "Rounded nasal pocket with swept cheek arms and clear oral volume; separate hollow black rubber mouthpiece behind the unchanged front valve. Cup7 and mouthpiece9 toggle independently; exterior visor8 remains complete.",
   "transparent_valve_materials": [],
   "requested_opacity": {
     "M_Scuba_Visor": 0.1,
     "M_Scuba_NasalCup": 0.2
   },
-  "variant": "cns-toggle",
+  "variant": "oral-mouthpiece",
   "variant_revision": 1,
   "cup_toggle_material_index": 7,
   "always_visible_visor_material_index": 8,
-  "version": "1.1.0",
+  "version": "1.2.0",
+  "mouthpiece_toggle_material_index": 9,
+  "fbx_sha256": "5f297c4211f5567a2573b92a6c42e6b266ca7db494057c15a41cec532510dcde",
   "material_triangle_counts": {
     "M_Scuba_Silicone": 8080,
     "M_Scuba_Polymer": 2172,
@@ -38,7 +41,7 @@
     "M_Scuba_Vent": 2906,
     "M_Scuba_RubberDetail": 1560,
     "M_Scuba_NasalCup": 7990,
-    "M_Scuba_Visor": 10980
-  },
-  "fbx_sha256": "9c63c2ab9e0164102dbf7cfa8560a363019e601b8794dcd0767443fe16481cc8"
+    "M_Scuba_Visor": 10980,
+    "M_Scuba_Mouthpiece": 10504
+  }
 }
