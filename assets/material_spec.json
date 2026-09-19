@@ -99,17 +99,5 @@
     "preview_transmission": 1,
     "recommended_game_opacity": 0.1,
     "preview_alpha": 0.1
-  },
-  "M_Scuba_Mouthpiece": {
-    "base_color_linear": [
-      0.018,
-      0.023,
-      0.028
-    ],
-    "roughness": 0.46,
-    "metallic": 0,
-    "preview_transmission": 0,
-    "recommended_game_opacity": 1,
-    "native_recipe": "Separate material instance with existing RubberDetail native parameters"
   }
 }

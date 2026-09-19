@@ -14,9 +14,9 @@ $env:STELLAR_BLADE_PAKS = 'D:\SteamLibrary\steamapps\common\StellarBlade\SB\Cont
 
 Replace the example paths with your own. `-EngineRoot` and `-GamePaks` arguments can be used instead of environment variables. The game folder is read only. The collision check is a filename heuristic for names such as `pakchunk947` and can miss renamed containers, including `CodexCNS-ScubaMask-947`. Inspect actual container IDs before distribution or replacement; choose an unused chunk ID in `manifest.json` when needed. Do not delete unrelated mods.
 
-The import phase creates one skeletal mesh and ten material instances under `/Game/OutfitMods/CodexScubaMask`. It verifies exact float32 scalar values, source material order, one `Root` bone and the expected skeleton reference. The source FBX hash is recorded so changed exports cannot be packaged using a stale import report.
+The import phase creates one skeletal mesh and nine material instances under `/Game/OutfitMods/CodexScubaMask`. It verifies exact float32 scalar values, source material order, one `Root` bone and the expected skeleton reference. The source FBX hash is recorded so changed exports cannot be packaged using a stale import report.
 
-Source version 1.2.0 reshapes the transparent oral-nasal cup and adds a separate opaque mouthpiece in section 9. The CNS configuration independently hides cup section 7 and mouthpiece section 9. The complete outer shell remains in visor section 8, including the 1,212 lower exterior triangles separated in version 1.1.0. Preserve the zero-based material order during editing/import. The mouthpiece uses a separate native opaque material instance with the same parameter values as RubberDetail; all first-nine material definitions remain unchanged.
+Version 1.1.0 keeps the original geometry and material values. It moves 1,212 lower exterior faceplate triangles into visor section 8. The CNS configuration hides only cup section 7, so the complete outer shell remains visible. Preserve the zero-based material order during editing/import.
 
 The game supplies these external dependencies at runtime:
 
@@ -26,7 +26,7 @@ The game supplies these external dependencies at runtime:
 
 The scripts generate dummy local assets only to maintain those references during cooking. The dummy content belongs to chunk 0 and **must not be distributed**. Do not upload the complete archive or generated `Content` folder.
 
-The Package phase copies only the selected custom `.pak`, `.utoc` and `.ucas` triple to `ue/Build/SelectedChunk/`. Before distribution, inspect the selected container's asset list and re-export the cooked mesh to verify the skeleton, ten material sections, positions, weights and material references. In particular, cup section 7 must contain 7,990 triangles and visor section 8 must contain 10,980, mouthpiece section 9 must contain 10,504, with 49,470 total. Hiding sections 7 and 9 must leave the lower faceplate and a closed outer visor (30,976 triangles). The generated package report intentionally does not label an uninspected build release-ready.
+The Package phase copies only the selected custom `.pak`, `.utoc` and `.ucas` triple to `ue/Build/SelectedChunk/`. Before distribution, inspect the selected container's asset list and re-export the cooked mesh to verify the skeleton, nine material sections, positions, weights and material references. In particular, cup section 7 must contain 7,990 triangles and visor section 8 must contain 10,980, with 38,966 total. Hiding section 7 must leave the lower faceplate and a closed outer visor. The generated package report intentionally does not label an uninspected build release-ready.
 
 After verifying the build, bundle those three files with `cns/CodexCNS-ScubaMask.dekcns.json` from the repository root. Those are the four files installed into CNS's `Cosmetics/CodexScubaMask/` directory as described in the main README. Keep the three container files' basenames matching one another. The build script does not install files or alter your CNS configuration.
 

@@ -80,21 +80,15 @@ def validate_cup_toggle(mesh, manifest, counts):
     require(components == 1, "The always-visible visor must be connected")
     config = json.loads((REPO / "cns/CodexCNS-ScubaMask.dekcns.json").read_text(encoding="utf-8-sig"))
     toggles = config[0]["UserConfigs"]["MaterialToggles"]
-    mouthpiece = manifest.get("mouthpiece_toggle_material_index")
-    require(mouthpiece == 9 and mesh.data.materials[mouthpiece].name == "M_Scuba_Mouthpiece",
-            "CNS expects the opaque mouthpiece in section 9")
-    require(len(toggles) == 2 and [item["MaterialIndex"] for item in toggles] == [cup, mouthpiece]
-            and all(item["Value"] is True for item in toggles), "CNS toggle bindings/defaults differ")
+    require(len(toggles) == 1 and toggles[0]["MaterialIndex"] == cup
+            and toggles[0]["Value"] is True, "CNS cup toggle binding/default differs")
     return {"cup_material_index": cup, "always_visible_visor_material_index": visor,
             "cup_triangles": counts["M_Scuba_NasalCup"],
             "always_visible_visor_triangles": counts["M_Scuba_Visor"],
             "cup_off_visible_triangles": sum(counts.values()) - counts["M_Scuba_NasalCup"],
             "outer_visor_connected_components": components,
             "outer_visor_boundary_edges": 0, "outer_visor_nonmanifold_edges": 0,
-            "cns_default_cup_visible": True, "mouthpiece_material_index": mouthpiece,
-            "mouthpiece_triangles": counts["M_Scuba_Mouthpiece"],
-            "cns_default_mouthpiece_visible": True,
-            "both_off_visible_triangles": sum(counts.values()) - counts["M_Scuba_NasalCup"] - counts["M_Scuba_Mouthpiece"]}
+            "cns_default_cup_visible": True}
 
 
 def export_public_fbx(filepath):

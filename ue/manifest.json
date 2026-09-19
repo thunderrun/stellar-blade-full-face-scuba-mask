@@ -303,37 +303,6 @@
         "BaseColor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
         "Baked NormalMap": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
       }
-    },
-    {
-      "source_name": "M_Scuba_Mouthpiece",
-      "asset_name": "MI_10_BlackRubberMouthpiece",
-      "base_color": [
-        0.023,
-        0.023,
-        0.023
-      ],
-      "metallic": 0.0,
-      "roughness": 0.52,
-      "parent_key": "opaque",
-      "scalar_parameters": {
-        "Metallic": 0.0,
-        "GlobalRoughness": 0.52,
-        "Baked Normal intensity": 0.0,
-        "Brightness": 1.0
-      },
-      "vector_parameters": {
-        "Base Color Tint": [
-          0.023,
-          0.023,
-          0.023,
-          1.0
-        ]
-      },
-      "texture_parameters": {
-        "Basecolor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
-        "BakedNormal": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
-      },
-      "translucent": false
     }
   ],
   "material_mode": "game_material_instances",
@@ -348,20 +317,16 @@
     }
   },
   "design_revision": 8,
-  "expected_material_count": 10,
+  "expected_material_count": 9,
   "translucent_section_order": [
     "M_Scuba_NasalCup",
     "M_Scuba_Visor"
   ],
-  "revision_change": "Expanded oral-nasal cup with dedicated opaque internal black rubber mouthpiece at slot9. Existing cup7/visor8 indices, native material parameters, external parents, Root and asset paths are preserved.",
+  "revision_change": "Version 1.1.0: move 1,212 lower exterior faceplate triangles from cup section 7 to always-visible visor section 8; retain all geometry, native materials, opacity values and Root rig.",
   "removed_empty_slots": [
     "M_Scuba_InnerValves"
   ],
-  "variant": "oral-nasal-cup-mouthpiece",
+  "variant": "cns-inner-cup-toggle",
   "variant_revision": 1,
-  "base_design_revision": 8,
-  "opaque_slots_after_translucent": [
-    "M_Scuba_Mouthpiece"
-  ],
-  "release_version": "1.2.0"
+  "base_design_revision": 8
 }
