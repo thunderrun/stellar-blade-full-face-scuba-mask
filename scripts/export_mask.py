@@ -9,6 +9,7 @@ import json
 import math
 import struct
 import sys
+from collections import Counter, defaultdict
 from pathlib import Path
 
 import bpy
@@ -44,6 +45,50 @@ def nearest_errors(source, target):
         tree.insert(point, index)
     tree.balance()
     return [tree.find(point)[2] for point in target]
+
+
+def validate_cup_toggle(mesh, manifest, counts):
+    """Check that the toggle hides only the cup and leaves a closed outer visor."""
+    if "cup_toggle_material_index" not in manifest:
+        return {}
+    cup = manifest["cup_toggle_material_index"]
+    visor = manifest["always_visible_visor_material_index"]
+    require(cup == 7 and visor == 8, "CNS expects cup section 7 and visor section 8")
+    require(mesh.data.materials[cup].name == "M_Scuba_NasalCup"
+            and mesh.data.materials[visor].name == "M_Scuba_Visor", "Toggle slot names changed")
+    require(counts == manifest["material_triangle_counts"], "Update section counts after geometry edits")
+    edge_counts = Counter()
+    for polygon in mesh.data.polygons:
+        if polygon.material_index == visor:
+            edge_counts.update(tuple(sorted(edge)) for edge in polygon.edge_keys)
+    require(edge_counts and all(count == 2 for count in edge_counts.values()),
+            "The always-visible outer visor must have no open or nonmanifold edges")
+    adjacency = defaultdict(set)
+    for a, b in edge_counts:
+        adjacency[a].add(b)
+        adjacency[b].add(a)
+    unseen = set(adjacency)
+    components = 0
+    while unseen:
+        components += 1
+        queue = [unseen.pop()]
+        while queue:
+            for vertex in adjacency[queue.pop()]:
+                if vertex in unseen:
+                    unseen.remove(vertex)
+                    queue.append(vertex)
+    require(components == 1, "The always-visible visor must be connected")
+    config = json.loads((REPO / "cns/CodexCNS-ScubaMask.dekcns.json").read_text(encoding="utf-8-sig"))
+    toggles = config[0]["UserConfigs"]["MaterialToggles"]
+    require(len(toggles) == 1 and toggles[0]["MaterialIndex"] == cup
+            and toggles[0]["Value"] is True, "CNS cup toggle binding/default differs")
+    return {"cup_material_index": cup, "always_visible_visor_material_index": visor,
+            "cup_triangles": counts["M_Scuba_NasalCup"],
+            "always_visible_visor_triangles": counts["M_Scuba_Visor"],
+            "cup_off_visible_triangles": sum(counts.values()) - counts["M_Scuba_NasalCup"],
+            "outer_visor_connected_components": components,
+            "outer_visor_boundary_edges": 0, "outer_visor_nonmanifold_edges": 0,
+            "cns_default_cup_visible": True}
 
 
 def export_public_fbx(filepath):
@@ -116,6 +161,7 @@ def main():
     for triangle in mesh.data.loop_triangles:
         material_counts[slots[triangle.material_index]] += 1
     require(all(material_counts.values()), "Every material section must contain geometry")
+    toggle_checks = validate_cup_toggle(mesh, manifest, material_counts)
     coords = [mesh.matrix_world @ vertex.co for vertex in mesh.data.vertices]
     root = rig.matrix_world @ rig.data.bones["Root"].matrix_local
     mesh_count = len([obj for obj in bpy.data.objects if obj.type == "MESH"])
@@ -181,7 +227,8 @@ def main():
     require(error_mm < 0.01 and rotation_error < 0.001 and position_error < 0.001,
             "FBX geometry or Root reference pose changed")
     report = {
-        "passed": True, "revision": manifest["revision"], "blender_version": bpy.app.version_string,
+        "passed": True, "revision": manifest["revision"], "version": manifest.get("version"),
+        "blender_version": bpy.app.version_string,
         "source": source.name, "fbx": fbx.name, "glb": glb.name,
         "source_sha256": sha256(source), "fbx_sha256": sha256(fbx), "glb_sha256": sha256(glb),
         "source_mesh_objects": mesh_count, "source_images": 0, "source_linked_libraries": 0,
@@ -189,6 +236,7 @@ def main():
         "all_vertices_rigid_weight_Root": weighted, "triangles": triangle_count,
         "source_vertices": len(coords), "fbx_imported_vertices": len(imported_coords),
         "material_triangle_counts": material_counts, "glb_alpha": alphas,
+        "cup_toggle": toggle_checks,
         "maximum_fbx_vertex_error_mm": error_mm,
         "Root_rest_rotation_error_degrees": rotation_error,
         "Root_rest_position_error_mm": position_error,

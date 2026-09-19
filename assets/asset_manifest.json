@@ -18,11 +18,27 @@
   "bone": "Root",
   "transparent_cup_material": "M_Scuba_NasalCup",
   "triangle_count": 38966,
-  "change": "Streamline the upper cup bridge-to-cheek contour; visor opacity0.10 and cup opacity0.20; preserve final under-chin fit",
+  "change": "Version 1.1.0: isolate the inner cup in section 7; move 1,212 lower exterior triangles to always-visible visor section 8 without changing geometry.",
   "transparent_valve_materials": [],
   "requested_opacity": {
     "M_Scuba_Visor": 0.1,
     "M_Scuba_NasalCup": 0.2
   },
-  "fbx_sha256": "f52dad9250248e8162dabaa9dead45132b02d700cd4bf09b568832313a00a9bb"
+  "variant": "cns-toggle",
+  "variant_revision": 1,
+  "cup_toggle_material_index": 7,
+  "always_visible_visor_material_index": 8,
+  "version": "1.1.0",
+  "material_triangle_counts": {
+    "M_Scuba_Silicone": 8080,
+    "M_Scuba_Polymer": 2172,
+    "M_Scuba_Teal": 882,
+    "M_Scuba_TealAccent": 3404,
+    "M_Scuba_Steel": 992,
+    "M_Scuba_Vent": 2906,
+    "M_Scuba_RubberDetail": 1560,
+    "M_Scuba_NasalCup": 7990,
+    "M_Scuba_Visor": 10980
+  },
+  "fbx_sha256": "9c63c2ab9e0164102dbf7cfa8560a363019e601b8794dcd0767443fe16481cc8"
 }

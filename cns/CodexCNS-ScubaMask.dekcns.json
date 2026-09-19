@@ -4,12 +4,26 @@
     "Requirement": "None",
     "CharacterID": "EVE",
     "DisplayName": "Full Face Scuba Mask",
-    "Description": "Streamlined inner cup, 10% visor opacity and 20% cup opacity.\nUnder-chin seal; no inner valves, snorkel, hose, or straps.",
+    "Description": "Inner nasal cup can be switched on/off in CNS.\n10% visor, 20% cup, under-chin seal and opaque front valve.",
     "FitMeshType": "Eyes",
     "OutfitTypes": [],
     "OutfitImage": "/Game/Art/UI/Texture/Item/glasses/Deco_Icon_FaceAccessory_003.Deco_Icon_FaceAccessory_003",
     "OutfitPaths": [
       "/Game/OutfitMods/CodexScubaMask/Models/SK_CodexScubaMask.SK_CodexScubaMask"
-    ]
+    ],
+    "UserConfigs": {
+      "ShapeKeys": [],
+      "MaterialToggles": [
+        {
+          "DisplayName": "Inner Nasal Cup",
+          "Description": "Show or hide only the inner nasal cup.",
+          "MaterialIndex": 7,
+          "Value": true
+        }
+      ],
+      "ScalarControls": [],
+      "VectorControls": [],
+      "TextureOptions": []
+    }
   }
 ]

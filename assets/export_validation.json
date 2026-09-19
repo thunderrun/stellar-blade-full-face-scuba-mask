@@ -1,13 +1,14 @@
 {
   "passed": true,
   "revision": 8,
+  "version": "1.1.0",
   "blender_version": "5.2.1 LTS",
   "source": "full_face_mask.blend",
   "fbx": "SK_CodexScubaMask.fbx",
   "glb": "SK_CodexScubaMask.glb",
-  "source_sha256": "474169c618bc0566f1fb2c29631559f157422cd9232bc710b4e76586b9d9ed24",
-  "fbx_sha256": "f52dad9250248e8162dabaa9dead45132b02d700cd4bf09b568832313a00a9bb",
-  "glb_sha256": "be6769e09d9bd2cb0e032600a7f1ac9d4972951b9ca74a1cf5065f6c983cb148",
+  "source_sha256": "f4eb4fa72c57a7691f630b6b58b2a0dd73ac8c0cab1b1a99a5a244409ea17582",
+  "fbx_sha256": "9c63c2ab9e0164102dbf7cfa8560a363019e601b8794dcd0767443fe16481cc8",
+  "glb_sha256": "2dee73f7de3473d3a448dac148bb03416326962f929b841853faa20e62477102",
   "source_mesh_objects": 33,
   "source_images": 0,
   "source_linked_libraries": 0,
@@ -28,8 +29,8 @@
     "M_Scuba_Steel": 992,
     "M_Scuba_Vent": 2906,
     "M_Scuba_RubberDetail": 1560,
-    "M_Scuba_NasalCup": 9202,
-    "M_Scuba_Visor": 9768
+    "M_Scuba_NasalCup": 7990,
+    "M_Scuba_Visor": 10980
   },
   "glb_alpha": {
     "M_Scuba_Silicone": 1,
@@ -41,6 +42,17 @@
     "M_Scuba_RubberDetail": 1,
     "M_Scuba_NasalCup": 0.20000000298023224,
     "M_Scuba_Visor": 0.10000000149011612
+  },
+  "cup_toggle": {
+    "cup_material_index": 7,
+    "always_visible_visor_material_index": 8,
+    "cup_triangles": 7990,
+    "always_visible_visor_triangles": 10980,
+    "cup_off_visible_triangles": 30976,
+    "outer_visor_connected_components": 1,
+    "outer_visor_boundary_edges": 0,
+    "outer_visor_nonmanifold_edges": 0,
+    "cns_default_cup_visible": true
   },
   "maximum_fbx_vertex_error_mm": 2.384185791015625e-05,
   "Root_rest_rotation_error_degrees": 0.0,
