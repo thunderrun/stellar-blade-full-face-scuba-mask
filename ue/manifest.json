@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "expected_engine": "4.26",
+  "fbx": "../assets/SK_CodexScubaMask.fbx",
+  "source_manifest": "../assets/asset_manifest.json",
+  "mesh_package": "/Game/OutfitMods/CodexScubaMask/Models/SK_CodexScubaMask",
+  "original_skeleton": "/Game/Art/Character/PC/00_ACC/ACC_GLA_03/ACC_GLA_03M_Skeleton.ACC_GLA_03M_Skeleton",
+  "expected_bones": [
+    "Root"
+  ],
+  "expected_physics_asset": null,
+  "chunk_id": 947,
+  "chunk_id_collision_checked": false,
+  "materials": [
+    {
+      "source_name": "M_Scuba_Silicone",
+      "asset_name": "MI_01_CharcoalSilicone",
+      "base_color": [
+        0.01,
+        0.01,
+        0.01
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5,
+      "parent_key": "opaque",
+      "scalar_parameters": {
+        "Metallic": 0.0,
+        "GlobalRoughness": 0.5,
+        "Baked Normal intensity": 0.0,
+        "Brightness": 1.0
+      },
+      "vector_parameters": {
+        "Base Color Tint": [
+          0.01,
+          0.01,
+          0.01,
+          1.0
+        ]
+      },
+      "texture_parameters": {
+        "Basecolor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
+        "BakedNormal": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
+      }
+    },
+    {
+      "source_name": "M_Scuba_Polymer",
+      "asset_name": "MI_02_GraphitePolymer",
+      "base_color": [
+        0.018,
+        0.018,
+        0.018
+      ],
+      "metallic": 0.05,
+      "roughness": 0.32,
+      "parent_key": "opaque",
+      "scalar_parameters": {
+        "Metallic": 0.05,
+        "GlobalRoughness": 0.32,
+        "Baked Normal intensity": 0.0,
+        "Brightness": 1.0
+      },
+      "vector_parameters": {
+        "Base Color Tint": [
+          0.018,
+          0.018,
+          0.018,
+          1.0
+        ]
+      },
+      "texture_parameters": {
+        "Basecolor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
+        "BakedNormal": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
+      }
+    },
+    {
+      "source_name": "M_Scuba_Teal",
+      "asset_name": "MI_03_CharcoalFrame",
+      "base_color": [
+        0.016,
+        0.016,
+        0.016
+      ],
+      "metallic": 0.25,
+      "roughness": 0.28,
+      "parent_key": "opaque",
+      "scalar_parameters": {
+        "Metallic": 0.25,
+        "GlobalRoughness": 0.28,
+        "Baked Normal intensity": 0.0,
+        "Brightness": 1.0
+      },
+      "vector_parameters": {
+        "Base Color Tint": [
+          0.016,
+          0.016,
+          0.016,
+          1.0
+        ]
+      },
+      "texture_parameters": {
+        "Basecolor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
+        "BakedNormal": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
+      }
+    },
+    {
+      "source_name": "M_Scuba_TealAccent",
+      "asset_name": "MI_04_CharcoalAccent",
+      "base_color": [
+        0.028,
+        0.028,
+        0.028
+      ],
+      "metallic": 0.3,
+      "roughness": 0.28,
+      "parent_key": "opaque",
+      "scalar_parameters": {
+        "Metallic": 0.3,
+        "GlobalRoughness": 0.28,
+        "Baked Normal intensity": 0.0,
+        "Brightness": 1.0
+      },
+      "vector_parameters": {
+        "Base Color Tint": [
+          0.028,
+          0.028,
+          0.028,
+          1.0
+        ]
+      },
+      "texture_parameters": {
+        "Basecolor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
+        "BakedNormal": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
+      }
+    },
+    {
+      "source_name": "M_Scuba_Steel",
+      "asset_name": "MI_05_DarkGunmetal",
+      "base_color": [
+        0.085,
+        0.085,
+        0.085
+      ],
+      "metallic": 0.7,
+      "roughness": 0.32,
+      "parent_key": "opaque",
+      "scalar_parameters": {
+        "Metallic": 0.7,
+        "GlobalRoughness": 0.32,
+        "Baked Normal intensity": 0.0,
+        "Brightness": 1.0
+      },
+      "vector_parameters": {
+        "Base Color Tint": [
+          0.085,
+          0.085,
+          0.085,
+          1.0
+        ]
+      },
+      "texture_parameters": {
+        "Basecolor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
+        "BakedNormal": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
+      }
+    },
+    {
+      "source_name": "M_Scuba_Vent",
+      "asset_name": "MI_06_VentShadow",
+      "base_color": [
+        0.003,
+        0.003,
+        0.003
+      ],
+      "metallic": 0.0,
+      "roughness": 0.62,
+      "parent_key": "opaque",
+      "scalar_parameters": {
+        "Metallic": 0.0,
+        "GlobalRoughness": 0.62,
+        "Baked Normal intensity": 0.0,
+        "Brightness": 1.0
+      },
+      "vector_parameters": {
+        "Base Color Tint": [
+          0.003,
+          0.003,
+          0.003,
+          1.0
+        ]
+      },
+      "texture_parameters": {
+        "Basecolor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
+        "BakedNormal": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
+      }
+    },
+    {
+      "source_name": "M_Scuba_RubberDetail",
+      "asset_name": "MI_09_RubberDetail",
+      "base_color": [
+        0.023,
+        0.023,
+        0.023
+      ],
+      "metallic": 0.0,
+      "roughness": 0.52,
+      "parent_key": "opaque",
+      "scalar_parameters": {
+        "Metallic": 0.0,
+        "GlobalRoughness": 0.52,
+        "Baked Normal intensity": 0.0,
+        "Brightness": 1.0
+      },
+      "vector_parameters": {
+        "Base Color Tint": [
+          0.023,
+          0.023,
+          0.023,
+          1.0
+        ]
+      },
+      "texture_parameters": {
+        "Basecolor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
+        "BakedNormal": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
+      }
+    },
+    {
+      "source_name": "M_Scuba_NasalCup",
+      "asset_name": "MI_08_TransparentNasalCup",
+      "base_color": [
+        0.18,
+        0.18,
+        0.18
+      ],
+      "metallic": 0.0,
+      "roughness": 0.055,
+      "opacity": 0.2,
+      "specular": 0.5,
+      "translucent": true,
+      "parent_key": "visor",
+      "scalar_parameters": {
+        "Opacity Inner": 0.2,
+        "Opacity Out": 0.2,
+        "Opacity Fresnel": 1.0,
+        "GlassColor Fresnel": 0.2,
+        "HDR_Intensity": 0.045,
+        "Fresnel_Pow": 2.0
+      },
+      "vector_parameters": {
+        "GlassColor In": [
+          0.18,
+          0.18,
+          0.18,
+          1.0
+        ],
+        "GlassColor Out": [
+          0.18,
+          0.18,
+          0.18,
+          1.0
+        ]
+      },
+      "texture_parameters": {
+        "BaseColor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
+        "Baked NormalMap": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
+      }
+    },
+    {
+      "source_name": "M_Scuba_Visor",
+      "asset_name": "MI_07_ClearPolycarbonate",
+      "base_color": [
+        0.12,
+        0.12,
+        0.12
+      ],
+      "metallic": 0.0,
+      "roughness": 0.055,
+      "opacity": 0.1,
+      "specular": 0.5,
+      "translucent": true,
+      "parent_key": "visor",
+      "scalar_parameters": {
+        "Opacity Inner": 0.1,
+        "Opacity Out": 0.1,
+        "Opacity Fresnel": 1.0,
+        "GlassColor Fresnel": 0.2,
+        "HDR_Intensity": 0.03,
+        "Fresnel_Pow": 2.0
+      },
+      "vector_parameters": {
+        "GlassColor In": [
+          0.12,
+          0.12,
+          0.12,
+          1.0
+        ],
+        "GlassColor Out": [
+          0.12,
+          0.12,
+          0.12,
+          1.0
+        ]
+      },
+      "texture_parameters": {
+        "BaseColor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
+        "Baked NormalMap": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
+      }
+    }
+  ],
+  "material_mode": "game_material_instances",
+  "material_reference": "References/material-parameter-contract.json",
+  "material_parents": {
+    "opaque": {
+      "path": "/Game/Art/Character/PC/00_ACC/Materials/MI_ACC_GLA_01.MI_ACC_GLA_01"
+    },
+    "visor": {
+      "path": "/Game/Art/Character/PC/00_ACC/Materials/MI_ACC_Glass_Base.MI_ACC_Glass_Base",
+      "translucent": true
+    }
+  },
+  "design_revision": 8,
+  "expected_material_count": 9,
+  "translucent_section_order": [
+    "M_Scuba_NasalCup",
+    "M_Scuba_Visor"
+  ],
+  "revision_change": "Streamline the upper nasal cup; set native visor inner/out opacity to 0.10 and nasal cup inner/out opacity to 0.20. All other material parameters, native parents and the opaque front valve remain unchanged.",
+  "removed_empty_slots": [
+    "M_Scuba_InnerValves"
+  ]
+}

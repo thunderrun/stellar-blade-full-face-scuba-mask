@@ -1,0 +1,28 @@
+{
+  "revision": 8,
+  "mesh_name": "SK_CodexScubaMask",
+  "fbx_path": "SK_CodexScubaMask.fbx",
+  "skeleton_path": "/Game/Art/Character/PC/00_ACC/ACC_GLA_03/ACC_GLA_03M_Skeleton.ACC_GLA_03M_Skeleton",
+  "material_slots": [
+    "M_Scuba_Silicone",
+    "M_Scuba_Polymer",
+    "M_Scuba_Teal",
+    "M_Scuba_TealAccent",
+    "M_Scuba_Steel",
+    "M_Scuba_Vent",
+    "M_Scuba_RubberDetail",
+    "M_Scuba_NasalCup",
+    "M_Scuba_Visor"
+  ],
+  "units": "centimetres",
+  "bone": "Root",
+  "transparent_cup_material": "M_Scuba_NasalCup",
+  "triangle_count": 38966,
+  "change": "Streamline the upper cup bridge-to-cheek contour; visor opacity0.10 and cup opacity0.20; preserve final under-chin fit",
+  "transparent_valve_materials": [],
+  "requested_opacity": {
+    "M_Scuba_Visor": 0.1,
+    "M_Scuba_NasalCup": 0.2
+  },
+  "fbx_sha256": "f52dad9250248e8162dabaa9dead45132b02d700cd4bf09b568832313a00a9bb"
+}

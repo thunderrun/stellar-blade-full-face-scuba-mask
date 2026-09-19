@@ -1,0 +1,28 @@
+# Local editor state and Blender backups
+*.blend1
+*.blend2
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# UE generates local-path reports, dummy dependencies and cooked content.
+ue/Build/
+ue/Saved/
+ue/Intermediate/
+ue/DerivedDataCache/
+ue/Binaries/
+ue/.vs/
+ue/Content/**/*.uasset
+ue/Content/**/*.uexp
+ue/Content/**/*.ubulk
+*.pak
+*.utoc
+*.ucas
+*.log
+
+# Local renders and optional working directories
+previews/
+work/

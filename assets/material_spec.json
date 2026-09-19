@@ -1,0 +1,103 @@
+{
+  "M_Scuba_Silicone": {
+    "base_color_linear": [
+      0.018,
+      0.021,
+      0.023
+    ],
+    "metallic": 0.03,
+    "roughness": 0.43,
+    "preview_transmission": 0,
+    "recommended_game_opacity": 1
+  },
+  "M_Scuba_Polymer": {
+    "base_color_linear": [
+      0.014,
+      0.018,
+      0.021
+    ],
+    "metallic": 0.12,
+    "roughness": 0.25,
+    "preview_transmission": 0,
+    "recommended_game_opacity": 1
+  },
+  "M_Scuba_Teal": {
+    "base_color_linear": [
+      0.009,
+      0.012,
+      0.015
+    ],
+    "metallic": 0.25,
+    "roughness": 0.22,
+    "preview_transmission": 0,
+    "recommended_game_opacity": 1
+  },
+  "M_Scuba_TealAccent": {
+    "base_color_linear": [
+      0.035,
+      0.04,
+      0.043
+    ],
+    "metallic": 0.2,
+    "roughness": 0.27,
+    "preview_transmission": 0,
+    "recommended_game_opacity": 1
+  },
+  "M_Scuba_Steel": {
+    "base_color_linear": [
+      0.13,
+      0.15,
+      0.17
+    ],
+    "metallic": 0.65,
+    "roughness": 0.24,
+    "preview_transmission": 0,
+    "recommended_game_opacity": 1
+  },
+  "M_Scuba_Vent": {
+    "base_color_linear": [
+      0.004,
+      0.005,
+      0.006
+    ],
+    "metallic": 0,
+    "roughness": 0.5,
+    "preview_transmission": 0,
+    "recommended_game_opacity": 1
+  },
+  "M_Scuba_RubberDetail": {
+    "base_color_linear": [
+      0.028,
+      0.032,
+      0.036
+    ],
+    "metallic": 0,
+    "roughness": 0.53,
+    "preview_transmission": 0,
+    "recommended_game_opacity": 1
+  },
+  "M_Scuba_NasalCup": {
+    "base_color_linear": [
+      0.82,
+      0.86,
+      0.89
+    ],
+    "metallic": 0,
+    "roughness": 0.06,
+    "preview_transmission": 1,
+    "recommended_game_opacity": 0.2,
+    "preview_alpha": 0.2
+  },
+  "M_Scuba_Visor": {
+    "base_color_linear": [
+      0.97,
+      0.985,
+      0.99
+    ],
+    "metallic": 0,
+    "roughness": 0.025,
+    "preview_transmission": 1,
+    "recommended_game_opacity": 0.1,
+    "preview_alpha": 0.1
+  }
+}
