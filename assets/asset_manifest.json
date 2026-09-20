@@ -1,5 +1,5 @@
 {
-  "revision": 8,
+  "revision": 12,
   "mesh_name": "SK_CodexScubaMask",
   "fbx_path": "SK_CodexScubaMask.fbx",
   "skeleton_path": "/Game/Art/Character/PC/00_ACC/ACC_GLA_03/ACC_GLA_03M_Skeleton.ACC_GLA_03M_Skeleton",
@@ -17,28 +17,28 @@
   "units": "centimetres",
   "bone": "Root",
   "transparent_cup_material": "M_Scuba_NasalCup",
-  "triangle_count": 38966,
-  "change": "Version 1.1.0: isolate the inner cup in section 7; move 1,212 lower exterior triangles to always-visible visor section 8 without changing geometry.",
+  "triangle_count": 48394,
+  "change": "Replace the standalone tube with a broad molded lower breathing chamber and direct short valve collar; preserve under-chin contact, opaque exterior and CNS controls.",
   "transparent_valve_materials": [],
   "requested_opacity": {
     "M_Scuba_Visor": 0.1,
     "M_Scuba_NasalCup": 0.2
   },
-  "variant": "cns-toggle",
+  "variant": "integrated-valve-oronasal-cup",
   "variant_revision": 1,
   "cup_toggle_material_index": 7,
   "always_visible_visor_material_index": 8,
-  "version": "1.1.0",
+  "version": "1.1.6",
   "material_triangle_counts": {
     "M_Scuba_Silicone": 8080,
-    "M_Scuba_Polymer": 2172,
     "M_Scuba_Teal": 882,
     "M_Scuba_TealAccent": 3404,
-    "M_Scuba_Steel": 992,
     "M_Scuba_Vent": 2906,
     "M_Scuba_RubberDetail": 1560,
-    "M_Scuba_NasalCup": 7990,
-    "M_Scuba_Visor": 10980
+    "M_Scuba_Polymer": 2172,
+    "M_Scuba_Steel": 992,
+    "M_Scuba_NasalCup": 16948,
+    "M_Scuba_Visor": 11450
   },
-  "fbx_sha256": "9c63c2ab9e0164102dbf7cfa8560a363019e601b8794dcd0767443fe16481cc8"
+  "fbx_sha256": "2667cbe61143a37a8115e14916ec0a029f0691664bfde2f4e1189ee6432223f5"
 }

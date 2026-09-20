@@ -4,7 +4,7 @@
     "Requirement": "None",
     "CharacterID": "EVE",
     "DisplayName": "Full Face Scuba Mask",
-    "Description": "Adjust visor and cup opacity in the configuration menu.\nInner nasal cup can be switched on/off.",
+    "Description": "Open the cog for Glass Color and Inner Cup Color.\nAdjust opacity and show or hide the inner cup separately.",
     "FitMeshType": "Eyes",
     "OutfitTypes": [],
     "OutfitImage": "/Game/Art/UI/Texture/Item/glasses/Deco_Icon_FaceAccessory_003.Deco_Icon_FaceAccessory_003",
@@ -73,7 +73,162 @@
           "ControlledBy": "Cup Opacity"
         }
       ],
-      "VectorControls": [],
+      "VectorControls": [
+        {
+          "DisplayName": "Glass Color",
+          "Description": "Choose a color with the swatches or color picker. Opacity is controlled separately.",
+          "ParamName": "GlassColor Out",
+          "Association": "Global",
+          "LayerIndex": -1,
+          "MaterialIndex": 8,
+          "Min": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Step": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+          ],
+          "Sliders": [
+            true,
+            true,
+            true,
+            false
+          ],
+          "Value": [
+            0.12,
+            0.12,
+            0.12,
+            1.0
+          ]
+        },
+        {
+          "DisplayName": "Glass Color (Inner Surface)",
+          "Description": "Linked color for the inner surface.",
+          "ParamName": "GlassColor In",
+          "Association": "Global",
+          "LayerIndex": -1,
+          "MaterialIndex": 8,
+          "Min": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Step": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+          ],
+          "Sliders": [
+            true,
+            true,
+            true,
+            false
+          ],
+          "Value": [
+            0.12,
+            0.12,
+            0.12,
+            1.0
+          ],
+          "ControlledBy": "Glass Color"
+        },
+        {
+          "DisplayName": "Inner Cup Color",
+          "Description": "Choose a color with the swatches or color picker. Opacity is controlled separately.",
+          "ParamName": "GlassColor Out",
+          "Association": "Global",
+          "LayerIndex": -1,
+          "MaterialIndex": 7,
+          "Min": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Step": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+          ],
+          "Sliders": [
+            true,
+            true,
+            true,
+            false
+          ],
+          "Value": [
+            0.18,
+            0.18,
+            0.18,
+            1.0
+          ]
+        },
+        {
+          "DisplayName": "Inner Cup Color (Inner Surface)",
+          "Description": "Linked color for the inner surface.",
+          "ParamName": "GlassColor In",
+          "Association": "Global",
+          "LayerIndex": -1,
+          "MaterialIndex": 7,
+          "Min": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Max": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Step": [
+            0.01,
+            0.01,
+            0.01,
+            0.01
+          ],
+          "Sliders": [
+            true,
+            true,
+            true,
+            false
+          ],
+          "Value": [
+            0.18,
+            0.18,
+            0.18,
+            1.0
+          ],
+          "ControlledBy": "Inner Cup Color"
+        }
+      ],
       "TextureOptions": []
     }
   }

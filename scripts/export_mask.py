@@ -132,6 +132,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, default=REPO / "assets/full_face_mask.blend")
     parser.add_argument("--output-dir", type=Path, default=REPO / "assets")
+    parser.add_argument("--manifest", type=Path, default=REPO / "assets/asset_manifest.json")
     parser.add_argument("--validate-only", action="store_true")
     args = parser.parse_args(sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else [])
     source = args.source.resolve()
@@ -139,7 +140,7 @@ def main():
     output.mkdir(parents=True, exist_ok=True)
     fbx = output / (MESH_NAME + ".fbx")
     glb = output / (MESH_NAME + ".glb")
-    manifest_path = REPO / "assets/asset_manifest.json"
+    manifest_path = args.manifest.resolve()
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
 
     bpy.ops.wm.open_mainfile(filepath=str(source))
@@ -243,10 +244,10 @@ def main():
         "bounding_box_cm": [[min(v[i] for v in imported_coords) for i in range(3)],
                             [max(v[i] for v in imported_coords) for i in range(3)]],
     }
-    (output / "export_validation.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    (output / "export_validation.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8", newline="\n")
     if output == manifest_path.parent.resolve():
         manifest["fbx_sha256"] = report["fbx_sha256"]
-        manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+        manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps(report, indent=2))
 
 

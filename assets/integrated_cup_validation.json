@@ -1,0 +1,2125 @@
+{
+  "version": "1.1.6",
+  "revision": 12,
+  "source": "full_face_mask.blend",
+  "sha256": "91fc32ea194d3ed50ed31a4c2fd7f8c561968bb69059ec9cdbbc4894f7b7140d",
+  "opaque_exact_triangle_comparison": {
+    "0": {
+      "identical": true,
+      "old_count": 8080,
+      "new_count": 8080,
+      "removed": 0,
+      "added": 0
+    },
+    "1": {
+      "identical": true,
+      "old_count": 2172,
+      "new_count": 2172,
+      "removed": 0,
+      "added": 0
+    },
+    "2": {
+      "identical": true,
+      "old_count": 882,
+      "new_count": 882,
+      "removed": 0,
+      "added": 0
+    },
+    "3": {
+      "identical": true,
+      "old_count": 3404,
+      "new_count": 3404,
+      "removed": 0,
+      "added": 0
+    },
+    "4": {
+      "identical": true,
+      "old_count": 992,
+      "new_count": 992,
+      "removed": 0,
+      "added": 0
+    },
+    "5": {
+      "identical": true,
+      "old_count": 2906,
+      "new_count": 2906,
+      "removed": 0,
+      "added": 0
+    },
+    "6": {
+      "identical": true,
+      "old_count": 1560,
+      "new_count": 1560,
+      "removed": 0,
+      "added": 0
+    }
+  },
+  "opaque_source_objects_exact": true,
+  "upper_cup_at_or_above_3_5cm": {
+    "identical": true,
+    "old_count": 9418,
+    "new_count": 9418,
+    "removed": 0,
+    "added": 0
+  },
+  "source_game_exact_triangle_comparison": {
+    "0": {
+      "identical": false,
+      "source_count": 10072,
+      "game_count": 8080,
+      "source_only": 5540,
+      "game_only": 3548
+    },
+    "1": {
+      "identical": false,
+      "source_count": 2808,
+      "game_count": 2172,
+      "source_only": 1864,
+      "game_only": 1228
+    },
+    "2": {
+      "identical": false,
+      "source_count": 1280,
+      "game_count": 882,
+      "source_only": 1220,
+      "game_only": 822
+    },
+    "3": {
+      "identical": false,
+      "source_count": 4960,
+      "game_count": 3404,
+      "source_only": 4611,
+      "game_only": 3055
+    },
+    "4": {
+      "identical": false,
+      "source_count": 1440,
+      "game_count": 992,
+      "source_only": 1345,
+      "game_only": 897
+    },
+    "5": {
+      "identical": false,
+      "source_count": 4220,
+      "game_count": 2906,
+      "source_only": 3959,
+      "game_only": 2645
+    },
+    "6": {
+      "identical": false,
+      "source_count": 2280,
+      "game_count": 1560,
+      "source_only": 1902,
+      "game_only": 1182
+    },
+    "7": {
+      "identical": true,
+      "source_count": 16948,
+      "game_count": 16948,
+      "source_only": 0,
+      "game_only": 0
+    },
+    "8": {
+      "identical": true,
+      "source_count": 11450,
+      "game_count": 11450,
+      "source_only": 0,
+      "game_only": 0
+    }
+  },
+  "source_unassigned_triangle_material_count": 0,
+  "cup_topology": {
+    "vertices": 8474,
+    "triangles": 16948,
+    "components": 1,
+    "component_vertex_counts": [
+      8474
+    ],
+    "nonmanifold_edges": 0,
+    "inconsistent_edge_winding": 0,
+    "euler_characteristic": 0,
+    "signed_volume_cm3": 2.462177768746663,
+    "zero_area_faces_below_1e_12cm2": 0,
+    "minimum_triangle_area_cm2": 1.1439881389113194e-10,
+    "self_intersections_nonadjacent": 0,
+    "self_pairs": []
+  },
+  "cup_external_collisions": {
+    "private_neutral_face_skin": {
+      "overlapping_triangle_pairs": 0,
+      "minimum_sample_clearance_mm": 0.42733974754810333
+    },
+    "visor": {
+      "overlapping_triangle_pairs": 0,
+      "minimum_sample_clearance_mm": 0.6879483908414841
+    },
+    "all_opaque": {
+      "overlapping_triangle_pairs": 515,
+      "minimum_sample_clearance_mm": 0.1499895192682743
+    },
+    "01 | Slim hollow silicone face seal": {
+      "overlapping_triangle_pairs": 0,
+      "minimum_sample_clearance_mm": 2.1812330186367035
+    },
+    "02 | Rear soft face-contact lip": {
+      "overlapping_triangle_pairs": 0,
+      "minimum_sample_clearance_mm": 9.485095143318176
+    },
+    "03 | Inner clear sealing bead": {
+      "overlapping_triangle_pairs": 0,
+      "minimum_sample_clearance_mm": 9.371795058250427
+    },
+    "04 | Continuous glossy black oval frame": {
+      "overlapping_triangle_pairs": 0,
+      "minimum_sample_clearance_mm": 1.741543561220169
+    },
+    "05 | Narrow satin outer trim": {
+      "overlapping_triangle_pairs": 0,
+      "minimum_sample_clearance_mm": 4.9158284068107605
+    },
+    "06 | Shield retention gasket": {
+      "overlapping_triangle_pairs": 0,
+      "minimum_sample_clearance_mm": 1.4945483207702637
+    }
+  },
+  "actual_under_chin_contacts": {
+    "near_skin_lower_sample_count": 444,
+    "central_samples_skin_normal_z_below_minus_0_7": 146,
+    "central_gap_minmax_mm": [
+      0.43467193841934204,
+      1.1802377551794052
+    ],
+    "lowest_contact_samples": [
+      {
+        "point": [
+          -8.412939071655273,
+          0.001629586797207594,
+          -0.8297236561775208
+        ],
+        "gap_mm": 0.6500010937452316,
+        "skin_normal": [
+          -0.19907042384147644,
+          0.025070499628782272,
+          -0.9796643853187561
+        ],
+        "surface_kind": "vertex"
+      },
+      {
+        "point": [
+          -8.443364143371582,
+          -0.0521145723760128,
+          -0.8249969482421875
+        ],
+        "gap_mm": 0.6878857314586639,
+        "skin_normal": [
+          -0.46361303329467773,
+          -0.056116413325071335,
+          -0.8842588663101196
+        ],
+        "surface_kind": "centroid"
+      },
+      {
+        "point": [
+          -8.411784172058105,
+          0.16403669118881226,
+          -0.824756383895874
+        ],
+        "gap_mm": 0.6500006467103958,
+        "skin_normal": [
+          -0.20264166593551636,
+          0.031470127403736115,
+          -0.9787471890449524
+        ],
+        "surface_kind": "vertex"
+      },
+      {
+        "point": [
+          -8.443733215332031,
+          0.1109427809715271,
+          -0.8237027525901794
+        ],
+        "gap_mm": 0.6931614875793457,
+        "skin_normal": [
+          -0.46489638090133667,
+          0.030876625329256058,
+          -0.8848264813423157
+        ],
+        "surface_kind": "centroid"
+      },
+      {
+        "point": [
+          -8.505294799804688,
+          0.007511629723012447,
+          -0.8232989311218262
+        ],
+        "gap_mm": 0.9289383888244629,
+        "skin_normal": [
+          -0.44263091683387756,
+          0.062265053391456604,
+          -0.8945395350456238
+        ],
+        "surface_kind": "vertex"
+      },
+      {
+        "point": [
+          -8.474903106689453,
+          0.058767758309841156,
+          -0.8232169151306152
+        ],
+        "gap_mm": 0.8094481378793716,
+        "skin_normal": [
+          -0.46489638090133667,
+          0.030876625329256058,
+          -0.8848264813423157
+        ],
+        "surface_kind": "centroid"
+      },
+      {
+        "point": [
+          -8.411858558654785,
+          -0.1654849350452423,
+          -0.8219682574272156
+        ],
+        "gap_mm": 0.6500024348497391,
+        "skin_normal": [
+          -0.20379357039928436,
+          -0.053749989718198776,
+          -0.977537214756012
+        ],
+        "surface_kind": "vertex"
+      },
+      {
+        "point": [
+          -8.411252975463867,
+          -0.05424238741397858,
+          -0.8206074237823486
+        ],
+        "gap_mm": 0.5756717175245285,
+        "skin_normal": [
+          -0.20379357039928436,
+          -0.053749989718198776,
+          -0.977537214756012
+        ],
+        "surface_kind": "centroid"
+      },
+      {
+        "point": [
+          -8.410818099975586,
+          0.10969119518995285,
+          -0.8198871612548828
+        ],
+        "gap_mm": 0.5832821875810623,
+        "skin_normal": [
+          -0.20264166593551636,
+          0.031470127403736115,
+          -0.9787471890449524
+        ],
+        "surface_kind": "centroid"
+      },
+      {
+        "point": [
+          -8.474430084228516,
+          -0.10960473865270615,
+          -0.8194441199302673
+        ],
+        "gap_mm": 0.8066972345113754,
+        "skin_normal": [
+          -0.46361303329467773,
+          -0.056116413325071335,
+          -0.8842588663101196
+        ],
+        "surface_kind": "centroid"
+      },
+      {
+        "point": [
+          -8.506473541259766,
+          0.16716204583644867,
+          -0.816628098487854
+        ],
+        "gap_mm": 0.9313900768756866,
+        "skin_normal": [
+          -0.46489638090133667,
+          0.030876625329256058,
+          -0.8848264813423157
+        ],
+        "surface_kind": "vertex"
+      },
+      {
+        "point": [
+          -8.539993286132812,
+          -0.05057283863425255,
+          -0.8162935972213745
+        ],
+        "gap_mm": 1.0408154129981995,
+        "skin_normal": [
+          -0.4421292543411255,
+          -0.08574923127889633,
+          -0.8928430676460266
+        ],
+        "surface_kind": "centroid"
+      },
+      {
+        "point": [
+          -8.409876823425293,
+          0.05538835749030113,
+          -0.8150118589401245
+        ],
+        "gap_mm": 0.5165702849626541,
+        "skin_normal": [
+          -0.20264166593551636,
+          0.031470127403736115,
+          -0.9787471890449524
+        ],
+        "surface_kind": "centroid"
+      },
+      {
+        "point": [
+          -8.540826797485352,
+          0.11504404246807098,
+          -0.8144680857658386
+        ],
+        "gap_mm": 1.055891439318657,
+        "skin_normal": [
+          -0.46489638090133667,
+          0.030876625329256058,
+          -0.8848264813423157
+        ],
+        "surface_kind": "centroid"
+      },
+      {
+        "point": [
+          -8.472735404968262,
+          0.22648397088050842,
+          -0.8144673705101013
+        ],
+        "gap_mm": 0.7737362384796143,
+        "skin_normal": [
+          -0.46489638090133667,
+          0.030876625329256058,
+          -0.8848264813423157
+        ],
+        "surface_kind": "centroid"
+      },
+      {
+        "point": [
+          -8.441706657409668,
+          -0.2245650738477707,
+          -0.8134170770645142
+        ],
+        "gap_mm": 0.6695152074098587,
+        "skin_normal": [
+          -0.46361303329467773,
+          -0.056116413325071335,
+          -0.8842588663101196
+        ],
+        "surface_kind": "centroid"
+      }
+    ]
+  },
+  "skin_signed_sample_penetrations": {
+    "count": 0,
+    "worst": []
+  },
+  "preliminary_target_arc_contacts": [
+    {
+      "skin_point": [
+        -8.0,
+        -2.75,
+        1.8686599731445312
+      ],
+      "skin_normal": [
+        -0.6811792850494385,
+        -0.6187093257904053,
+        -0.3913995921611786
+      ],
+      "nearest_cup_gap_mm": 5.749980807304382,
+      "outward_ray_first_cup_point": null,
+      "outward_ray_gap_mm": null,
+      "cup_normal_dot_skin_normal": null
+    },
+    {
+      "skin_point": [
+        -8.069419860839844,
+        -2.5,
+        1.5811599493026733
+      ],
+      "skin_normal": [
+        -0.6709112524986267,
+        -0.6355012059211731,
+        -0.3821207284927368
+      ],
+      "nearest_cup_gap_mm": 3.650154173374176,
+      "outward_ray_first_cup_point": null,
+      "outward_ray_gap_mm": null,
+      "cup_normal_dot_skin_normal": null
+    },
+    {
+      "skin_point": [
+        -8.188429832458496,
+        -2.0,
+        0.6731100082397461
+      ],
+      "skin_normal": [
+        -0.6216112971305847,
+        -0.7364315986633301,
+        -0.2669605612754822
+      ],
+      "nearest_cup_gap_mm": 0.6272204965353012,
+      "outward_ray_first_cup_point": null,
+      "outward_ray_gap_mm": null,
+      "cup_normal_dot_skin_normal": null
+    },
+    {
+      "skin_point": [
+        -8.280989646911621,
+        -1.5,
+        -0.12197999656200409
+      ],
+      "skin_normal": [
+        -0.3668481111526489,
+        -0.7208163142204285,
+        -0.5880869626998901
+      ],
+      "nearest_cup_gap_mm": 0.4217389225959778,
+      "outward_ray_first_cup_point": null,
+      "outward_ray_gap_mm": null,
+      "cup_normal_dot_skin_normal": null
+    },
+    {
+      "skin_point": [
+        -8.3471097946167,
+        -1.0,
+        -0.5132099986076355
+      ],
+      "skin_normal": [
+        -0.45439961552619934,
+        -0.45028960704803467,
+        -0.768609344959259
+      ],
+      "nearest_cup_gap_mm": 0.435338132083416,
+      "outward_ray_first_cup_point": null,
+      "outward_ray_gap_mm": null,
+      "cup_normal_dot_skin_normal": null
+    },
+    {
+      "skin_point": [
+        -8.38677978515625,
+        -0.5,
+        -0.7121000289916992
+      ],
+      "skin_normal": [
+        -0.2039596438407898,
+        -0.25282955169677734,
+        -0.9457683563232422
+      ],
+      "nearest_cup_gap_mm": 0.4463917389512062,
+      "outward_ray_first_cup_point": null,
+      "outward_ray_gap_mm": null,
+      "cup_normal_dot_skin_normal": null
+    },
+    {
+      "skin_point": [
+        -8.399999618530273,
+        0.0,
+        -0.7660499811172485
+      ],
+      "skin_normal": [
+        -0.19907091557979584,
+        0.02507011406123638,
+        -0.9796643853187561
+      ],
+      "nearest_cup_gap_mm": 0.44878605753183365,
+      "outward_ray_first_cup_point": null,
+      "outward_ray_gap_mm": null,
+      "cup_normal_dot_skin_normal": null
+    },
+    {
+      "skin_point": [
+        -8.38677978515625,
+        0.5,
+        -0.7200800180435181
+      ],
+      "skin_normal": [
+        -0.19661085307598114,
+        0.23681101202964783,
+        -0.9514541029930115
+      ],
+      "nearest_cup_gap_mm": 0.4459884390234947,
+      "outward_ray_first_cup_point": null,
+      "outward_ray_gap_mm": null,
+      "cup_normal_dot_skin_normal": null
+    },
+    {
+      "skin_point": [
+        -8.3471097946167,
+        1.0,
+        -0.5202999711036682
+      ],
+      "skin_normal": [
+        -0.44313952326774597,
+        0.45921948552131653,
+        -0.7698991894721985
+      ],
+      "nearest_cup_gap_mm": 0.43193962424993515,
+      "outward_ray_first_cup_point": null,
+      "outward_ray_gap_mm": null,
+      "cup_normal_dot_skin_normal": null
+    },
+    {
+      "skin_point": [
+        -8.280989646911621,
+        1.5,
+        -0.11134999990463257
+      ],
+      "skin_normal": [
+        -0.3624090254306793,
+        0.7251480221748352,
+        -0.585508406162262
+      ],
+      "nearest_cup_gap_mm": 0.42605362832546234,
+      "outward_ray_first_cup_point": null,
+      "outward_ray_gap_mm": null,
+      "cup_normal_dot_skin_normal": null
+    },
+    {
+      "skin_point": [
+        -8.188429832458496,
+        2.0,
+        0.7244200110435486
+      ],
+      "skin_normal": [
+        -0.6245867013931274,
+        0.7359161376953125,
+        -0.26137861609458923
+      ],
+      "nearest_cup_gap_mm": 0.6195445358753204,
+      "outward_ray_first_cup_point": null,
+      "outward_ray_gap_mm": null,
+      "cup_normal_dot_skin_normal": null
+    },
+    {
+      "skin_point": [
+        -8.069419860839844,
+        2.5,
+        1.6179200410842896
+      ],
+      "skin_normal": [
+        -0.7033615112304688,
+        0.6230913400650024,
+        -0.3421107530593872
+      ],
+      "nearest_cup_gap_mm": 3.611212372779846,
+      "outward_ray_first_cup_point": null,
+      "outward_ray_gap_mm": null,
+      "cup_normal_dot_skin_normal": null
+    },
+    {
+      "skin_point": [
+        -8.0,
+        2.75,
+        1.899940013885498
+      ],
+      "skin_normal": [
+        -0.677851140499115,
+        0.6208310127258301,
+        -0.3938106596469879
+      ],
+      "nearest_cup_gap_mm": 5.697476863861084,
+      "outward_ray_first_cup_point": null,
+      "outward_ray_gap_mm": null,
+      "cup_normal_dot_skin_normal": null
+    }
+  ],
+  "declared_lower_rim_audit": [
+    {
+      "declared_point_cm": [
+        -8.562735557556152,
+        2.5384058952331543,
+        2.7113587856292725
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.526126861572266,
+        2.5161914825439453,
+        2.7251906394958496
+      ],
+      "skin_gap_mm": 0.4499996453523636,
+      "skin_outward_normal": [
+        -0.8135318756103516,
+        0.4936501085758209,
+        -0.3073686361312866
+      ],
+      "cup_normal_dot_skin": 3.4086406230926514e-06,
+      "most_skin_facing_incident_surface_normal_dot": -0.8232701644301414,
+      "outward_ray_first_surface_cm": [
+        -8.562735557556152,
+        2.5384058952331543,
+        2.7113590240478516
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.8037935420870781,
+      "outward_ray_gap_mm": 0.45000309294462204
+    },
+    {
+      "declared_point_cm": [
+        -8.502687454223633,
+        2.466960906982422,
+        2.448822021484375
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.466320037841797,
+        2.4450130462646484,
+        2.4636778831481934
+      ],
+      "skin_gap_mm": 0.4499993473291397,
+      "skin_outward_normal": [
+        -0.8081682920455933,
+        0.48772650957107544,
+        -0.3301316797733307
+      ],
+      "cup_normal_dot_skin": -0.7306874692440033,
+      "most_skin_facing_incident_surface_normal_dot": -0.8039824217557907,
+      "outward_ray_first_surface_cm": [
+        -8.502687454223633,
+        2.466960906982422,
+        2.448822021484375
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.7306874692440033,
+      "outward_ray_gap_mm": 0.44999970293045044
+    },
+    {
+      "declared_point_cm": [
+        -8.434463500976562,
+        2.392387628555298,
+        2.148864269256592
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.398146629333496,
+        2.3693740367889404,
+        2.1621475219726562
+      ],
+      "skin_gap_mm": 0.4499983787536621,
+      "skin_outward_normal": [
+        -0.8070437908172607,
+        0.5114156007766724,
+        -0.29518550634384155
+      ],
+      "cup_normal_dot_skin": -0.06561844237148762,
+      "most_skin_facing_incident_surface_normal_dot": -0.7526387721300125,
+      "outward_ray_first_surface_cm": [
+        -8.434463500976562,
+        2.392387628555298,
+        2.148864269256592
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.7381860539317131,
+      "outward_ray_gap_mm": 0.4499952325820923
+    },
+    {
+      "declared_point_cm": [
+        -8.37290096282959,
+        2.3125760555267334,
+        1.8252021074295044
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.338086128234863,
+        2.2868893146514893,
+        1.8375762701034546
+      ],
+      "skin_gap_mm": 0.4500001296401024,
+      "skin_outward_normal": [
+        -0.7736586332321167,
+        0.5708202123641968,
+        -0.2749846279621124
+      ],
+      "cup_normal_dot_skin": 4.364177584648132e-06,
+      "most_skin_facing_incident_surface_normal_dot": -0.7808840423822403,
+      "outward_ray_first_surface_cm": null,
+      "outward_ray_surface_normal_dot_skin": null,
+      "outward_ray_gap_mm": null
+    },
+    {
+      "declared_point_cm": [
+        -8.31660270690918,
+        2.2228689193725586,
+        1.4679534435272217
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.28384780883789,
+        2.194704055786133,
+        1.4805562496185303
+      ],
+      "skin_gap_mm": 0.44999707490205765,
+      "skin_outward_normal": [
+        -0.7278894782066345,
+        0.6258912086486816,
+        -0.2800664007663727
+      ],
+      "cup_normal_dot_skin": -0.7797980681061745,
+      "most_skin_facing_incident_surface_normal_dot": -0.7977407053112984,
+      "outward_ray_first_surface_cm": null,
+      "outward_ray_surface_normal_dot_skin": null,
+      "outward_ray_gap_mm": null
+    },
+    {
+      "declared_point_cm": [
+        -8.273195266723633,
+        2.1176280975341797,
+        1.0855900049209595
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.243231773376465,
+        2.0862016677856445,
+        1.097403645515442
+      ],
+      "skin_gap_mm": 0.44999927282333374,
+      "skin_outward_normal": [
+        -0.6658561825752258,
+        0.698366105556488,
+        -0.2625269293785095
+      ],
+      "cup_normal_dot_skin": 8.810311555862427e-07,
+      "most_skin_facing_incident_surface_normal_dot": -0.837196558713913,
+      "outward_ray_first_surface_cm": [
+        -8.273195266723633,
+        2.1176280975341797,
+        1.0855900049209595
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.8371966332197189,
+      "outward_ray_gap_mm": 0.44999869710206986
+    },
+    {
+      "declared_point_cm": [
+        -8.247525215148926,
+        1.9968724250793457,
+        0.6846295595169067
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.219423294067383,
+        1.9637502431869507,
+        0.6963868737220764
+      ],
+      "skin_gap_mm": 0.450003482401371,
+      "skin_outward_normal": [
+        -0.6244789361953735,
+        0.7360458374023438,
+        -0.2612711787223816
+      ],
+      "cup_normal_dot_skin": -0.9175108447670937,
+      "most_skin_facing_incident_surface_normal_dot": -0.9175108000636101,
+      "outward_ray_first_surface_cm": null,
+      "outward_ray_surface_normal_dot_skin": null,
+      "outward_ray_gap_mm": null
+    },
+    {
+      "declared_point_cm": [
+        -8.244937896728516,
+        1.8691396713256836,
+        0.3607836663722992
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.221922874450684,
+        1.8348747491836548,
+        0.37870657444000244
+      ],
+      "skin_gap_mm": 0.4500007629394531,
+      "skin_outward_normal": [
+        -0.5114444494247437,
+        0.7614413499832153,
+        -0.39828598499298096
+      ],
+      "cup_normal_dot_skin": 8.560717105865479e-06,
+      "most_skin_facing_incident_surface_normal_dot": -0.9592343419790268,
+      "outward_ray_first_surface_cm": [
+        -8.244937896728516,
+        1.8691396713256836,
+        0.36078372597694397
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.9566055834293365,
+      "outward_ray_gap_mm": 0.44999970293045044
+    },
+    {
+      "declared_point_cm": [
+        -8.269968032836914,
+        1.7356741428375244,
+        0.1482006311416626
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.2467679977417,
+        1.7020668983459473,
+        0.16710202395915985
+      ],
+      "skin_gap_mm": 0.4499945789575577,
+      "skin_outward_normal": [
+        -0.5155628323554993,
+        0.7468364834785461,
+        -0.4200362265110016
+      ],
+      "cup_normal_dot_skin": -0.9621514528989792,
+      "most_skin_facing_incident_surface_normal_dot": -0.9621514081954956,
+      "outward_ray_first_surface_cm": [
+        -8.27193832397461,
+        1.7385287284851074,
+        0.1465950906276703
+      ],
+      "outward_ray_surface_normal_dot_skin": -4.634261131286621e-06,
+      "outward_ray_gap_mm": 0.4882182384133339
+    },
+    {
+      "declared_point_cm": [
+        -8.294190406799316,
+        1.5967503786087036,
+        -0.05594232678413391
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.270537376403809,
+        1.5644997358322144,
+        -0.03531588613986969
+      ],
+      "skin_gap_mm": 0.4500022158026695,
+      "skin_outward_normal": [
+        -0.5256154537200928,
+        0.7166798114776611,
+        -0.458364874124527
+      ],
+      "cup_normal_dot_skin": -0.9496078789234161,
+      "most_skin_facing_incident_surface_normal_dot": -0.9765700399875641,
+      "outward_ray_first_surface_cm": null,
+      "outward_ray_surface_normal_dot_skin": null,
+      "outward_ray_gap_mm": null
+    },
+    {
+      "declared_point_cm": [
+        -8.31151294708252,
+        1.4518026113510132,
+        -0.22330012917518616
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.292798042297363,
+        1.4236520528793335,
+        -0.19359660148620605
+      ],
+      "skin_gap_mm": 0.4500001296401024,
+      "skin_outward_normal": [
+        -0.4158884882926941,
+        0.6255673170089722,
+        -0.6600775122642517
+      ],
+      "cup_normal_dot_skin": -0.9826985374093056,
+      "most_skin_facing_incident_surface_normal_dot": -0.9908241331577301,
+      "outward_ray_first_surface_cm": [
+        -8.31151294708252,
+        1.4518026113510132,
+        -0.223300039768219
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.9826985374093056,
+      "outward_ray_gap_mm": 0.44999918138980866
+    },
+    {
+      "declared_point_cm": [
+        -8.33032512664795,
+        1.310204267501831,
+        -0.35017144680023193
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.31320571899414,
+        1.2809998989105225,
+        -0.32052314281463623
+      ],
+      "skin_gap_mm": 0.44999901205301285,
+      "skin_outward_normal": [
+        -0.3804364502429962,
+        0.6489859819412231,
+        -0.6588514447212219
+      ],
+      "cup_normal_dot_skin": -1.4729797840118408e-05,
+      "most_skin_facing_incident_surface_normal_dot": -0.9888931140303612,
+      "outward_ray_first_surface_cm": [
+        -8.33032512664795,
+        1.3102041482925415,
+        -0.35017141699790955
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.9807191267609596,
+      "outward_ray_gap_mm": 0.4499993304014206
+    },
+    {
+      "declared_point_cm": [
+        -8.351202011108398,
+        1.1585443019866943,
+        -0.46371808648109436
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.331990242004395,
+        1.1339384317398071,
+        -0.431307315826416
+      ],
+      "skin_gap_mm": 0.4499998688697815,
+      "skin_outward_normal": [
+        -0.4269278049468994,
+        0.5467978119850159,
+        -0.7202394008636475
+      ],
+      "cup_normal_dot_skin": -1.3142824172973633e-05,
+      "most_skin_facing_incident_surface_normal_dot": -0.9763399213552475,
+      "outward_ray_first_surface_cm": [
+        -8.351202011108398,
+        1.1585443019866943,
+        -0.4637180268764496
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.97527926415205,
+      "outward_ray_gap_mm": 0.44999899512529373
+    },
+    {
+      "declared_point_cm": [
+        -8.369149208068848,
+        1.0006098747253418,
+        -0.5656946897506714
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.349207878112793,
+        0.9799451231956482,
+        -0.5310491919517517
+      ],
+      "skin_gap_mm": 0.4499999061226845,
+      "skin_outward_normal": [
+        -0.4431370794773102,
+        0.4592176675796509,
+        -0.769901692867279
+      ],
+      "cup_normal_dot_skin": -1.0959804058074951e-05,
+      "most_skin_facing_incident_surface_normal_dot": -0.9764138832688332,
+      "outward_ray_first_surface_cm": null,
+      "outward_ray_surface_normal_dot_skin": null,
+      "outward_ray_gap_mm": null
+    },
+    {
+      "declared_point_cm": [
+        -8.384733200073242,
+        0.836430549621582,
+        -0.6513950228691101
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.364380836486816,
+        0.8206198811531067,
+        -0.6145057678222656
+      ],
+      "skin_gap_mm": 0.45000147074460983,
+      "skin_outward_normal": [
+        -0.45227012038230896,
+        0.3513471782207489,
+        -0.819760262966156
+      ],
+      "cup_normal_dot_skin": 8.616596460342407e-06,
+      "most_skin_facing_incident_surface_normal_dot": -0.9754033386707306,
+      "outward_ray_first_surface_cm": null,
+      "outward_ray_surface_normal_dot_skin": null,
+      "outward_ray_gap_mm": null
+    },
+    {
+      "declared_point_cm": [
+        -8.395648956298828,
+        0.6753329038619995,
+        -0.7147826552391052
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.377128601074219,
+        0.6575626730918884,
+        -0.6778200268745422
+      ],
+      "skin_gap_mm": 0.4500022903084755,
+      "skin_outward_normal": [
+        -0.41154786944389343,
+        0.39489543437957764,
+        -0.8213926553726196
+      ],
+      "cup_normal_dot_skin": 8.910894393920898e-06,
+      "most_skin_facing_incident_surface_normal_dot": -0.9829759374260902,
+      "outward_ray_first_surface_cm": null,
+      "outward_ray_surface_normal_dot_skin": null,
+      "outward_ray_gap_mm": null
+    },
+    {
+      "declared_point_cm": [
+        -8.396024703979492,
+        0.5030285716056824,
+        -0.764707624912262
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.387177467346191,
+        0.49237188696861267,
+        -0.721892237663269
+      ],
+      "skin_gap_mm": 0.44999953359365463,
+      "skin_outward_normal": [
+        -0.19661058485507965,
+        0.2368149310350418,
+        -0.9514530897140503
+      ],
+      "cup_normal_dot_skin": 0.006473044399172068,
+      "most_skin_facing_incident_surface_normal_dot": -0.9971444383263588,
+      "outward_ray_first_surface_cm": [
+        -8.396025657653809,
+        0.5030285716056824,
+        -0.7647075057029724
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.9966887161135674,
+      "outward_ray_gap_mm": 0.4499988461136818
+    },
+    {
+      "declared_point_cm": [
+        -8.403725624084473,
+        0.3326932191848755,
+        -0.7911131381988525
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.394356727600098,
+        0.32664841413497925,
+        -0.747516393661499
+      ],
+      "skin_gap_mm": 0.4499991238117218,
+      "skin_outward_normal": [
+        -0.20820821821689606,
+        0.13432900607585907,
+        -0.9688162803649902
+      ],
+      "cup_normal_dot_skin": -2.0780717022717e-05,
+      "most_skin_facing_incident_surface_normal_dot": -0.999627597630024,
+      "outward_ray_first_surface_cm": [
+        -8.403726577758789,
+        0.3326932191848755,
+        -0.791113018989563
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.9977637473493814,
+      "outward_ray_gap_mm": 0.44999921864271164
+    },
+    {
+      "declared_point_cm": [
+        -8.407731056213379,
+        0.16340729594230652,
+        -0.8051814436912537
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.398612022399902,
+        0.16199113428592682,
+        -0.761137843132019
+      ],
+      "skin_gap_mm": 0.4500000923871994,
+      "skin_outward_normal": [
+        -0.20264166593551636,
+        0.031470127403736115,
+        -0.9787471890449524
+      ],
+      "cup_normal_dot_skin": -0.003682078113342868,
+      "most_skin_facing_incident_surface_normal_dot": -0.999294372042641,
+      "outward_ray_first_surface_cm": null,
+      "outward_ray_surface_normal_dot_skin": null,
+      "outward_ray_gap_mm": null
+    },
+    {
+      "declared_point_cm": [
+        -8.408957481384277,
+        0.0011281768092885613,
+        -0.8101303577423096
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.399999618530273,
+        6.139089236967266e-10,
+        -0.7660453915596008
+      ],
+      "skin_gap_mm": 0.45000001788139343,
+      "skin_outward_normal": [
+        -0.19907042384147644,
+        0.025070499628782272,
+        -0.9796643853187561
+      ],
+      "cup_normal_dot_skin": 8.821134542813525e-06,
+      "most_skin_facing_incident_surface_normal_dot": -0.9994062488549389,
+      "outward_ray_first_surface_cm": [
+        -8.408957481384277,
+        0.0011281726183369756,
+        -0.8101302981376648
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.9964537126943469,
+      "outward_ray_gap_mm": 0.4499997401833534
+    },
+    {
+      "declared_point_cm": [
+        -8.407782554626465,
+        -0.16440993547439575,
+        -0.802417516708374
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.398612022399902,
+        -0.1619911789894104,
+        -0.7584282755851746
+      ],
+      "skin_gap_mm": 0.4500002786517143,
+      "skin_outward_normal": [
+        -0.20379357039928436,
+        -0.053749989718198776,
+        -0.977537214756012
+      ],
+      "cup_normal_dot_skin": 6.537215085700154e-06,
+      "most_skin_facing_incident_surface_normal_dot": -0.9994970574043691,
+      "outward_ray_first_surface_cm": null,
+      "outward_ray_surface_normal_dot_skin": null,
+      "outward_ray_gap_mm": null
+    },
+    {
+      "declared_point_cm": [
+        -8.403196334838867,
+        -0.33407062292099,
+        -0.7858868837356567
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.394356727600098,
+        -0.32664844393730164,
+        -0.7423923015594482
+      ],
+      "skin_gap_mm": 0.45000068843364716,
+      "skin_outward_normal": [
+        -0.1964258998632431,
+        -0.16493776440620422,
+        -0.9665465950965881
+      ],
+      "cup_normal_dot_skin": -0.9976254925131798,
+      "most_skin_facing_incident_surface_normal_dot": -0.9992515780031681,
+      "outward_ray_first_surface_cm": [
+        -8.403970718383789,
+        -0.3347211480140686,
+        -0.7896990180015564
+      ],
+      "outward_ray_surface_normal_dot_skin": -1.620559487491846e-05,
+      "outward_ray_gap_mm": 0.48944005912542343
+    },
+    {
+      "declared_point_cm": [
+        -8.396354675292969,
+        -0.5037494897842407,
+        -0.7566071152687073
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.387176513671875,
+        -0.49237215518951416,
+        -0.7140477299690247
+      ],
+      "skin_gap_mm": 0.4499981552362442,
+      "skin_outward_normal": [
+        -0.2039603590965271,
+        -0.2528304159641266,
+        -0.945767879486084
+      ],
+      "cup_normal_dot_skin": -0.9990418665111065,
+      "most_skin_facing_incident_surface_normal_dot": -0.9990418702363968,
+      "outward_ray_first_surface_cm": null,
+      "outward_ray_surface_normal_dot_skin": null,
+      "outward_ray_gap_mm": null
+    },
+    {
+      "declared_point_cm": [
+        -8.397161483764648,
+        -0.6703404188156128,
+        -0.7043747901916504
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.377130508422852,
+        -0.6575623750686646,
+        -0.6661579608917236
+      ],
+      "skin_gap_mm": 0.4500049352645874,
+      "skin_outward_normal": [
+        -0.4451252222061157,
+        -0.28395408391952515,
+        -0.8492546677589417
+      ],
+      "cup_normal_dot_skin": -0.9735964611172676,
+      "most_skin_facing_incident_surface_normal_dot": -0.9735964611172676,
+      "outward_ray_first_surface_cm": [
+        -8.397161483764648,
+        -0.6703404188156128,
+        -0.7043747901916504
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.9735964611172676,
+      "outward_ray_gap_mm": 0.45000383800268173
+    },
+    {
+      "declared_point_cm": [
+        -8.385034561157227,
+        -0.8365298509597778,
+        -0.6398664712905884
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.364380836486816,
+        -0.8206201195716858,
+        -0.6031880378723145
+      ],
+      "skin_gap_mm": 0.4500003531575203,
+      "skin_outward_normal": [
+        -0.45897039771080017,
+        -0.3535501956939697,
+        -0.8150757551193237
+      ],
+      "cup_normal_dot_skin": -0.9646003097295761,
+      "most_skin_facing_incident_surface_normal_dot": -0.9739704728126526,
+      "outward_ray_first_surface_cm": [
+        -8.389839172363281,
+        -0.8402312397956848,
+        -0.6483995914459229
+      ],
+      "outward_ray_surface_normal_dot_skin": -1.3008713722229004e-05,
+      "outward_ray_gap_mm": 0.5546921322345734
+    },
+    {
+      "declared_point_cm": [
+        -8.369654655456543,
+        -1.0002082586288452,
+        -0.55830317735672
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.349206924438477,
+        -0.9799456596374512,
+        -0.5237160921096802
+      ],
+      "skin_gap_mm": 0.44999435544013977,
+      "skin_outward_normal": [
+        -0.4544002115726471,
+        -0.45028507709503174,
+        -0.7686116099357605
+      ],
+      "cup_normal_dot_skin": -0.9756949245929718,
+      "most_skin_facing_incident_surface_normal_dot": -0.9756949841976166,
+      "outward_ray_first_surface_cm": [
+        -8.369654655456543,
+        -1.0002081394195557,
+        -0.5583031177520752
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.9756949245929718,
+      "outward_ray_gap_mm": 0.44999340718984604
+    },
+    {
+      "declared_point_cm": [
+        -8.350707054138184,
+        -1.158884882926941,
+        -0.4617714285850525
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.331990242004395,
+        -1.1339384317398071,
+        -0.42933130264282227
+      ],
+      "skin_gap_mm": 0.45000068843364716,
+      "skin_outward_normal": [
+        -0.41592347621917725,
+        -0.5543668270111084,
+        -0.7208917140960693
+      ],
+      "cup_normal_dot_skin": -0.014393366873264313,
+      "most_skin_facing_incident_surface_normal_dot": -0.9788640961050987,
+      "outward_ray_first_surface_cm": [
+        -8.350707054138184,
+        -1.158884882926941,
+        -0.4617713987827301
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.9788641706109047,
+      "outward_ray_gap_mm": 0.44999940490722656
+    },
+    {
+      "declared_point_cm": [
+        -8.330720901489258,
+        -1.3099175691604614,
+        -0.3541781008243561
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.31320571899414,
+        -1.2810001373291016,
+        -0.32447972893714905
+      ],
+      "skin_gap_mm": 0.44999919831752777,
+      "skin_outward_normal": [
+        -0.3892306685447693,
+        -0.6426090002059937,
+        -0.6599645614624023
+      ],
+      "cup_normal_dot_skin": -0.9806392416357994,
+      "most_skin_facing_incident_surface_normal_dot": -0.9806393012404442,
+      "outward_ray_first_surface_cm": [
+        -8.330720901489258,
+        -1.3099174499511719,
+        -0.3541780710220337
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.9806392416357994,
+      "outward_ray_gap_mm": 0.44999918138980866
+    },
+    {
+      "declared_point_cm": [
+        -8.311655044555664,
+        -1.4516743421554565,
+        -0.22805137932300568
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.292798042297363,
+        -1.4236524105072021,
+        -0.19831617176532745
+      ],
+      "skin_gap_mm": 0.44999975711107254,
+      "skin_outward_normal": [
+        -0.4190443456172943,
+        -0.6227105259895325,
+        -0.6607824563980103
+      ],
+      "cup_normal_dot_skin": -0.04288598895072937,
+      "most_skin_facing_incident_surface_normal_dot": -0.9738766849040985,
+      "outward_ray_first_surface_cm": [
+        -8.311655044555664,
+        -1.4516743421554565,
+        -0.22805136442184448
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.9738766774535179,
+      "outward_ray_gap_mm": 0.44999992644786835
+    },
+    {
+      "declared_point_cm": [
+        -8.2870454788208,
+        -1.596936821937561,
+        -0.07590708136558533
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.270537376403809,
+        -1.5644999742507935,
+        -0.04944322258234024
+      ],
+      "skin_gap_mm": 0.4500002786517143,
+      "skin_outward_normal": [
+        -0.36684519052505493,
+        -0.720818817615509,
+        -0.5880856513977051
+      ],
+      "cup_normal_dot_skin": -0.9743581153452396,
+      "most_skin_facing_incident_surface_normal_dot": -0.9961341992020607,
+      "outward_ray_first_surface_cm": null,
+      "outward_ray_surface_normal_dot_skin": null,
+      "outward_ray_gap_mm": null
+    },
+    {
+      "declared_point_cm": [
+        -8.269786834716797,
+        -1.7355841398239136,
+        0.12531352043151855
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.246769905090332,
+        -1.7020663022994995,
+        0.14459428191184998
+      ],
+      "skin_gap_mm": 0.4499969258904457,
+      "skin_outward_normal": [
+        -0.5115016102790833,
+        -0.7448406219482422,
+        -0.42846062779426575
+      ],
+      "cup_normal_dot_skin": 1.6391277313232422e-07,
+      "most_skin_facing_incident_surface_normal_dot": -0.9609843045473099,
+      "outward_ray_first_surface_cm": [
+        -8.269787788391113,
+        -1.735584020614624,
+        0.1253136694431305
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.9609842449426651,
+      "outward_ray_gap_mm": 0.44999746775627136
+    },
+    {
+      "declared_point_cm": [
+        -8.245121002197266,
+        -1.8686087131500244,
+        0.3318459689617157
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.221922874450684,
+        -1.834875226020813,
+        0.35052528977394104
+      ],
+      "skin_gap_mm": 0.4500020295381546,
+      "skin_outward_normal": [
+        -0.5155051946640015,
+        -0.7496331334114075,
+        -0.415095716714859
+      ],
+      "cup_normal_dot_skin": -0.9519044533371925,
+      "most_skin_facing_incident_surface_normal_dot": -0.9519044980406761,
+      "outward_ray_first_surface_cm": null,
+      "outward_ray_surface_normal_dot_skin": null,
+      "outward_ray_gap_mm": null
+    },
+    {
+      "declared_point_cm": [
+        -8.248489379882812,
+        -1.9974591732025146,
+        0.6373885869979858
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.2205171585083,
+        -1.9643200635910034,
+        0.6494015455245972
+      ],
+      "skin_gap_mm": 0.4499952122569084,
+      "skin_outward_normal": [
+        -0.6216145753860474,
+        -0.7364300489425659,
+        -0.2669573426246643
+      ],
+      "cup_normal_dot_skin": -5.8002769947052e-06,
+      "most_skin_facing_incident_surface_normal_dot": -0.9133909568190575,
+      "outward_ray_first_surface_cm": [
+        -8.248489379882812,
+        -1.9974591732025146,
+        0.6373885869979858
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.9133908748626709,
+      "outward_ray_gap_mm": 0.44999608939886093
+    },
+    {
+      "declared_point_cm": [
+        -8.27646255493164,
+        -2.1192455291748047,
+        1.0431873798370361
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.246658325195312,
+        -2.087733030319214,
+        1.055174469947815
+      ],
+      "skin_gap_mm": 0.4500022158026695,
+      "skin_outward_normal": [
+        -0.6623019576072693,
+        -0.7002841234207153,
+        -0.26637983322143555
+      ],
+      "cup_normal_dot_skin": -0.8419448137283325,
+      "most_skin_facing_incident_surface_normal_dot": -0.8419448137283325,
+      "outward_ray_first_surface_cm": null,
+      "outward_ray_surface_normal_dot_skin": null,
+      "outward_ray_gap_mm": null
+    },
+    {
+      "declared_point_cm": [
+        -8.322338104248047,
+        -2.2256295680999756,
+        1.43484365940094
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.290451049804688,
+        -2.196075439453125,
+        1.4464515447616577
+      ],
+      "skin_gap_mm": 0.44999707490205765,
+      "skin_outward_normal": [
+        -0.7086077928543091,
+        -0.6567599177360535,
+        -0.2579561173915863
+      ],
+      "cup_normal_dot_skin": 1.3795681297779083e-05,
+      "most_skin_facing_incident_surface_normal_dot": -0.8085082992911339,
+      "outward_ray_first_surface_cm": [
+        -8.322338104248047,
+        -2.2256295680999756,
+        1.4348435401916504
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.8085083588957787,
+      "outward_ray_gap_mm": 0.45000018721818924
+    },
+    {
+      "declared_point_cm": [
+        -8.381255149841309,
+        -2.3148975372314453,
+        1.8011248111724854
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.346235275268555,
+        -2.289353609085083,
+        1.8132120370864868
+      ],
+      "skin_gap_mm": 0.4499983415007591,
+      "skin_outward_normal": [
+        -0.7782220244407654,
+        -0.5676454901695251,
+        -0.26860594749450684
+      ],
+      "cup_normal_dot_skin": -1.874379813671112e-05,
+      "most_skin_facing_incident_surface_normal_dot": -0.7572615891695023,
+      "outward_ray_first_surface_cm": [
+        -8.381255149841309,
+        -2.3148975372314453,
+        1.801124930381775
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.7572616636753082,
+      "outward_ray_gap_mm": 0.44999750500917435
+    },
+    {
+      "declared_point_cm": [
+        -8.444517135620117,
+        -2.3928513526916504,
+        2.1350324153900146
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.40837287902832,
+        -2.3695905208587646,
+        2.148355722427368
+      ],
+      "skin_gap_mm": 0.44999822974205017,
+      "skin_outward_normal": [
+        -0.8032107949256897,
+        -0.5169055461883545,
+        -0.29607632756233215
+      ],
+      "cup_normal_dot_skin": -0.7316520437598228,
+      "most_skin_facing_incident_surface_normal_dot": -0.7646778002381325,
+      "outward_ray_first_surface_cm": [
+        -8.444517135620117,
+        -2.3928513526916504,
+        2.1350324153900146
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.7316520437598228,
+      "outward_ray_gap_mm": 0.4500000754594803
+    },
+    {
+      "declared_point_cm": [
+        -8.516463279724121,
+        -2.468757152557373,
+        2.442351818084717
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.479632377624512,
+        -2.4469027519226074,
+        2.4561667442321777
+      ],
+      "skin_gap_mm": 0.44999804347753525,
+      "skin_outward_normal": [
+        -0.8184671401977539,
+        -0.4856584966182709,
+        -0.30699729919433594
+      ],
+      "cup_normal_dot_skin": -0.7680433019995689,
+      "most_skin_facing_incident_surface_normal_dot": -0.781931035220623,
+      "outward_ray_first_surface_cm": null,
+      "outward_ray_surface_normal_dot_skin": null,
+      "outward_ray_gap_mm": null
+    },
+    {
+      "declared_point_cm": [
+        -8.576794624328613,
+        -2.538267135620117,
+        2.709806442260742
+      ],
+      "on_actual_cup_distance_mm": 0.0,
+      "nearest_skin_point_cm": [
+        -8.5400390625,
+        -2.516502857208252,
+        2.7239603996276855
+      ],
+      "skin_gap_mm": 0.4499988257884979,
+      "skin_outward_normal": [
+        -0.8167914748191833,
+        -0.4836522936820984,
+        -0.3145348131656647
+      ],
+      "cup_normal_dot_skin": -1.2133270502090454e-05,
+      "most_skin_facing_incident_surface_normal_dot": -0.8344088792800903,
+      "outward_ray_first_surface_cm": [
+        -8.576794624328613,
+        -2.538267135620117,
+        2.709806442260742
+      ],
+      "outward_ray_surface_normal_dot_skin": -0.8007594347000122,
+      "outward_ray_gap_mm": 0.4499966854453087
+    }
+  ],
+  "under_chin_seal_exact_vs_v1_1_5": {
+    "identical": true,
+    "old_count": 39,
+    "new_count": 39
+  },
+  "direct_collar_air_path": [
+    {
+      "start": [
+        -10.0,
+        0.0,
+        3.299999952316284
+      ],
+      "end": [
+        -9.684932708740234,
+        -6.727641448378563e-05,
+        1.001598834991455
+      ],
+      "wall_hits": [],
+      "minimum_clearance_mm": 5.4384684562683105,
+      "samples_inside_wall_by_ray_parity": 0
+    },
+    {
+      "start": [
+        -9.684932708740234,
+        -6.727641448378563e-05,
+        1.001598834991455
+      ],
+      "end": [
+        -9.85560131072998,
+        -4.719381468021311e-05,
+        0.8973296880722046
+      ],
+      "wall_hits": [],
+      "minimum_clearance_mm": 8.995173573493958,
+      "samples_inside_wall_by_ray_parity": 0
+    },
+    {
+      "start": [
+        -9.85560131072998,
+        -4.719381468021311e-05,
+        0.8973296880722046
+      ],
+      "end": [
+        -10.354808807373047,
+        1.1547805115696974e-05,
+        0.5923424959182739
+      ],
+      "wall_hits": [],
+      "minimum_clearance_mm": 8.995168805122375,
+      "samples_inside_wall_by_ray_parity": 0
+    }
+  ],
+  "direct_collar_wall_sections": [
+    {
+      "t": 0.1,
+      "rays_with_no_near_inner_wall": [],
+      "first_wall_minmax_cm": [
+        0.899610161781311,
+        0.8996705412864685
+      ],
+      "second_wall_minmax_cm": [
+        0.9995669661259651,
+        0.9996340213513374
+      ]
+    },
+    {
+      "t": 0.2,
+      "rays_with_no_near_inner_wall": [],
+      "first_wall_minmax_cm": [
+        0.8996098041534424,
+        0.8996708393096924
+      ],
+      "second_wall_minmax_cm": [
+        0.9995666755533218,
+        0.999634416232109
+      ]
+    },
+    {
+      "t": 0.3,
+      "rays_with_no_near_inner_wall": [],
+      "first_wall_minmax_cm": [
+        0.8996098637580872,
+        0.8996706008911133
+      ],
+      "second_wall_minmax_cm": [
+        0.9995667873120307,
+        0.9996342150664329
+      ]
+    },
+    {
+      "t": 0.4,
+      "rays_with_no_near_inner_wall": [],
+      "first_wall_minmax_cm": [
+        0.8996101021766663,
+        0.8996706008911133
+      ],
+      "second_wall_minmax_cm": [
+        0.9995669214224815,
+        0.9996340586042404
+      ]
+    },
+    {
+      "t": 0.5,
+      "rays_with_no_near_inner_wall": [],
+      "first_wall_minmax_cm": [
+        0.899610161781311,
+        0.8996704816818237
+      ],
+      "second_wall_minmax_cm": [
+        0.999567040631771,
+        1.3031321628189088
+      ]
+    },
+    {
+      "t": 0.6,
+      "rays_with_no_near_inner_wall": [],
+      "first_wall_minmax_cm": [
+        0.8996098637580872,
+        0.8996707201004028
+      ],
+      "second_wall_minmax_cm": [
+        0.9995668096637725,
+        1.3985749347305299
+      ]
+    }
+  ],
+  "socket_axis_hits_preserved_valve_at": [
+    -10.273740768432617,
+    2.008626324823126e-06,
+    0.6418700218200684
+  ],
+  "legacy_exposed_stem_removal": {
+    "old_stem_triangles": 340,
+    "retained_exact_stem_triangles": 0,
+    "note": "Old standalone stem surface entirely below z2.2, above z1.1, anterior x<-9.6."
+  },
+  "broad_lower_chamber_samples": [
+    {
+      "point_cm": [
+        -9.699999809265137,
+        0.0,
+        1.2999999523162842
+      ],
+      "left_first_wall_cm": 1.4422831535339355,
+      "right_first_wall_cm": 1.4339852333068848,
+      "width_cm": 2.8762683868408203,
+      "inside_wall_parity": 0
+    },
+    {
+      "point_cm": [
+        -9.699999809265137,
+        0.0,
+        1.600000023841858
+      ],
+      "left_first_wall_cm": 1.5381628274917603,
+      "right_first_wall_cm": 1.5299745798110962,
+      "width_cm": 3.0681374073028564,
+      "inside_wall_parity": 0
+    },
+    {
+      "point_cm": [
+        -9.699999809265137,
+        0.0,
+        1.899999976158142
+      ],
+      "left_first_wall_cm": 1.6128275394439697,
+      "right_first_wall_cm": 1.605934500694275,
+      "width_cm": 3.2187620401382446,
+      "inside_wall_parity": 0
+    },
+    {
+      "point_cm": [
+        -9.699999809265137,
+        0.0,
+        2.200000047683716
+      ],
+      "left_first_wall_cm": 1.6889870166778564,
+      "right_first_wall_cm": 1.6812222003936768,
+      "width_cm": 3.370209217071533,
+      "inside_wall_parity": 0
+    }
+  ],
+  "concealed_visor_port_audit": {
+    "changed_sample_count": 1113,
+    "changed_samples_outside_radius_1_0701cm": 0,
+    "uncovered_changed_samples": 0,
+    "max_changed_radial_distance_cm": 1.0699997337812068,
+    "samples": [
+      {
+        "kind": "removed",
+        "point_cm": [
+          -10.748274803161621,
+          0.3017202317714691,
+          1.5197620391845703
+        ],
+        "distance_from_previous_surface_mm": 0.2831586077809334,
+        "radial_distance_cm": 1.0412162959516036,
+        "axial_distance_cm": -0.16271333269651223,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -10.760839462280273,
+          0.15052397549152374,
+          1.5127449035644531
+        ],
+        "distance_from_previous_surface_mm": 0.612105019390583,
+        "radial_distance_cm": 1.0084015673497015,
+        "axial_distance_cm": -0.14834814915957395,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -10.765055656433105,
+          -6.29562009635265e-06,
+          1.5107247829437256
+        ],
+        "distance_from_previous_surface_mm": 0.7244036346673965,
+        "radial_distance_cm": 0.9975778780560829,
+        "axial_distance_cm": -0.14371222451909516,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -10.760791778564453,
+          -0.1504262089729309,
+          1.51273775100708
+        ],
+        "distance_from_previous_surface_mm": 0.6125374138355255,
+        "radial_distance_cm": 1.008355822227002,
+        "axial_distance_cm": -0.1484153531573611,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -10.749102592468262,
+          -0.3014369606971741,
+          1.5197356939315796
+        ],
+        "distance_from_previous_surface_mm": 0.2800103835761547,
+        "radial_distance_cm": 1.041523950654844,
+        "axial_distance_cm": -0.1620537542130478,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -10.391489028930664,
+          0.7967820763587952,
+          1.1596229076385498
+        ],
+        "distance_from_previous_surface_mm": 1.343444287776947,
+        "radial_distance_cm": 0.9423933670955054,
+        "axial_distance_cm": -0.27936827040684875,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -10.431901931762695,
+          0.6379823684692383,
+          1.1277363300323486
+        ],
+        "distance_from_previous_surface_mm": 2.6994040608406067,
+        "radial_distance_cm": 0.8087712106989206,
+        "axial_distance_cm": -0.22827412527112756,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -10.470080375671387,
+          0.4786684513092041,
+          1.1054160594940186
+        ],
+        "distance_from_previous_surface_mm": 3.8695284724235535,
+        "radial_distance_cm": 0.690694118941987,
+        "axial_distance_cm": -0.18407412664600997,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -10.472769737243652,
+          -0.4782930314540863,
+          1.105363130569458
+        ],
+        "distance_from_previous_surface_mm": 3.858744204044342,
+        "radial_distance_cm": 0.6914058566765825,
+        "axial_distance_cm": -0.18184766344711534,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -10.436429023742676,
+          -0.6377272009849548,
+          1.127721905708313
+        ],
+        "distance_from_previous_surface_mm": 2.684001624584198,
+        "radial_distance_cm": 0.8100001548028138,
+        "axial_distance_cm": -0.22453150866203941,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -10.396719932556152,
+          -0.7965492010116577,
+          1.1596087217330933
+        ],
+        "distance_from_previous_surface_mm": 1.327556073665619,
+        "radial_distance_cm": 0.9436243486757162,
+        "axial_distance_cm": -0.2750571011347347,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -10.060890197753906,
+          1.006307601928711,
+          0.780510663986206
+        ],
+        "distance_from_previous_surface_mm": 0.7191662490367889,
+        "radial_distance_cm": 1.0063577216109567,
+        "axial_distance_cm": -0.3638138246606104,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -10.116572380065918,
+          0.8386201858520508,
+          0.7350605726242065
+        ],
+        "distance_from_previous_surface_mm": 2.539680004119873,
+        "radial_distance_cm": 0.8386399987292192,
+        "axial_distance_cm": -0.29261930225766264,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -10.162764549255371,
+          0.6715032458305359,
+          0.701752781867981
+        ],
+        "distance_from_previous_surface_mm": 4.296779036521912,
+        "radial_distance_cm": 0.6715478541475821,
+        "axial_distance_cm": -0.2358533195219934,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -10.167840003967285,
+          -0.6712385416030884,
+          0.7017315626144409
+        ],
+        "distance_from_previous_surface_mm": 4.290328919887543,
+        "radial_distance_cm": 0.6712410424982531,
+        "axial_distance_cm": -0.23164596108108526,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -10.1224365234375,
+          -0.8383798599243164,
+          0.7350407838821411
+        ],
+        "distance_from_previous_surface_mm": 2.534322142601013,
+        "radial_distance_cm": 0.8383642486556242,
+        "axial_distance_cm": -0.28777322318637744,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -10.068816184997559,
+          -1.0060359239578247,
+          0.7804657816886902
+        ],
+        "distance_from_previous_surface_mm": 0.7191313058137894,
+        "radial_distance_cm": 1.0060781075208016,
+        "axial_distance_cm": -0.35722888060990954,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -9.83775520324707,
+          0.880428671836853,
+          0.3178415298461914
+        ],
+        "distance_from_previous_surface_mm": 0.5958229303359985,
+        "radial_distance_cm": 1.0144009549927089,
+        "axial_distance_cm": -0.31302720648091054,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -9.890650749206543,
+          0.705001175403595,
+          0.2837623655796051
+        ],
+        "distance_from_previous_surface_mm": 2.107429951429367,
+        "radial_distance_cm": 0.8674008089915952,
+        "axial_distance_cm": -0.2501396144143655,
+        "covered_by_opaque_along_valve_axis": true
+      },
+      {
+        "kind": "removed",
+        "point_cm": [
+          -9.940099716186523,
+          0.5289835929870605,
+          0.25993552803993225
+        ],
+        "distance_from_previous_surface_mm": 3.5140174627304077,
+        "radial_distance_cm": 0.7278017427526586,
+        "axial_distance_cm": -0.19553822990201297,
+        "covered_by_opaque_along_valve_axis": true
+      }
+    ]
+  },
+  "checks": {
+    "single_closed_orientable_cup": true,
+    "no_nonadjacent_self_intersections": true,
+    "no_skin_visor_or_outer_seal_intersections": true,
+    "no_sampled_skin_penetration": true,
+    "opaque_game_geometry_exact": true,
+    "opaque_source_geometry_exact": true,
+    "source_game_cup_visor_exact": true,
+    "upper_cup_exact_above_3_5cm": true,
+    "under_chin_seal_exact_vs_v1_1_5": true,
+    "central_true_under_chin_contact_present": true,
+    "declared_lower_rim_on_actual_surface": true,
+    "declared_lower_rim_skin_gap_under_0_6mm": true,
+    "direct_collar_air_path_open": true,
+    "direct_collar_enclosed": true,
+    "old_exposed_stem_removed": true,
+    "lower_chamber_broad_and_open": true,
+    "visor_changes_confined_under_valve": true
+  },
+  "passed": true,
+  "source_fbx_sha256": "2667cbe61143a37a8115e14916ec0a029f0691664bfde2f4e1189ee6432223f5",
+  "export_validation_sha256": "fa8d6cf79973af77945329e778f5a8f725938c2e728846adfdfdb3cc51c17c1d",
+  "independent_review_sha256": "bbd31db9d109d83fbbdf89845f1d77f20e48682e4332dbdde0961b4992b31dca",
+  "source_binding_scope": "Independent review targets the Blender SHA-256; the FBX SHA-256 is linked by the passed export validation report."
+}

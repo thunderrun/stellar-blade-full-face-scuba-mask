@@ -316,17 +316,18 @@
       "translucent": true
     }
   },
-  "design_revision": 8,
+  "design_revision": 12,
   "expected_material_count": 9,
   "translucent_section_order": [
     "M_Scuba_NasalCup",
     "M_Scuba_Visor"
   ],
-  "revision_change": "Version 1.1.0: move 1,212 lower exterior faceplate triangles from cup section 7 to always-visible visor section 8; retain all geometry, native materials, opacity values and Root rig.",
+  "revision_change": "Version 1.1.6: replace the exposed vertical pipe with a broad molded lower cup and direct short valve collar; preserve 39 under-chin seal points and opaque sections 0-6; enlarge only the concealed visor valve aperture; retain all CNS controls.",
   "removed_empty_slots": [
     "M_Scuba_InnerValves"
   ],
-  "variant": "cns-inner-cup-toggle",
+  "variant": "integrated-valve-oronasal-cup",
   "variant_revision": 1,
-  "base_design_revision": 8
+  "base_design_revision": 11,
+  "version": "1.1.6"
 }

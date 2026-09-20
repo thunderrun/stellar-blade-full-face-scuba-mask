@@ -1,33 +1,47 @@
 # Full Face Scuba Mask
 
-![Full Face Scuba Mask on Eve in CNS](media/in-game.jpg)
+![Full Face Scuba Mask 1.1.7 color and opacity controls in CNS](media/cns-color-settings-in-game.png)
+
+The supplied in-game screenshot shows **Glass Color**, **Inner Cup Color**, both opacity sliders and **Inner Nasal Cup** in CNS. It confirms that the controls are displayed; it does not establish every color/persistence interaction or fit during facial animation.
 
 An original full-face mask accessory fitted for Eve in **Stellar Blade**, intended for use with CNS. This repository contains editable mask geometry and the export/build scripts. It does not include the game's character mesh, textures, original glasses mesh, or Unreal Engine.
 
-Version **1.1.1** retains the version 1.1 model and **Inner Nasal Cup** On/Off control, and adds separate **Visor Opacity** and **Cup Opacity** sliders in CNS. The black frame, under-chin silicone seal, complete outer faceplate and opaque chin valve stay visible in both states. There are no inner valves, head straps, hose, snorkel or logos. Default outer visor opacity is **10%**; the cup defaults to **20%** when shown. Both are adjustable from 0% to 100%. The experimental 1.2 oral-cup/mouthpiece redesign has been reverted.
+Version **1.1.7** adds separate **Glass Color** and **Inner Cup Color** swatches and color pickers inside the CNS configuration menu. Colors are now chosen in these settings rows. The **Inner Nasal Cup** toggle and both opacity sliders are preserved. Default opacity remains 10% for the visor and 20% for the cup.
+
+The geometry remains version **1.1.6**: a broad molded lower cup joins the chin valve through a short direct collar, with a fitted under-chin seal. All mesh, material and rig files are unchanged by the color-settings update.
+
+![Opaque cup fit diagnostic; actual cup remains transparent](media/cup-fit-diagnostic.png)
+
+This Blender diagnostic hides the outer mask and makes the cup opaque to show its fit. The [profile preview](media/cup-chin-profile.png) shows the underside wrap. The delivered cup remains transparent at the existing 20% default; lighting and appearance differ in game.
 
 ## Download and use
 
-The [Nexus Mods download](https://www.nexusmods.com/stellarblade/mods/3872) remains at **1.1.0**. The **1.1.1 opacity configuration is on GitHub only** for now. For a new installation, install [Custom Nanosuit System 2.2](https://www.nexusmods.com/stellarblade/mods/1496) and its required UE4SS setup first. With the game closed, copy the Nexus archive's four mod files into `StellarBlade/SB/Content/Paks/~mods/CustomNanosuitSystem/Cosmetics/CodexScubaMask/`. Remove duplicate older main/no-inner-cup copies installed elsewhere.
+Download the complete **1.1.7** package from the [GitHub release](https://github.com/thunderrun/stellar-blade-full-face-scuba-mask/releases/tag/v1.1.7). The mod also has a [Nexus Mods page](https://www.nexusmods.com/stellarblade/mods/3872). For a new installation, install [Custom Nanosuit System 2.2](https://www.nexusmods.com/stellarblade/mods/1496) and its required UE4SS setup first.
 
-After installing 1.1.0 (or if it is already installed), replace only its `CodexCNS-ScubaMask.dekcns.json` with [the updated configuration](cns/CodexCNS-ScubaMask.dekcns.json), then restart the game once so CNS reloads its cached configuration. The three binary mod files are unchanged.
+With the game closed, extract the **1.1.7** package's `SB` folder into the `StellarBlade` directory and replace the mask files in `SB/Content/Paks/~mods/CustomNanosuitSystem/Cosmetics/CodexScubaMask/`. The full package includes the verified **1.1.6 PAK/UCAS/UTOC triple** and new color-control JSON. Existing 1.1.6 installations need only the new JSON; older geometry requires the complete package. Keep only one installed copy of this mask. Restart the game after installation.
 
-Start the game, equip a vanilla pair of glasses to initialize Eve's Eyes component, then press **Alt+N**, select Eve and choose **Full Face Scuba Mask** in the glasses/Eyes category. It uses the same component as other glasses accessories.
+Start the game, equip a vanilla pair of glasses to initialize Eve's Eyes component, then press **Alt+N**, select Eve and choose **Full Face Scuba Mask** in the glasses/Eyes category. Open the mask's **cog/configuration** menu. **Glass Color** changes the visor and **Inner Cup Color** changes the cup and its valve collar independently. Use the color swatches or open the color picker for a custom color. Each setting colors both sides of its surface together. The opaque frame and separate opacity settings stay unchanged. At low opacity, tints are subtle; increase the corresponding opacity to make them more visible. In-game lighting affects the result.
 
-Open the item's **cog/configuration** controls. **Inner Nasal Cup** switches the cup On/Off (default On); **Visor Opacity** and **Cup Opacity** adjust transparency independently. The raw slider range is **0.00–1.00**, equivalent to **0–100%**, in 0.01 steps. Defaults are 0.10 and 0.20. Each slider changes both inside and outside surface opacity. Reflections and Fresnel effects are unchanged, so 0 does not necessarily remove every reflection; use the cup toggle to hide its geometry completely. After the initial configuration update/restart, slider adjustments need no file swaps. If an older saved configuration hides the new controls, use **Reset Configuration** in the item's configuration panel.
+Open the item's **cog/configuration** controls. **Inner Nasal Cup** switches the cup On/Off (default On); **Visor Opacity** and **Cup Opacity** adjust transparency independently. The raw slider range is **0.00–1.00**, equivalent to **0–100%**, in 0.01 steps. Defaults are 0.10 and 0.20. Each slider changes both inside and outside surface opacity. Reflections and Fresnel effects are unchanged, so 0 does not necessarily remove every reflection; use the cup toggle to hide its geometry completely. After the initial configuration update/restart, slider adjustments need no file swaps. If the new controls are missing after restarting, reset only this mask through **Reset Configuration** in its configuration panel; this also resets its saved settings.
 
 ## Files
 
 | Path | Purpose |
 | --- | --- |
 | `assets/full_face_mask.blend` | Editable mask components, optimized game mesh and one-bone rig; no game fitting references |
-| `assets/SK_CodexScubaMask.fbx` | 38,966-triangle skeletal game mesh, centimetres, one `Root` bone |
+| `assets/SK_CodexScubaMask.fbx` | 48,394-triangle skeletal game mesh, centimetres, one `Root` bone |
 | `assets/SK_CodexScubaMask.glb` | Portable mask preview/export, metres |
 | `assets/material_spec.json` | Blender preview material values |
 | `assets/asset_manifest.json` | Export dimensions/slot contract and external skeleton reference |
 | `assets/export_validation.json` | Source inventory and FBX/GLB checks for the included exports |
+| `assets/cup_fit_validation.json` | Historical 1.1.5 under-chin geometry report; does not validate the current collar |
+| `assets/valve_connection_validation.json` | Historical 1.1.4 open-passage and valve-contact audit, bound to that source hash |
+| `assets/under_chin_validation.json` | Historical 1.1.5 underside-contact and old-duct audit, bound to that source hash |
+| `assets/integrated_cup_geometry_validation.json` | Current 1.1.6 geometry, collar dimensions, collision and preserved seal-point checks |
+| `assets/integrated_cup_validation.json` | Current independent 17-check review, bound to source and validated FBX hashes |
 | `scripts/export_mask.py` | Repeatable selection, export and validation |
-| `cns/CodexCNS-ScubaMask.dekcns.json` | Custom-authored CNS registration, cup toggle and linked opacity sliders |
+| `cns/CodexCNS-ScubaMask.dekcns.json` | CNS registration, independent glass/cup color pickers, cup toggle and linked opacity sliders |
+| `scripts/package_color_variants.py` | Historical 1.1.2 preset-only helper; incompatible with the current color-settings configuration |
 | `ue/` | Text-only UE 4.26 import/cook recipe and game material parameter contract |
 
 ## Open or export the model
@@ -45,16 +59,30 @@ The first command regenerates FBX/GLB and verifies geometry positions, triangle 
 
 The authoring components and optimized mesh are separate. Editing a visible component does **not** automatically update the optimized mesh: update `SK_CodexScubaMask` as part of your edit and adjust the triangle counts in `asset_manifest.json` when appropriate. Keep the armature object named `Armature`; preserve the rest transform, centimetre source coordinates and material order for game integration.
 
-Cup/rims use material index **7** (`M_Scuba_NasalCup`, 7,990 triangles). The complete outer visor, including the lower faceplate, uses index **8** (`M_Scuba_Visor`, 10,980 triangles). The other seven sections are unchanged. CNS hides section 7 directly; lowering glass opacity to zero is not the toggle mechanism. Keep section 8 visible so Cup Off retains a closed shell. Cup Off shows 30,976 triangles, matching the earlier no-inner-cup variant.
+The cup, sealing lip and direct valve collar use material index **7** (`M_Scuba_NasalCup`, 16,948 triangles). The complete outer visor, including the lower faceplate, uses index **8** (`M_Scuba_Visor`, 11,450 triangles). Opaque sections 0-6 are unchanged. CNS hides section 7 directly; lowering glass opacity to zero is not the toggle mechanism. Cup Off leaves 31,446 exterior triangles, including the enlarged faceplate aperture concealed beneath the valve.
+
+The editable source contains `10 | Under-chin cup with directly molded valve collar` and `08 | Continuous outer visor with valve port`. The authored cup and visor match their optimized game sections. The broad lower chamber connects directly through a short 18 mm inner / 20 mm outer diameter collar; the old exposed vertical stem is removed. The concealed faceplate aperture has a 10.7 mm radius. All 39 lower seal points are unchanged from 1.1.5 and sit **0.45 mm** from the neutral reference skin. These are artistic fit measurements for a game asset.
 
 ## Build the game accessory
 
 See [the UE build instructions](ue/README.md). You need your own installation of Unreal Engine **4.26.2**, Stellar Blade, and CNS. The project generates local placeholders at the game's required skeleton/material paths, but excludes those placeholders from the selected custom chunk. Only text/code is checked into `ue/`; no generated engine or game assets are included here.
 
-CNS `ScalarControls` links each hidden `Opacity Inner` control to its visible `Opacity Out` control through `ControlledBy`, so the user sees one slider per transparent part. No mesh or material recook is needed. Game shader opacity uses separate inner/outer scalar parameters. `ue/manifest.json` sets both visor values to `0.10` and both nasal cup values to `0.20`. Blender/glTF previews approximate that shader and may look different under different lighting.
+CNS `VectorControls` exposes **Glass Color** on material slot **8** and **Inner Cup Color** on slot **7**. Each visible control writes `GlassColor Out`; its hidden `GlassColor In` partner uses `ControlledBy` to match it. Both use global parameters, layer index -1, RGB sliders from 0 to 1, and a hidden alpha fixed at 1. The neutral defaults match the cooked shader: `[0.12, 0.12, 0.12, 1]` for glass and `[0.18, 0.18, 0.18, 1]` for the cup. The old `OutfitDatas` color presets are removed so they do not compete with saved color settings. One original `OutfitPaths` entry and the existing `UniqueFitID` remain.
+
+CNS `ScalarControls` links each hidden `Opacity Inner` control to its visible `Opacity Out` control through `ControlledBy`. Opacity defaults and the cup toggle are unchanged. This 1.1.7 configuration update needs no mesh or material recook; it uses the verified 1.1.6 geometry. See the [CNS advanced configuration schema](https://github.com/Dekita/SB-CustomNanosuitSystem-Docs/blob/main/guides/cns-json-advanced.md). Blender/glTF previews approximate the game shader and may look different under different lighting.
+
+## Package the geometry update
+
+Build and inspect the custom chunk using [the UE recipe](ue/README.md). Package only the selected chunk's three archives, renamed to the matching `CodexCNS-ScubaMask-947.pak/.utoc/.ucas` basenames, plus the current `cns/CodexCNS-ScubaMask.dekcns.json`. Retain the item ID and existing opacity/toggle definitions when extending the configuration. For the 1.1.7 release, reuse the verified 1.1.6 binary triple and replace only the JSON on an existing 1.1.6 installation.
+
+`scripts/package_color_variants.py` remains a historical **1.1.2 preset-only** helper using old archives and configuration checks. Do not use it for the current release. `scripts/export_mask.py` accepts `--manifest` for validating an isolated draft against its own manifest before updating the source tree.
 
 ## Scope and verification
 
-The included mask-only source retains every vertex and triangle from the final fitted revision 8 model. Version 1.1.0 only reassigns 1,212 lower exterior triangles from cup to visor material, keeping them visible when the cup is hidden. Its fitting reference was deliberately removed for distribution. The original local fit/audit checked the neutral face pose and under-chin placement; this repository cannot rerun character-clearance tests without a separately obtained local reference. Facial animation, alternate heads and extreme poses can change clearance. Source/cooked checks passed. Version 1.1.1 changes only the JSON controls and documentation; its existing mesh/material archives are byte-identical to 1.1.0. The scalar fields and parameter names were checked against installed CNS 2.2 and the native material contract. Live slider behavior and persistence still need in-game verification.
+The mask-only source now has a broad lower chamber molded into a short direct valve collar. Every triangle coordinate and material assignment in opaque sections 0-6 is preserved. The upper cup and all 39 under-chin seal points remain exact; the old vertical duct is replaced and visor changes are confined to the concealed valve aperture. The Root rig and all nine material definitions are unchanged. The source is free of character meshes, images, linked libraries and text blocks. The private Eve reference used for fitting is not included.
+
+Source and independent checks report a closed manifold cup, no cup/skin, cup/visor or cup/outer-seal triangle intersections, no nonadjacent self-intersections, and a closed manifold visor. The 17-check review confirms the broad lower chamber, open direct collar, removal of the old exposed stem, retained underside contact, and visor changes confined beneath the existing valve. Export checks verify all 48,394 triangles, material order, rigid Root weights and FBX roundtrip geometry. The shape is fitted to Eve's **neutral pose**: facial animation, other heads and extreme poses still require in-game inspection. The existing attachment follows the glasses Root bone and does not deform with facial expressions.
+
+The design uses a compact nose-and-mouth pocket, a lower chin skirt and a broad lower chamber with a direct valve collar. The chin section is informed by the distinction between the breathing cup and flexible chin seal in [Avon's modular respirator design](https://patents.google.com/patent/WO2024074487A1/en). The original full-face arrangement was informed by [Ocean Reef's inner-pocket design](https://diving.oceanreefgroup.com/full-face-masks/) and [Interspiro's contoured face sealing](https://interspiro.com/en-gb/products/divator-full-face-mask?VariantID=VO62.VO64.VO36).
 
 See [provenance and dependencies](ATTRIBUTION.md). No project license has been selected yet.

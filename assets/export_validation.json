@@ -1,15 +1,15 @@
 {
   "passed": true,
-  "revision": 8,
-  "version": "1.1.0",
+  "revision": 12,
+  "version": "1.1.6",
   "blender_version": "5.2.1 LTS",
   "source": "full_face_mask.blend",
   "fbx": "SK_CodexScubaMask.fbx",
   "glb": "SK_CodexScubaMask.glb",
-  "source_sha256": "f4eb4fa72c57a7691f630b6b58b2a0dd73ac8c0cab1b1a99a5a244409ea17582",
-  "fbx_sha256": "9c63c2ab9e0164102dbf7cfa8560a363019e601b8794dcd0767443fe16481cc8",
-  "glb_sha256": "2dee73f7de3473d3a448dac148bb03416326962f929b841853faa20e62477102",
-  "source_mesh_objects": 33,
+  "source_sha256": "91fc32ea194d3ed50ed31a4c2fd7f8c561968bb69059ec9cdbbc4894f7b7140d",
+  "fbx_sha256": "2667cbe61143a37a8115e14916ec0a029f0691664bfde2f4e1189ee6432223f5",
+  "glb_sha256": "bc1fb5f018178587f5f08f4de348686e3553fd5c91a74ad150a053b950a21c9d",
+  "source_mesh_objects": 31,
   "source_images": 0,
   "source_linked_libraries": 0,
   "source_text_blocks": 0,
@@ -18,9 +18,9 @@
     "Root"
   ],
   "all_vertices_rigid_weight_Root": true,
-  "triangles": 38966,
-  "source_vertices": 19579,
-  "fbx_imported_vertices": 19579,
+  "triangles": 48394,
+  "source_vertices": 24347,
+  "fbx_imported_vertices": 24347,
   "material_triangle_counts": {
     "M_Scuba_Silicone": 8080,
     "M_Scuba_Polymer": 2172,
@@ -29,8 +29,8 @@
     "M_Scuba_Steel": 992,
     "M_Scuba_Vent": 2906,
     "M_Scuba_RubberDetail": 1560,
-    "M_Scuba_NasalCup": 7990,
-    "M_Scuba_Visor": 10980
+    "M_Scuba_NasalCup": 16948,
+    "M_Scuba_Visor": 11450
   },
   "glb_alpha": {
     "M_Scuba_Silicone": 1,
@@ -46,9 +46,9 @@
   "cup_toggle": {
     "cup_material_index": 7,
     "always_visible_visor_material_index": 8,
-    "cup_triangles": 7990,
-    "always_visible_visor_triangles": 10980,
-    "cup_off_visible_triangles": 30976,
+    "cup_triangles": 16948,
+    "always_visible_visor_triangles": 11450,
+    "cup_off_visible_triangles": 31446,
     "outer_visor_connected_components": 1,
     "outer_visor_boundary_edges": 0,
     "outer_visor_nonmanifold_edges": 0,
