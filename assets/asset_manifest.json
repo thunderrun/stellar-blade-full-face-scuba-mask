@@ -1,5 +1,5 @@
 {
-  "revision": 16,
+  "revision": 17,
   "mesh_name": "SK_CodexScubaMask",
   "fbx_path": "SK_CodexScubaMask.fbx",
   "skeleton_path": "/Game/Art/Character/PC/00_ACC/ACC_GLA_03/ACC_GLA_03M_Skeleton.ACC_GLA_03M_Skeleton",
@@ -23,17 +23,17 @@
   "bone": "Root",
   "transparent_cup_material": "M_Scuba_NasalCup",
   "triangle_count": 107302,
-  "change": "Original scuba cup, mask and hood with paired optional side filters. No upper exterior side valves. Gas-mask cup and its inlet valves are a separately selectable variant.",
+  "change": "Original Scuba cup, mask, hood and optional paired filters preserved exactly from 1.2.0. The separately selected Large oral-nasal cup has smoother continuous curves.",
   "transparent_valve_materials": [],
   "requested_opacity": {
     "M_Scuba_Visor": 0.1,
     "M_Scuba_NasalCup": 0.2
   },
   "variant": "integrated-valve-oronasal-cup",
-  "variant_revision": 5,
+  "variant_revision": 6,
   "cup_toggle_material_index": 7,
   "always_visible_visor_material_index": 8,
-  "version": "1.2.0",
+  "version": "1.2.1",
   "material_triangle_counts": {
     "M_Scuba_Silicone": 8080,
     "M_Scuba_Polymer": 2172,
@@ -80,5 +80,5 @@
     }
   ],
   "cup_inlet_valve_count": 0,
-  "fbx_sha256": "68cb99de7874e989d2b9ff0cb0fcf9f2d75b76cf981c7e88b78d6bfe2b5e84cf"
+  "fbx_sha256": "468cf84a1e8c737d848ea73ab7534153dd91e1190d08547a307704246fa34e01"
 }

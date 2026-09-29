@@ -1,5 +1,5 @@
 {
-  "revision": 16,
+  "revision": 17,
   "mesh_name": "SK_CodexGasMask",
   "fbx_path": "SK_CodexGasMask.fbx",
   "skeleton_path": "/Game/Art/Character/PC/00_ACC/ACC_GLA_03/ACC_GLA_03M_Skeleton.ACC_GLA_03M_Skeleton",
@@ -22,18 +22,18 @@
   "units": "centimetres",
   "bone": "Root",
   "transparent_cup_material": "M_Scuba_NasalCup",
-  "triangle_count": 113702,
-  "change": "Enlarged oral-nasal cup with two shallow cup-mounted inlet valves beneath the visor. Existing large-cup shell and lower collar are preserved. All other sections exactly match the scuba-cup mesh; no upper exterior valves.",
+  "triangle_count": 137150,
+  "change": "Rounded oral-nasal cup with continuous nose-to-cheek and bowl curves, paired cup-mounted inlet valves and preserved lower chin collar. Other sections and all CNS settings are unchanged from 1.2.0.",
   "transparent_valve_materials": [],
   "requested_opacity": {
     "M_Scuba_Visor": 0.1,
     "M_Scuba_NasalCup": 0.2
   },
-  "variant": "broad-gas-mask-cup-with-paired-inlets",
-  "variant_revision": 5,
+  "variant": "continuous-curved-gas-mask-cup-with-paired-inlets",
+  "variant_revision": 6,
   "cup_toggle_material_index": 7,
   "always_visible_visor_material_index": 8,
-  "version": "1.2.0",
+  "version": "1.2.1",
   "material_triangle_counts": {
     "M_Scuba_Silicone": 8080,
     "M_Scuba_Polymer": 2172,
@@ -42,7 +42,7 @@
     "M_Scuba_Steel": 992,
     "M_Scuba_Vent": 2204,
     "M_Scuba_RubberDetail": 1560,
-    "M_Scuba_NasalCup": 23348,
+    "M_Scuba_NasalCup": 46796,
     "M_Scuba_Visor": 11450,
     "M_Scuba_ValveAccent": 1200,
     "M_Scuba_ValveVent": 702,
@@ -57,14 +57,14 @@
     10
   ],
   "valve_triangle_count": 5066,
-  "valve_off_visible_triangles": 49728,
+  "valve_off_visible_triangles": 73176,
   "cup_and_valve_off_visible_triangles": 26380,
   "hood_toggle_material_index": 11,
   "hood_triangle_count": 49404,
   "hood_default_visible": false,
-  "hood_off_visible_triangles": 54794,
-  "default_visible_triangles": 54794,
-  "hood_on_valve_off_visible_triangles": 99132,
+  "hood_off_visible_triangles": 78242,
+  "default_visible_triangles": 78242,
+  "hood_on_valve_off_visible_triangles": 122580,
   "hood_on_cup_off_visible_triangles": 80850,
   "hood_on_cup_and_valve_off_visible_triangles": 75784,
   "side_filter_material_indices": [
@@ -74,5 +74,5 @@
   "side_filter_default_visible": false,
   "side_filter_triangle_count": 9504,
   "cup_inlet_valve_count": 2,
-  "fbx_sha256": "054f5d32fc40fb10d6612509b9db1996273a0274e2ea6a1ffefcda4f745449dc"
+  "fbx_sha256": "e036a75b8bac1b7bf0e2b0edb4bd6664067a9007f94b6c26a5cc617b142bc741"
 }

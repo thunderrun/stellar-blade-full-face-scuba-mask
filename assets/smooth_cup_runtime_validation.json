@@ -1,0 +1,115 @@
+{
+  "version": "1.2.1",
+  "geometry_revision": 17,
+  "tested_at_utc": "2026-09-29T08:10:00Z",
+  "game_version_displayed": "2.1",
+  "cns_version_displayed": "2.2",
+  "method": "Fresh game launch after installation, Continue into the existing camp, direct CNS interaction and visual observation, menu close/reopen readback, then complete process exit.",
+  "scope": "Existing camp save, CNS close face view and camp idle; targeted geometry and controls regression check.",
+  "passed": true,
+  "source_sha256": "e120d94932a0cdf020925a139819e2b41d28ebfe93c725ff0fa368fe974a831b",
+  "fbx_sha256": {
+    "SK_CodexScubaMask": "468cf84a1e8c737d848ea73ab7534153dd91e1190d08547a307704246fa34e01",
+    "SK_CodexGasMask": "e036a75b8bac1b7bf0e2b0edb4bd6664067a9007f94b6c26a5cc617b142bc741"
+  },
+  "cooked_audit_summary_sha256": "0e0a6e85a4340cae6b0858ea7675da50b96112dc744b27751051da7cba3faa56",
+  "installed_payload": [
+    {
+      "name": "CodexCNS-ScubaMask-947.pak",
+      "bytes": 339,
+      "sha256": "16732bab2b93b11a7093657d35375572878d02d2616243e3042293bf485acb44"
+    },
+    {
+      "name": "CodexCNS-ScubaMask-947.ucas",
+      "bytes": 16509728,
+      "sha256": "a67b9fb883a3f6962fcb321ac62d0ee728c72d30fefd2fc043ed90027df1a42b"
+    },
+    {
+      "name": "CodexCNS-ScubaMask-947.utoc",
+      "bytes": 5087,
+      "sha256": "82aa42b74e577a54d8ea1861f51c72c2829c1a409d125fd19b780c73a9a69781"
+    },
+    {
+      "name": "CodexCNS-ScubaMask.dekcns.json",
+      "bytes": 7452,
+      "sha256": "a9aff1c4af9e8edff148fa17138f19809ec3d963d1de734a6f9d7e99001870a5"
+    }
+  ],
+  "checks": {
+    "fresh_launch_and_both_named_variants_render": true,
+    "smoother_continuous_gas_cup_visible": true,
+    "cup_and_inlet_toggle_passed": true,
+    "menu_reopen_retains_selected_state": true,
+    "scuba_to_gas_and_reverse_variant_switch": true,
+    "side_filters_off_on_off_on_independent_of_cup": true,
+    "hood_on_visible_with_hair_temporarily_hidden": true,
+    "cup_opacity_020_to_098": true,
+    "cyan_visor_independent_of_neutral_then_black_cup_and_inlet_color": true,
+    "upper_exterior_valves_absent": true,
+    "installed_payload_hashes_unchanged_after_test": true,
+    "original_cns_save_restored_after_game_exit": true
+  },
+  "menu_reopen_readback": {
+    "variant": "Large oral-nasal cup",
+    "inner_nasal_cup": "On",
+    "valve": "On",
+    "hood": "On",
+    "side_filters": "On",
+    "visor_opacity": 0.1,
+    "cup_opacity": 0.98,
+    "glass_color": "cyan",
+    "inner_cup_color": "black",
+    "matches_before_reopen": true
+  },
+  "observations": [
+    "The broad gas-mask cup now has a rounder bridge and nose-tip profile that flows into the cheek and mouth bowl. The two round inlet assemblies remain on the cup beneath the visor.",
+    "A small transition at the lower mounting flange remains, preserving the existing chin collar and face contact region.",
+    "Cup Off removes the cup and both inlet assemblies together while the filters remain visible. Filters Off leaves the cup and inlets visible.",
+    "The original narrower Scuba cup remains selectable and has no paired inlet assemblies. Switching back restores the new smooth gas cup and retains controls.",
+    "The thin dark rim was difficult to distinguish with hair and the default neutral visor tint. Cyan tint and temporarily hiding hair showed the complete rim and hood. Classic Round Glasses were unequipped and re-equipped during inspection; no mod file change was needed.",
+    "Hair and hairpin were temporarily hidden through CNS for inspection. The mod contains no hair changes or automatic hair-hiding behavior.",
+    "Original CNS settings were restored byte-for-byte after game exit. Normal game save writes were retained; the game remains closed."
+  ],
+  "limitations": [
+    "Camp idle and CNS close face view only; no combat, extreme-pose, alternate-head or exhaustive facial-animation validation.",
+    "Menu close/reopen was checked. Full game restart persistence was not repeated for 1.2.1; the unchanged CNS configuration was tested across restart in 1.2.0.",
+    "Chin Valve Off/On and the full visor opacity range were not repeated in this targeted revision check; those controls and geometry are unchanged.",
+    "The hood uses the rigid glasses Root attachment; its cuff does not deform with the neck. Hair intersections remain outside scope.",
+    "Inlet discs are cosmetic geometry, with no airflow simulation. The design is visually inspired by respirator nose cups rather than an exact manufacturer replica.",
+    "All 32 combinations across both meshes passed static section checks; live testing sampled controls and combined states."
+  ],
+  "screenshots": [
+    {
+      "file": "media/runtime-1.2.1/01-cup-and-filters-on.jpg",
+      "sha256": "f86ab3d34f60564503c54be85eb66c7c4d50cf56c83ce00c2d84a79d32dfcfa6"
+    },
+    {
+      "file": "media/runtime-1.2.1/02-cup-off-filters-on.jpg",
+      "sha256": "5fef9525be49b6afd462eeb635673959c8697d266c12c88e8ee704cb5ee191d8"
+    },
+    {
+      "file": "media/runtime-1.2.1/03-cup-on-filters-off.jpg",
+      "sha256": "a3e862e27195642d96caacca5ae946ffbd347d15fc6066a7e5ac882acc826fab"
+    },
+    {
+      "file": "media/runtime-1.2.1/04-original-scuba-cup.jpg",
+      "sha256": "f7a293541982621f914a9121243dfc54840effe771f98be5bddce31ccef989f7"
+    },
+    {
+      "file": "media/runtime-1.2.1/05-smooth-cup-reselected.jpg",
+      "sha256": "f2611a9ed914a22f467dcf7e2d9f548b0b6fdc72f11a7492750d8d2d5b156e4b"
+    },
+    {
+      "file": "media/runtime-1.2.1/06-smooth-cup-neutral.jpg",
+      "sha256": "b85b5b3082c3b9d9fc76fd217b64420923a318727c1c4ed21085d4439bb935cf"
+    },
+    {
+      "file": "media/runtime-1.2.1/07-smooth-gas-cup-black.jpg",
+      "sha256": "8e5d4fcaa840b412a65a230694e022ec9e8d2adf177ca932bc51f289746feea1"
+    },
+    {
+      "file": "media/runtime-1.2.1/08-menu-reopen-readback.jpg",
+      "sha256": "8afabd71559401398bb2ea4eee723e4ccb081236208ca85e333982f65cfdd7fa"
+    }
+  ]
+}

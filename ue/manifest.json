@@ -466,20 +466,20 @@
       "translucent": true
     }
   },
-  "design_revision": 16,
+  "design_revision": 17,
   "expected_material_count": 14,
   "translucent_section_order": [
     "M_Scuba_NasalCup",
     "M_Scuba_Visor"
   ],
-  "revision_change": "Version 1.2.0: optional paired side filters and two named cup variants; the larger gas-mask cup includes paired inlet valves beneath the visor. Upper exterior valves removed. Original defaults and controls retained.",
+  "revision_change": "Version 1.2.1: smoother continuous curves on the enlarged gas-mask cup, retaining paired inner inlet valves and lower collar; all other geometry and CNS controls unchanged.",
   "removed_empty_slots": [
     "M_Scuba_InnerValves"
   ],
   "variant": "integrated-valve-oronasal-cup",
-  "variant_revision": 5,
-  "base_design_revision": 14,
-  "version": "1.2.0",
+  "variant_revision": 6,
+  "base_design_revision": 16,
+  "version": "1.2.1",
   "appended_opaque_section_order": [
     "M_Scuba_ValveAccent",
     "M_Scuba_ValveVent",
