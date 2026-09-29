@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "scope": "Remove local render-path text metadata from four historical PNG previews; all pixel and other chunks are unchanged. Historical image hashes refer to their earlier files.",
+  "files": [
+    {
+      "file": "media/contoured-cup-preview.png",
+      "before_sha256": "5247f05701234861c8308037dedb10804722ffcd61ad667e175ad2f0a4342c47",
+      "after_sha256": "60c2ae56e0b14f726eeb27343d33574865167470b0e7d33e26bf5c1aadce4323",
+      "removed_local_path_text_chunks": 1,
+      "compressed_pixel_data_sha256": "677f2386c0506dbed58058121967782ac48827e7be958b1feed9551284f22372",
+      "all_other_chunks_byte_identical": true,
+      "pixel_data_unchanged": true
+    },
+    {
+      "file": "media/cup-chin-profile.png",
+      "before_sha256": "dfc467c4d4c6d258ea786a4f333c702d965ca7b1011da4392d72620677f507d5",
+      "after_sha256": "95d91c64bbac3d69da0e8b2343d35f6f4181bb34bee92b0a68ded110b6a59914",
+      "removed_local_path_text_chunks": 1,
+      "compressed_pixel_data_sha256": "bbbaa7f88a38f09f8a1280481d01db98edb660a3a60379b6a949bbaf12d63858",
+      "all_other_chunks_byte_identical": true,
+      "pixel_data_unchanged": true
+    },
+    {
+      "file": "media/cup-fit-diagnostic.png",
+      "before_sha256": "66545c6f00a121205bc3faf1fa4d737ab278823cbe22d330f596c63616b8da4e",
+      "after_sha256": "b0606f6a44e69074ec54ee72eb9b9cf91f26a86db48bfb103c85e2bd3c0cec76",
+      "removed_local_path_text_chunks": 1,
+      "compressed_pixel_data_sha256": "3c56228654e3076568439d7df0f851d56d50d6dce51553fd6d5aeb75855e1371",
+      "all_other_chunks_byte_identical": true,
+      "pixel_data_unchanged": true
+    },
+    {
+      "file": "media/cup-valve-interior.png",
+      "before_sha256": "e58501bf878bb4ba1f60eaf3b994f2160d14e57d14ed6444f5f0484592daad62",
+      "after_sha256": "80135c8404c39038cd3954d4e4cb851dfbab1c2fef269d757daea5dbb5cf77c0",
+      "removed_local_path_text_chunks": 1,
+      "compressed_pixel_data_sha256": "adf6d490d70cd01dd6af53ce17e4d90e648f3f9369773817d92e3554d07aaa46",
+      "all_other_chunks_byte_identical": true,
+      "pixel_data_unchanged": true
+    }
+  ]
+}

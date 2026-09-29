@@ -1,0 +1,1128 @@
+{
+  "version": "1.2.0",
+  "revision": 16,
+  "passed": true,
+  "source_sha256": "3966bccdb5ea8499cf97a64d30300219de55a4d0a3620bad7d4e4c1b2d5dc35e",
+  "baseline_version": "1.1.9",
+  "baseline_source_sha256": "1646e0ae27fd527ac19defba38d9a010408925ebb2c02862e71aad334c30cad3",
+  "original_sections_0_to_11_exact": true,
+  "side_filter_sections_12_13_unchanged": true,
+  "variant_shared_sections_except_7_exact": true,
+  "upper_exterior_valves_removed": true,
+  "gas_cup_inlet_valves": 2,
+  "material_count": 14,
+  "triangles_by_mesh": {
+    "SK_CodexScubaMask": 107302,
+    "SK_CodexGasMask": 113702
+  },
+  "independent_integrated_source_review": {
+    "source_sha256": "3966bccdb5ea8499cf97a64d30300219de55a4d0a3620bad7d4e4c1b2d5dc35e",
+    "baseline_sha256": "7a3f6b4fea4db393e247be97c1b3af9cb76331f6ca82b33637deebd70a400cab",
+    "approved_cup_sha256": "675e1f0895fa92211c4858188e77abe65bac76b8cd076a2f1cc58e940df314ae",
+    "checks": {
+      "old_large_cup_prefix_corner_data_exact": true,
+      "standard_previous_sections_0_to_13_exact": true,
+      "large_shared_sections_except_cup_exact": true,
+      "large_cup_coordinates_winding_exact_approved_donor": true,
+      "large_cup_corner_data_exact_approved_donor": true,
+      "original_materials_0_to_13_exact": true,
+      "variant_materials_exact": true,
+      "rest_rig_exact": true,
+      "standard_root_weight1": true,
+      "large_root_weight1": true,
+      "standard_parent_armature": true,
+      "large_parent_armature": true,
+      "no_source_images_texts_linked_libraries": true,
+      "upper_exterior_valve_sections_removed": true,
+      "upper_exterior_valve_authoring_objects_removed": true,
+      "upper_exterior_valve_materials_removed": true,
+      "no_private_windows_profile_path_bytes": true,
+      "large_cup_no_side_hardware_intersection": true,
+      "source_hash_unchanged_during_audit": true
+    },
+    "passed": true,
+    "cup_hardware_bvh_overlaps": 0,
+    "baseline_sections": {
+      "0": {
+        "triangles": 8080,
+        "corner_data_sha256": "3558da4883d4fdc76f3bccbe891bd69cf77b29c04c5db1e62d43d7f4e818bbcf"
+      },
+      "2": {
+        "triangles": 882,
+        "corner_data_sha256": "4da1cd9a9562aed01dfd8803c7f53a8fb34e795078e61d8390643c3465d8f3ca"
+      },
+      "3": {
+        "triangles": 2204,
+        "corner_data_sha256": "582afcd3e5e936151d54f90482c9e1bc1bd09a8f8d74e84a57fa420741a5a2dd"
+      },
+      "5": {
+        "triangles": 2204,
+        "corner_data_sha256": "85627aa76c050c668b9320841ef2ea8c4f0fe1172e215c100d8b8a3a911e22b7"
+      },
+      "6": {
+        "triangles": 1560,
+        "corner_data_sha256": "bebf77e27cca6fe297091d5fbea885cd865460984fe8348bfa792429c0ca877e"
+      },
+      "1": {
+        "triangles": 2172,
+        "corner_data_sha256": "b4cf33764fdb5f05ff80f61d3de9f79796f7758321ec1881f05ddd5edd5513e2"
+      },
+      "4": {
+        "triangles": 992,
+        "corner_data_sha256": "44b3cbb6299b5c2a061796debcc37b8b81900ea1b0270b2dc36a405b6960b6a2"
+      },
+      "10": {
+        "triangles": 702,
+        "corner_data_sha256": "b1414422692125bc72f5d1a67b3a3f36d10204362ffda57cbae732ad1c5c57f1"
+      },
+      "9": {
+        "triangles": 1200,
+        "corner_data_sha256": "20f2d0204e73759c832b27a32fe1f1e3d07e2d73c7b40b8d4a59643b473a4bcf"
+      },
+      "7": {
+        "triangles": 16948,
+        "corner_data_sha256": "22b0d5573e5f2215430b8246b41069a3a9fd1d1ca40c59a87b165702e4d219d7"
+      },
+      "8": {
+        "triangles": 11450,
+        "corner_data_sha256": "d5ecefed6e4140d8dc7cbf65357d3cfcd9dcfae85487b9fe8531f1c29376db6f"
+      },
+      "11": {
+        "triangles": 49404,
+        "corner_data_sha256": "6944e67251a88eafc680a837969249508c03af41fb75854aace4a4f52f24c286"
+      },
+      "12": {
+        "triangles": 3904,
+        "corner_data_sha256": "87ee309a3b3b052e5f5703285c23a8d3d7d47758885b934d24dfc8f9bb79a85a"
+      },
+      "13": {
+        "triangles": 5600,
+        "corner_data_sha256": "cfa96c41673364dabd907eb79fbdc6c449d1c3394213ec6391040438778f6457"
+      },
+      "14": {
+        "triangles": 2112,
+        "corner_data_sha256": "bf8417429d56387be747908b6b532f6ab2e338987beec34f0bbd7d3357801ef5"
+      },
+      "15": {
+        "triangles": 2240,
+        "corner_data_sha256": "7bc163fd5af70538bc57e2b85c955b3a70caa78879af8cabd86b3572546c9b09"
+      }
+    },
+    "standard_sections": {
+      "0": {
+        "triangles": 8080,
+        "corner_data_sha256": "3558da4883d4fdc76f3bccbe891bd69cf77b29c04c5db1e62d43d7f4e818bbcf"
+      },
+      "2": {
+        "triangles": 882,
+        "corner_data_sha256": "4da1cd9a9562aed01dfd8803c7f53a8fb34e795078e61d8390643c3465d8f3ca"
+      },
+      "3": {
+        "triangles": 2204,
+        "corner_data_sha256": "582afcd3e5e936151d54f90482c9e1bc1bd09a8f8d74e84a57fa420741a5a2dd"
+      },
+      "5": {
+        "triangles": 2204,
+        "corner_data_sha256": "85627aa76c050c668b9320841ef2ea8c4f0fe1172e215c100d8b8a3a911e22b7"
+      },
+      "6": {
+        "triangles": 1560,
+        "corner_data_sha256": "bebf77e27cca6fe297091d5fbea885cd865460984fe8348bfa792429c0ca877e"
+      },
+      "1": {
+        "triangles": 2172,
+        "corner_data_sha256": "b4cf33764fdb5f05ff80f61d3de9f79796f7758321ec1881f05ddd5edd5513e2"
+      },
+      "4": {
+        "triangles": 992,
+        "corner_data_sha256": "44b3cbb6299b5c2a061796debcc37b8b81900ea1b0270b2dc36a405b6960b6a2"
+      },
+      "10": {
+        "triangles": 702,
+        "corner_data_sha256": "b1414422692125bc72f5d1a67b3a3f36d10204362ffda57cbae732ad1c5c57f1"
+      },
+      "9": {
+        "triangles": 1200,
+        "corner_data_sha256": "20f2d0204e73759c832b27a32fe1f1e3d07e2d73c7b40b8d4a59643b473a4bcf"
+      },
+      "7": {
+        "triangles": 16948,
+        "corner_data_sha256": "22b0d5573e5f2215430b8246b41069a3a9fd1d1ca40c59a87b165702e4d219d7"
+      },
+      "8": {
+        "triangles": 11450,
+        "corner_data_sha256": "d5ecefed6e4140d8dc7cbf65357d3cfcd9dcfae85487b9fe8531f1c29376db6f"
+      },
+      "11": {
+        "triangles": 49404,
+        "corner_data_sha256": "6944e67251a88eafc680a837969249508c03af41fb75854aace4a4f52f24c286"
+      },
+      "12": {
+        "triangles": 3904,
+        "corner_data_sha256": "87ee309a3b3b052e5f5703285c23a8d3d7d47758885b934d24dfc8f9bb79a85a"
+      },
+      "13": {
+        "triangles": 5600,
+        "corner_data_sha256": "cfa96c41673364dabd907eb79fbdc6c449d1c3394213ec6391040438778f6457"
+      }
+    },
+    "large_cup_sections": {
+      "0": {
+        "triangles": 8080,
+        "corner_data_sha256": "3558da4883d4fdc76f3bccbe891bd69cf77b29c04c5db1e62d43d7f4e818bbcf"
+      },
+      "2": {
+        "triangles": 882,
+        "corner_data_sha256": "4da1cd9a9562aed01dfd8803c7f53a8fb34e795078e61d8390643c3465d8f3ca"
+      },
+      "3": {
+        "triangles": 2204,
+        "corner_data_sha256": "582afcd3e5e936151d54f90482c9e1bc1bd09a8f8d74e84a57fa420741a5a2dd"
+      },
+      "5": {
+        "triangles": 2204,
+        "corner_data_sha256": "85627aa76c050c668b9320841ef2ea8c4f0fe1172e215c100d8b8a3a911e22b7"
+      },
+      "6": {
+        "triangles": 1560,
+        "corner_data_sha256": "bebf77e27cca6fe297091d5fbea885cd865460984fe8348bfa792429c0ca877e"
+      },
+      "1": {
+        "triangles": 2172,
+        "corner_data_sha256": "b4cf33764fdb5f05ff80f61d3de9f79796f7758321ec1881f05ddd5edd5513e2"
+      },
+      "4": {
+        "triangles": 992,
+        "corner_data_sha256": "44b3cbb6299b5c2a061796debcc37b8b81900ea1b0270b2dc36a405b6960b6a2"
+      },
+      "10": {
+        "triangles": 702,
+        "corner_data_sha256": "b1414422692125bc72f5d1a67b3a3f36d10204362ffda57cbae732ad1c5c57f1"
+      },
+      "9": {
+        "triangles": 1200,
+        "corner_data_sha256": "20f2d0204e73759c832b27a32fe1f1e3d07e2d73c7b40b8d4a59643b473a4bcf"
+      },
+      "8": {
+        "triangles": 11450,
+        "corner_data_sha256": "d5ecefed6e4140d8dc7cbf65357d3cfcd9dcfae85487b9fe8531f1c29376db6f"
+      },
+      "11": {
+        "triangles": 49404,
+        "corner_data_sha256": "6944e67251a88eafc680a837969249508c03af41fb75854aace4a4f52f24c286"
+      },
+      "12": {
+        "triangles": 3904,
+        "corner_data_sha256": "87ee309a3b3b052e5f5703285c23a8d3d7d47758885b934d24dfc8f9bb79a85a"
+      },
+      "13": {
+        "triangles": 5600,
+        "corner_data_sha256": "cfa96c41673364dabd907eb79fbdc6c449d1c3394213ec6391040438778f6457"
+      },
+      "7": {
+        "triangles": 23348,
+        "corner_data_sha256": "ae3ba063d69f813200fe7d86be2ffdcc8561337b97fbab23b7a123c0df710b29"
+      }
+    },
+    "material_names": [
+      "M_Scuba_Silicone",
+      "M_Scuba_Polymer",
+      "M_Scuba_Teal",
+      "M_Scuba_TealAccent",
+      "M_Scuba_Steel",
+      "M_Scuba_Vent",
+      "M_Scuba_RubberDetail",
+      "M_Scuba_NasalCup",
+      "M_Scuba_Visor",
+      "M_Scuba_ValveAccent",
+      "M_Scuba_ValveVent",
+      "M_Scuba_LatexHood",
+      "M_GasMask_FilterBody",
+      "M_GasMask_FilterAccent"
+    ],
+    "standard_triangle_count": 107302,
+    "gas_triangle_count": 113702,
+    "standard_vertex_count": 54017,
+    "gas_vertex_count": 57225,
+    "limitations": "Neutral-pose source geometry and donor equality only; no live CNS/runtime or animated-neck certification."
+  },
+  "enlarged_cup_fit": {
+    "baseline_sha256": "1646e0ae27fd527ac19defba38d9a010408925ebb2c02862e71aad334c30cad3",
+    "candidate": "large-cup.blend",
+    "name": "24 | Broad gas-mask oral-nasal cup",
+    "vertices": 8474,
+    "triangles": 16948,
+    "bounds_cm": [
+      [
+        -11.91688346862793,
+        -4.018494129180908,
+        -0.8297236561775208
+      ],
+      [
+        -7.655356407165527,
+        4.018494606018066,
+        8.5
+      ]
+    ],
+    "fixed_all_vertices_at_or_below_z_cm": 1.9,
+    "fixed_vertex_count": 2129,
+    "fixed_region_exact": true,
+    "maximum_displacement_cm": 1.5644523058637934,
+    "topology": {
+      "vertices": 8474,
+      "triangles": 16948,
+      "bounds_cm": [
+        [
+          -11.91688346862793,
+          -7.655356407165527
+        ],
+        [
+          -4.018494129180908,
+          4.018494606018066
+        ],
+        [
+          -0.8297236561775208,
+          8.5
+        ]
+      ],
+      "finite_coordinates": true,
+      "minimum_triangle_area_cm2": 1.1439881389113194e-10,
+      "degenerate_triangles": 0,
+      "total_area_cm2": 169.18965375264128,
+      "signed_volume_cm3": 3.415480504126184,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "inconsistent_winding_edges": 0,
+      "connected_component_triangle_counts": [
+        16948
+      ],
+      "boundary_components": []
+    },
+    "self_intersections": {
+      "nonadjacent_bvh_pairs": 0,
+      "strict_intersection_pairs": 0,
+      "examples": [],
+      "example_bounds": []
+    },
+    "clearance_checks": {
+      "skin": {
+        "overlap_pairs": 0,
+        "min_sampled_mm": 0.43467193841934204,
+        "p01_mm": 0.6018029898405075
+      },
+      "visor": {
+        "overlap_pairs": 0,
+        "min_sampled_mm": 0.6879483908414841,
+        "p01_mm": 0.7475753128528595
+      },
+      "hood": {
+        "overlap_pairs": 0,
+        "min_sampled_mm": 10.11866807937622,
+        "p01_mm": 13.159080743789673
+      },
+      "silicone": {
+        "overlap_pairs": 0,
+        "min_sampled_mm": 2.1812330186367035,
+        "p01_mm": 3.833557367324829
+      }
+    },
+    "frontal_projected_area_cm2": {
+      "original": 31.733975000000004,
+      "broad": 44.882175000000004
+    },
+    "private_reference_exported": false,
+    "rig": "Root,weight1",
+    "passed": true,
+    "candidate_sha256": "fef60ae7d8cd1e738618f9ff7bae1fbd2d934d7a7796a5446cd052b63377e499",
+    "dense_clearance_checks": {
+      "skin": {
+        "minimum_sampled_mm": 0.3820107504725456,
+        "triangle_at_minimum": 12951,
+        "point_at_minimum_cm": [
+          -8.246805191040039,
+          -1.9330339431762695,
+          0.48461729288101196
+        ],
+        "displacement_at_minimum_cm": 0.0,
+        "minimum_unchanged_triangles_mm": 0.3820107504725456,
+        "minimum_changed_triangles_mm": 0.4499983415007591,
+        "sample_count": 254220,
+        "sampling": "15 uniform barycentric points per triangle; no global-distance guarantee"
+      },
+      "visor": {
+        "minimum_sampled_mm": 0.6879483908414841,
+        "triangle_at_minimum": 13341,
+        "point_at_minimum_cm": [
+          -9.488506317138672,
+          1.2810949087142944,
+          0.4909946024417877
+        ],
+        "displacement_at_minimum_cm": 0.0,
+        "minimum_unchanged_triangles_mm": 0.6879483908414841,
+        "minimum_changed_triangles_mm": 0.8409637212753296,
+        "sample_count": 254220,
+        "sampling": "15 uniform barycentric points per triangle; no global-distance guarantee"
+      },
+      "hood": {
+        "minimum_sampled_mm": 10.11866807937622,
+        "triangle_at_minimum": 12938,
+        "point_at_minimum_cm": [
+          -8.408957481384277,
+          0.0011281768092885613,
+          -0.8101303577423096
+        ],
+        "displacement_at_minimum_cm": 0.0,
+        "minimum_unchanged_triangles_mm": 10.11866807937622,
+        "minimum_changed_triangles_mm": 17.309577465057373,
+        "sample_count": 254220,
+        "sampling": "15 uniform barycentric points per triangle; no global-distance guarantee"
+      },
+      "silicone": {
+        "minimum_sampled_mm": 2.1812330186367035,
+        "triangle_at_minimum": 13780,
+        "point_at_minimum_cm": [
+          -8.412939071655273,
+          0.001629586797207594,
+          -0.8297236561775208
+        ],
+        "displacement_at_minimum_cm": 0.0,
+        "minimum_unchanged_triangles_mm": 2.1812330186367035,
+        "minimum_changed_triangles_mm": 10.634684562683105,
+        "sample_count": 254220,
+        "sampling": "15 uniform barycentric points per triangle; no global-distance guarantee"
+      }
+    },
+    "vertex_mapping": {
+      "donor_vertex_i_equals_sorted_optimized_slot7_vertex_ids_i": true,
+      "same_triangle_sequence_and_winding": true,
+      "same_oriented_triangle_multiset": true,
+      "authored_same_vertex_sequence": true,
+      "authored_vertex_count": 8474,
+      "optimized_slot7_vertex_count": 8474,
+      "authored_exact_coordinate_match_count": 8474,
+      "authored_unambiguous_coordinate_matches": true,
+      "authored_same_triangle_sequence_and_winding": true
+    },
+    "final_geometry_pass": true
+  },
+  "cup_inlet_geometry": {
+    "name": "24 | Broad gas-mask cup with paired inlet valves",
+    "baseline_cup_sha256": "fef60ae7d8cd1e738618f9ff7bae1fbd2d934d7a7796a5446cd052b63377e499",
+    "vertices": 11682,
+    "triangles": 23348,
+    "baseline_cup_vertices": 8474,
+    "baseline_cup_triangles": 16948,
+    "original_cup_geometry_exact": true,
+    "material": "M_Scuba_NasalCup",
+    "root_weight": 1,
+    "inlet_count": 2,
+    "parts": [
+      {
+        "name": "Inlet seat -1",
+        "side": -1,
+        "vertex_start": 8474,
+        "vertex_count": 448,
+        "triangle_count": 896,
+        "topology": {
+          "vertices": 448,
+          "triangles": 896,
+          "bounds_cm": [
+            [
+              -11.212899208068848,
+              -9.849015235900879
+            ],
+            [
+              -2.865299940109253,
+              -1.9347000122070312
+            ],
+            [
+              4.295000076293945,
+              5.704999923706055
+            ]
+          ],
+          "finite_coordinates": true,
+          "minimum_triangle_area_cm2": 0.00022851673987659432,
+          "degenerate_triangles": 0,
+          "total_area_cm2": 1.4424866240953407,
+          "signed_volume_cm3": 0.01858360844198659,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "connected_component_triangle_counts": [
+            896
+          ],
+          "boundary_components": []
+        },
+        "self_intersections": {
+          "nonadjacent_bvh_pairs": 0,
+          "strict_intersection_pairs": 0,
+          "examples": [],
+          "example_bounds": []
+        },
+        "clearance": {
+          "visor": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 0.7485341280698776
+          },
+          "hood": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 46.79967403411865
+          },
+          "silicone": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 39.237844944000244
+          },
+          "skin": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 11.586445569992065
+          }
+        },
+        "cup_interface_intersection_pairs": 378
+      },
+      {
+        "name": "Inlet flap -1",
+        "side": -1,
+        "vertex_start": 8922,
+        "vertex_count": 898,
+        "triangle_count": 1792,
+        "topology": {
+          "vertices": 898,
+          "triangles": 1792,
+          "bounds_cm": [
+            [
+              -11.145675659179688,
+              -10.140810012817383
+            ],
+            [
+              -2.7788400650024414,
+              -2.0211598873138428
+            ],
+            [
+              4.426000118255615,
+              5.573999881744385
+            ]
+          ],
+          "finite_coordinates": true,
+          "minimum_triangle_area_cm2": 0.00022827800685604023,
+          "degenerate_triangles": 0,
+          "total_area_cm2": 2.3323755301797178,
+          "signed_volume_cm3": 0.02280151229934153,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "connected_component_triangle_counts": [
+            1792
+          ],
+          "boundary_components": []
+        },
+        "self_intersections": {
+          "nonadjacent_bvh_pairs": 0,
+          "strict_intersection_pairs": 0,
+          "examples": [],
+          "example_bounds": []
+        },
+        "clearance": {
+          "visor": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 0.8064789324998856
+          },
+          "hood": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 48.74776363372803
+          },
+          "silicone": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 41.17185592651367
+          },
+          "skin": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 13.775463104248047
+          }
+        },
+        "cup_interface_intersection_pairs": 0
+      },
+      {
+        "name": "Inlet retaining post -1",
+        "side": -1,
+        "vertex_start": 9820,
+        "vertex_count": 258,
+        "triangle_count": 512,
+        "topology": {
+          "vertices": 258,
+          "triangles": 512,
+          "bounds_cm": [
+            [
+              -10.912760734558105,
+              -10.681726455688477
+            ],
+            [
+              -2.4626998901367188,
+              -2.3373000621795654
+            ],
+            [
+              4.90500020980835,
+              5.09499979019165
+            ]
+          ],
+          "finite_coordinates": true,
+          "minimum_triangle_area_cm2": 5.886107135336261e-05,
+          "degenerate_triangles": 0,
+          "total_area_cm2": 0.09619749379097203,
+          "signed_volume_cm3": 0.0018172814161517012,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "connected_component_triangle_counts": [
+            512
+          ],
+          "boundary_components": []
+        },
+        "self_intersections": {
+          "nonadjacent_bvh_pairs": 0,
+          "strict_intersection_pairs": 0,
+          "examples": [],
+          "example_bounds": []
+        },
+        "clearance": {
+          "visor": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 0.568024180829525
+          },
+          "hood": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 53.962507247924805
+          },
+          "silicone": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 46.529269218444824
+          },
+          "skin": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 15.218104124069214
+          }
+        },
+        "cup_interface_intersection_pairs": 138
+      },
+      {
+        "name": "Inlet seat 1",
+        "side": 1,
+        "vertex_start": 10078,
+        "vertex_count": 448,
+        "triangle_count": 896,
+        "topology": {
+          "vertices": 448,
+          "triangles": 896,
+          "bounds_cm": [
+            [
+              -11.202576637268066,
+              -9.849534034729004
+            ],
+            [
+              1.9347000122070312,
+              2.865299940109253
+            ],
+            [
+              4.295000076293945,
+              5.704999923706055
+            ]
+          ],
+          "finite_coordinates": true,
+          "minimum_triangle_area_cm2": 0.00022026701995673045,
+          "degenerate_triangles": 0,
+          "total_area_cm2": 1.4400760176222145,
+          "signed_volume_cm3": 0.018564594043711545,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "connected_component_triangle_counts": [
+            896
+          ],
+          "boundary_components": []
+        },
+        "self_intersections": {
+          "nonadjacent_bvh_pairs": 0,
+          "strict_intersection_pairs": 0,
+          "examples": [],
+          "example_bounds": []
+        },
+        "clearance": {
+          "visor": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 0.7423746585845947
+          },
+          "hood": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 47.40838050842285
+          },
+          "silicone": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 39.21964645385742
+          },
+          "skin": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 11.52597427368164
+          }
+        },
+        "cup_interface_intersection_pairs": 404
+      },
+      {
+        "name": "Inlet flap 1",
+        "side": 1,
+        "vertex_start": 10526,
+        "vertex_count": 898,
+        "triangle_count": 1792,
+        "topology": {
+          "vertices": 898,
+          "triangles": 1792,
+          "bounds_cm": [
+            [
+              -11.134292602539062,
+              -10.13880729675293
+            ],
+            [
+              2.0211598873138428,
+              2.7788400650024414
+            ],
+            [
+              4.426000118255615,
+              5.573999881744385
+            ]
+          ],
+          "finite_coordinates": true,
+          "minimum_triangle_area_cm2": 0.00022778582087649478,
+          "degenerate_triangles": 0,
+          "total_area_cm2": 2.3248617668570626,
+          "signed_volume_cm3": 0.022828104488629024,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "connected_component_triangle_counts": [
+            1792
+          ],
+          "boundary_components": []
+        },
+        "self_intersections": {
+          "nonadjacent_bvh_pairs": 0,
+          "strict_intersection_pairs": 0,
+          "examples": [],
+          "example_bounds": []
+        },
+        "clearance": {
+          "visor": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 0.8032585680484772
+          },
+          "hood": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 49.336395263671875
+          },
+          "silicone": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 41.138572692871094
+          },
+          "skin": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 14.0421462059021
+          }
+        },
+        "cup_interface_intersection_pairs": 0
+      },
+      {
+        "name": "Inlet retaining post 1",
+        "side": 1,
+        "vertex_start": 11424,
+        "vertex_count": 258,
+        "triangle_count": 512,
+        "topology": {
+          "vertices": 258,
+          "triangles": 512,
+          "bounds_cm": [
+            [
+              -10.89884090423584,
+              -10.666181564331055
+            ],
+            [
+              2.3373000621795654,
+              2.4626998901367188
+            ],
+            [
+              4.90500020980835,
+              5.09499979019165
+            ]
+          ],
+          "finite_coordinates": true,
+          "minimum_triangle_area_cm2": 5.923054073375289e-05,
+          "degenerate_triangles": 0,
+          "total_area_cm2": 0.09650281937549858,
+          "signed_volume_cm3": 0.00180025173479711,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_winding_edges": 0,
+          "connected_component_triangle_counts": [
+            512
+          ],
+          "boundary_components": []
+        },
+        "self_intersections": {
+          "nonadjacent_bvh_pairs": 0,
+          "strict_intersection_pairs": 0,
+          "examples": [],
+          "example_bounds": []
+        },
+        "clearance": {
+          "visor": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 0.5616847425699234
+          },
+          "hood": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 54.45866584777832
+          },
+          "silicone": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 46.40810966491699
+          },
+          "skin": {
+            "intersection_pairs": 0,
+            "min_sampled_mm": 15.894880294799805
+          }
+        },
+        "cup_interface_intersection_pairs": 140
+      }
+    ],
+    "part_intersections": [
+      {
+        "parts": [
+          "Inlet flap -1",
+          "Inlet seat -1"
+        ],
+        "intersection_pairs": 0,
+        "intentional_retaining_post_interface": false
+      },
+      {
+        "parts": [
+          "Inlet retaining post -1",
+          "Inlet seat -1"
+        ],
+        "intersection_pairs": 0,
+        "intentional_retaining_post_interface": false
+      },
+      {
+        "parts": [
+          "Inlet retaining post -1",
+          "Inlet flap -1"
+        ],
+        "intersection_pairs": 368,
+        "intentional_retaining_post_interface": true
+      },
+      {
+        "parts": [
+          "Inlet seat 1",
+          "Inlet seat -1"
+        ],
+        "intersection_pairs": 0,
+        "intentional_retaining_post_interface": false
+      },
+      {
+        "parts": [
+          "Inlet seat 1",
+          "Inlet flap -1"
+        ],
+        "intersection_pairs": 0,
+        "intentional_retaining_post_interface": false
+      },
+      {
+        "parts": [
+          "Inlet seat 1",
+          "Inlet retaining post -1"
+        ],
+        "intersection_pairs": 0,
+        "intentional_retaining_post_interface": false
+      },
+      {
+        "parts": [
+          "Inlet flap 1",
+          "Inlet seat -1"
+        ],
+        "intersection_pairs": 0,
+        "intentional_retaining_post_interface": false
+      },
+      {
+        "parts": [
+          "Inlet flap 1",
+          "Inlet flap -1"
+        ],
+        "intersection_pairs": 0,
+        "intentional_retaining_post_interface": false
+      },
+      {
+        "parts": [
+          "Inlet flap 1",
+          "Inlet retaining post -1"
+        ],
+        "intersection_pairs": 0,
+        "intentional_retaining_post_interface": false
+      },
+      {
+        "parts": [
+          "Inlet flap 1",
+          "Inlet seat 1"
+        ],
+        "intersection_pairs": 0,
+        "intentional_retaining_post_interface": false
+      },
+      {
+        "parts": [
+          "Inlet retaining post 1",
+          "Inlet seat -1"
+        ],
+        "intersection_pairs": 0,
+        "intentional_retaining_post_interface": false
+      },
+      {
+        "parts": [
+          "Inlet retaining post 1",
+          "Inlet flap -1"
+        ],
+        "intersection_pairs": 0,
+        "intentional_retaining_post_interface": false
+      },
+      {
+        "parts": [
+          "Inlet retaining post 1",
+          "Inlet retaining post -1"
+        ],
+        "intersection_pairs": 0,
+        "intentional_retaining_post_interface": false
+      },
+      {
+        "parts": [
+          "Inlet retaining post 1",
+          "Inlet seat 1"
+        ],
+        "intersection_pairs": 0,
+        "intentional_retaining_post_interface": false
+      },
+      {
+        "parts": [
+          "Inlet retaining post 1",
+          "Inlet flap 1"
+        ],
+        "intersection_pairs": 358,
+        "intentional_retaining_post_interface": true
+      }
+    ],
+    "design": "Two shallow cup-mounted seating lips, flexible disc flaps and center retention posts. All fit below the visor and share cup material/visibility. Existing cup remains intact; seat/post-to-cup and post-to-flap contacts are intentional cosmetic mounted interfaces.",
+    "reference": "https://multimedia.3m.com/mws/media/95995O/3m-full-facepiece-respirator-6000-series-user-instructions.pdf",
+    "private_reference_exported": false,
+    "passed": true,
+    "candidate_sha256": "675e1f0895fa92211c4858188e77abe65bac76b8cd076a2f1cc58e940df314ae"
+  },
+  "source_privacy_review": {
+    "source_sha256": "3966bccdb5ea8499cf97a64d30300219de55a4d0a3620bad7d4e4c1b2d5dc35e",
+    "source_unchanged": true,
+    "raw_absolute_private_path_hits": [],
+    "raw_private_path_tail_hits": [],
+    "scan_encodings": [
+      "ASCII-compatible byte text",
+      "utf-16-le alignment0",
+      "utf-16-le alignment1",
+      "utf-16-be alignment0",
+      "utf-16-be alignment1"
+    ],
+    "generic_scan_category_counts": {
+      "absolute_private_path": 0,
+      "local_user_path_tail": 0,
+      "workspace_reference": 0,
+      "private_fitting_reference": 0
+    },
+    "scan_scope": "Entire source bytes, including stale nulled-drive buffer tails; public labels omit local account and workspace strings.",
+    "nonempty_weak_references": [],
+    "source_images": 0,
+    "source_libraries": 0,
+    "source_texts": 0,
+    "mesh_objects": 36,
+    "mesh_inventory": {
+      "SK_CodexScubaMask": {
+        "triangles": 107302,
+        "material_slots": [
+          "M_Scuba_Silicone",
+          "M_Scuba_Polymer",
+          "M_Scuba_Teal",
+          "M_Scuba_TealAccent",
+          "M_Scuba_Steel",
+          "M_Scuba_Vent",
+          "M_Scuba_RubberDetail",
+          "M_Scuba_NasalCup",
+          "M_Scuba_Visor",
+          "M_Scuba_ValveAccent",
+          "M_Scuba_ValveVent",
+          "M_Scuba_LatexHood",
+          "M_GasMask_FilterBody",
+          "M_GasMask_FilterAccent"
+        ],
+        "section7_triangles": 16948
+      },
+      "SK_CodexGasMask": {
+        "triangles": 113702,
+        "material_slots": [
+          "M_Scuba_Silicone",
+          "M_Scuba_Polymer",
+          "M_Scuba_Teal",
+          "M_Scuba_TealAccent",
+          "M_Scuba_Steel",
+          "M_Scuba_Vent",
+          "M_Scuba_RubberDetail",
+          "M_Scuba_NasalCup",
+          "M_Scuba_Visor",
+          "M_Scuba_ValveAccent",
+          "M_Scuba_ValveVent",
+          "M_Scuba_LatexHood",
+          "M_GasMask_FilterBody",
+          "M_GasMask_FilterAccent"
+        ],
+        "section7_triangles": 23348
+      }
+    },
+    "unexpected_face_reference_objects": [],
+    "removed_side_valve_identifiers": [],
+    "scene_metadata": {
+      "revision": "16",
+      "variant": "cns-cup-variants",
+      "contents": "Original scuba cup and enlarged gas-mask cup with paired inlet valves; optional side filters and hood; single Root rig only",
+      "design_revision": "16 - optional side filters and gas-mask cup with two internal inlet valves"
+    },
+    "privacy_passed": true
+  },
+  "source_metadata_sanitation": {
+    "before_sha256": "6de94b7a2bf5f627b4d0b32587cc02d1b0d8e5a92413c58b0d3d082810ea5098",
+    "source_sha256": "3966bccdb5ea8499cf97a64d30300219de55a4d0a3620bad7d4e4c1b2d5dc35e",
+    "file_size_unchanged": true,
+    "changed_byte_count": 100,
+    "all_bytes_outside_exact_stale_path_buffer_identical": true,
+    "blender_reopen_successful": true,
+    "all_scene_checks": {
+      "meshes": true,
+      "objects": true,
+      "rigs": true,
+      "materials": true,
+      "images": true,
+      "libraries": true,
+      "scene_properties": true
+    },
+    "all_meshes_corner_geometry_attributes_weights_materials_rigs_unchanged": true,
+    "before_scene_fingerprint": "2e157032608c2a46dcf4649a6d4afe5ee033d87cff2cebb7b061546f349bee5f",
+    "after_scene_fingerprint": "2e157032608c2a46dcf4649a6d4afe5ee033d87cff2cebb7b061546f349bee5f",
+    "passed": true
+  },
+  "side_filters": {
+    "component_count": 118,
+    "within_component_self_intersections": 0,
+    "minimum_sampled_skin_clearance_mm": 3.018144965171814,
+    "minimum_sampled_hood_clearance_mm": 3.7659606337547302,
+    "mounts": [
+      {
+        "side": -1,
+        "ray_samples": 1281,
+        "ray_misses": 0,
+        "max_gap_mm": -0.21364992047892883,
+        "max_embed_mm": 3.6459484742954373
+      },
+      {
+        "side": 1,
+        "ray_samples": 1281,
+        "ray_misses": 0,
+        "max_gap_mm": -0.3429924795636907,
+        "max_embed_mm": 3.826928180642426
+      }
+    ],
+    "mount_intersections": "Seat boots overlap the existing frame/visor intentionally; grille/rib details overlap the filter housings."
+  },
+  "toggle_groups": {
+    "cup": [
+      7
+    ],
+    "chin_valve": [
+      1,
+      4,
+      9,
+      10
+    ],
+    "hood": [
+      11
+    ],
+    "filters": [
+      12,
+      13
+    ]
+  },
+  "static_visibility_combinations": {
+    "SK_CodexScubaMask": {
+      "cup_0_chin_valve_0_hood_0_filters_0": 26380,
+      "cup_0_chin_valve_0_hood_0_filters_1": 35884,
+      "cup_0_chin_valve_0_hood_1_filters_0": 75784,
+      "cup_0_chin_valve_0_hood_1_filters_1": 85288,
+      "cup_0_chin_valve_1_hood_0_filters_0": 31446,
+      "cup_0_chin_valve_1_hood_0_filters_1": 40950,
+      "cup_0_chin_valve_1_hood_1_filters_0": 80850,
+      "cup_0_chin_valve_1_hood_1_filters_1": 90354,
+      "cup_1_chin_valve_0_hood_0_filters_0": 43328,
+      "cup_1_chin_valve_0_hood_0_filters_1": 52832,
+      "cup_1_chin_valve_0_hood_1_filters_0": 92732,
+      "cup_1_chin_valve_0_hood_1_filters_1": 102236,
+      "cup_1_chin_valve_1_hood_0_filters_0": 48394,
+      "cup_1_chin_valve_1_hood_0_filters_1": 57898,
+      "cup_1_chin_valve_1_hood_1_filters_0": 97798,
+      "cup_1_chin_valve_1_hood_1_filters_1": 107302
+    },
+    "SK_CodexGasMask": {
+      "cup_0_chin_valve_0_hood_0_filters_0": 26380,
+      "cup_0_chin_valve_0_hood_0_filters_1": 35884,
+      "cup_0_chin_valve_0_hood_1_filters_0": 75784,
+      "cup_0_chin_valve_0_hood_1_filters_1": 85288,
+      "cup_0_chin_valve_1_hood_0_filters_0": 31446,
+      "cup_0_chin_valve_1_hood_0_filters_1": 40950,
+      "cup_0_chin_valve_1_hood_1_filters_0": 80850,
+      "cup_0_chin_valve_1_hood_1_filters_1": 90354,
+      "cup_1_chin_valve_0_hood_0_filters_0": 49728,
+      "cup_1_chin_valve_0_hood_0_filters_1": 59232,
+      "cup_1_chin_valve_0_hood_1_filters_0": 99132,
+      "cup_1_chin_valve_0_hood_1_filters_1": 108636,
+      "cup_1_chin_valve_1_hood_0_filters_0": 54794,
+      "cup_1_chin_valve_1_hood_0_filters_1": 64298,
+      "cup_1_chin_valve_1_hood_1_filters_0": 104198,
+      "cup_1_chin_valve_1_hood_1_filters_1": 113702
+    }
+  },
+  "visual_review": {
+    "passed": true,
+    "candidate_sha256": "675e1f0895fa92211c4858188e77abe65bac76b8cd076a2f1cc58e940df314ae",
+    "findings": [
+      "Paired thin inlet flap discs with seating lips and center retention posts sit on the enlarged cup beneath the visor.",
+      "The original broad cup shape and lower chin seal remain unchanged.",
+      "The upper exterior side-valve pair is removed; only the optional side filters remain outside the mask."
+    ],
+    "reviewed_local_preview_hashes": [
+      {
+        "name": "three-quarter.png",
+        "sha256": "041b218165ba4220ac57f9d7a8755eb453ae3580f11b9aec79c939cf237944c1"
+      },
+      {
+        "name": "detail.png",
+        "sha256": "41fb06bf22511792112deff87d2b3c1ac89336597ebc7eb324cce66b9813016f"
+      }
+    ],
+    "scope": "Opaque Blender fitting diagnostics reviewed; game shader and live CNS behavior tested separately."
+  },
+  "private_reference_exported": false,
+  "existing_cns_controls_unchanged": true,
+  "default_cup_variant": "Scuba cup",
+  "side_filters_default_visible": false,
+  "inlet_controls": "Gas cup inlet valves share cup section7 visibility/color/opacity; absent on Scuba cup.",
+  "in_game_tested_at_this_stage": false,
+  "limitations": [
+    "Neutral Eve fitting reference and preview evidence remain private; public source/export validation can be reproduced without them.",
+    "Cup inlet flaps are cosmetic closed geometry over the cup shell, with intentional seat/post mounting intersections; not a functional airflow simulation.",
+    "Rigid Root attachment, no neck deformation. Hair and alternate heads excluded."
+  ]
+}

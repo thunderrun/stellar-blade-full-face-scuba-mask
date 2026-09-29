@@ -4,12 +4,13 @@
     "Requirement": "None",
     "CharacterID": "EVE",
     "DisplayName": "Full Face Scuba Mask",
-    "Description": "Open the cog to toggle Hood, Valve and Inner Nasal Cup.\nAdjust Glass Color, Inner Cup Color and opacity separately.",
+    "Description": "Choose Scuba cup or Large oral-nasal cup with paired inlet valves beneath the visor.\nOpen the cog for optional Side Filters, Hood, chin Valve, cup, color and opacity controls.",
     "FitMeshType": "Eyes",
     "OutfitTypes": [],
     "OutfitImage": "/Game/Art/UI/Texture/Item/glasses/Deco_Icon_FaceAccessory_003.Deco_Icon_FaceAccessory_003",
     "OutfitPaths": [
-      "/Game/OutfitMods/CodexScubaMask/Models/SK_CodexScubaMask.SK_CodexScubaMask"
+      "/Game/OutfitMods/CodexScubaMask/Models/SK_CodexScubaMask.SK_CodexScubaMask",
+      "/Game/OutfitMods/CodexScubaMask/Models/SK_CodexGasMask.SK_CodexGasMask"
     ],
     "UserConfigs": {
       "ShapeKeys": [],
@@ -52,6 +53,19 @@
           "Description": "Show or hide the fitted glossy latex scuba hood. Hair is unchanged.",
           "MaterialIndex": 11,
           "Value": false
+        },
+        {
+          "DisplayName": "Side Filters",
+          "Description": "Show or hide both side filters.",
+          "MaterialIndex": 12,
+          "Value": false
+        },
+        {
+          "DisplayName": "Side Filters (Accent)",
+          "Description": "Linked side filters details.",
+          "MaterialIndex": 13,
+          "Value": false,
+          "ControlledBy": "Side Filters"
         }
       ],
       "ScalarControls": [
@@ -263,6 +277,10 @@
         }
       ],
       "TextureOptions": []
-    }
+    },
+    "OutfitNames": [
+      "Scuba cup",
+      "Large oral-nasal cup"
+    ]
   }
 ]

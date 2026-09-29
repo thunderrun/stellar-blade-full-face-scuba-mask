@@ -136,5 +136,25 @@
     "preview_transmission": 0,
     "recommended_game_opacity": 1,
     "description": "Opaque glossy black latex. Native game material uses GlobalRoughness 0.20; preview coat approximates its finish."
+  },
+  "M_GasMask_FilterBody": {
+    "base_color_linear": [
+      0.018,
+      0.023,
+      0.028
+    ],
+    "metallic": 0.12,
+    "roughness": 0.34,
+    "recommended_game_opacity": 1
+  },
+  "M_GasMask_FilterAccent": {
+    "base_color_linear": [
+      0.11,
+      0.14,
+      0.15
+    ],
+    "metallic": 0.65,
+    "roughness": 0.3,
+    "recommended_game_opacity": 1
   }
 }

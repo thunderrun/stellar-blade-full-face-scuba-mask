@@ -1,0 +1,132 @@
+{
+  "version": "1.2.0",
+  "geometry_revision": 16,
+  "tested_at_utc": "2026-09-29T07:16:29Z",
+  "game_version_displayed": "2.1",
+  "cns_version_displayed": "2.2",
+  "method": "Direct observation and interaction in the running game, then complete process exit, relaunch, Continue and CNS readback.",
+  "scope": "Existing camp save, CNS Face camera and normal gameplay idle; no combat or extreme-pose sweep.",
+  "passed": true,
+  "source_sha256": "3966bccdb5ea8499cf97a64d30300219de55a4d0a3620bad7d4e4c1b2d5dc35e",
+  "fbx_sha256": {
+    "SK_CodexScubaMask": "68cb99de7874e989d2b9ff0cb0fcf9f2d75b76cf981c7e88b78d6bfe2b5e84cf",
+    "SK_CodexGasMask": "054f5d32fc40fb10d6612509b9db1996273a0274e2ea6a1ffefcda4f745449dc"
+  },
+  "cooked_audit_summary_sha256": "6f49349aa624acac9b0bf8937e91386e324b40d5a6fa97c448692594bc6f560f",
+  "installed_payload": [
+    {
+      "name": "CodexCNS-ScubaMask-947.pak",
+      "bytes": 339,
+      "sha256": "f26f612b7773b326e20ba322230657f990dff2bc92f3c86d3b0d79e44f837647"
+    },
+    {
+      "name": "CodexCNS-ScubaMask-947.ucas",
+      "bytes": 11222816,
+      "sha256": "2a7e375e11ca98f804f15e00350b5bee171876d2584fafe7860e96ca57872905"
+    },
+    {
+      "name": "CodexCNS-ScubaMask-947.utoc",
+      "bytes": 4127,
+      "sha256": "6f7fae1dedd446426e571ecf823c0af92d642185ff77f9a1294ea27045f2f8e7"
+    },
+    {
+      "name": "CodexCNS-ScubaMask.dekcns.json",
+      "bytes": 7452,
+      "sha256": "a9aff1c4af9e8edff148fa17138f19809ec3d963d1de734a6f9d7e99001870a5"
+    }
+  ],
+  "checks": {
+    "both_named_cup_variants_and_reverse_switch": true,
+    "enlarged_cup_has_two_inlet_valves_beneath_visor": true,
+    "original_scuba_cup_has_no_inlet_valves": true,
+    "upper_exterior_valves_absent": true,
+    "side_filters_off_on_off_on_independent_of_cup": true,
+    "cup_toggle_hides_and_restores_cup_and_both_inlets_together": true,
+    "chin_valve_independent_off_and_on": true,
+    "hood_off_to_on_and_visible_with_hair_temporarily_hidden": true,
+    "visor_opacity_010_to_098_to_010": true,
+    "cup_opacity_020_to_098": true,
+    "cup_and_inlet_colors_follow_cup_control": true,
+    "cyan_visor_and_yellow_then_black_cup_independent": true,
+    "menu_reopen_and_full_restart_persistence": true,
+    "installed_payload_hashes_unchanged_after_test": true,
+    "original_cns_save_restored_after_game_exit": true
+  },
+  "restart_readback": {
+    "variant": "Large oral-nasal cup",
+    "inner_nasal_cup": "On",
+    "valve": "On",
+    "hood": "On",
+    "side_filters": "On",
+    "visor_opacity": 0.1,
+    "cup_opacity": 0.98,
+    "glass_color": "cyan",
+    "inner_cup_color": "black",
+    "matches_before_restart": true
+  },
+  "observations": [
+    "Two small round inlet flap assemblies are mounted on the enlarged inner cup, behind the visor. The upper exterior valve pair has been removed.",
+    "Cup Off removes the enlarged cup and both inlet assemblies while the optional filters remain; Filters Off leaves the cup and inlets visible.",
+    "The original narrow Scuba cup is preserved as a separate named variant. Hardware, tint and opacity choices remain when switching variants.",
+    "Valve Off removes the raised external chin assembly; the existing visor valve port remains.",
+    "Hair and hairpin were temporarily hidden through CNS for hood inspection. The mod contains no hair assets or automatic hair-hiding behavior.",
+    "The original CNS save was backed up and restored byte-for-byte after testing. Normal game save writes were retained; the game remains closed.",
+    "Final source privacy sanitation changed only unused serialized metadata; source geometry equivalence and export/cooked audits were repeated. The installed binaries used for live testing are unchanged."
+  ],
+  "limitations": [
+    "Camp/idle visual and controls checks only; no exhaustive combat, facial-animation, extreme-neck-motion or alternate-head validation.",
+    "The hood shares the rigid glasses Root attachment; its cuff does not deform with the neck. Hair intersections remain outside scope.",
+    "The cup inlet discs are cosmetic closed geometry on the shell, not simulated airflow or functional ventilation.",
+    "All 32 combinations across both meshes passed static section checks. Live tests sampled independent controls and combined states, not an exhaustive 32-state screenshot matrix."
+  ],
+  "screenshots": [
+    {
+      "file": "media/runtime-1.2.0/01-scuba-cup-filters-off.jpg",
+      "sha256": "0cfa480c931adb4bad93bd4d6bd40d8bbda2959cd451121c083d67eddc5389c8"
+    },
+    {
+      "file": "media/runtime-1.2.0/02-large-cup-inlets-filters-off.jpg",
+      "sha256": "e8cc2c0b50a563468f56e3714129a38d5790a54a78f28e5e83b320e827d1b358"
+    },
+    {
+      "file": "media/runtime-1.2.0/03-large-cup-filters-on.jpg",
+      "sha256": "f9fbe56a8db0f5e145649ac3828020573ede3fe5c3d23b13b21d3813f02d9906"
+    },
+    {
+      "file": "media/runtime-1.2.0/04-cup-and-inlets-off-filters-on.jpg",
+      "sha256": "12df30fc8b2a36197e260b20a7216f8515c4451d155efdb1425261cc8705c9e2"
+    },
+    {
+      "file": "media/runtime-1.2.0/05-chin-valve-and-cup-off.jpg",
+      "sha256": "b41e3eb39f656cf94d402d292f65546586e1711441555a14bf94a2458269784f"
+    },
+    {
+      "file": "media/runtime-1.2.0/06-independent-cup-visor-colors.jpg",
+      "sha256": "8291a48007bf647cd373e4fcf6bc58fe07d9153a5861969844363ce11f8d2534"
+    },
+    {
+      "file": "media/runtime-1.2.0/07-visor-opacity-high.jpg",
+      "sha256": "d178a3f91e46b91e99bc1cd78ea2f032190f0c88a2d3439628d9364fcc308607"
+    },
+    {
+      "file": "media/runtime-1.2.0/08-original-cup-filters-hood.jpg",
+      "sha256": "2308fb8f78d3bb1b8624a4db7e5e9c69d147f8f23a05d3f49c26221a4b50fa08"
+    },
+    {
+      "file": "media/runtime-1.2.0/09-filters-off-inlets-retained.jpg",
+      "sha256": "3c5ee0604df9bca8702d12e772e53a13b9608a38fb9db605ff171faa9b0c84b0"
+    },
+    {
+      "file": "media/runtime-1.2.0/10-gas-mask-options.jpg",
+      "sha256": "609fd43291bce79d195528c9d5c256570c648b56c8edfe8b45580fd599582321"
+    },
+    {
+      "file": "media/runtime-1.2.0/11-restart-variant.jpg",
+      "sha256": "8da4a2619516398db554604361d4f6b5e42225abc59c053a05fdaaff2e19f130"
+    },
+    {
+      "file": "media/runtime-1.2.0/12-restart-settings.jpg",
+      "sha256": "1d116784bfb327495226c96998bf0e7fc57a57ac52f5fd62a38dfc07cfdec5bd"
+    }
+  ]
+}

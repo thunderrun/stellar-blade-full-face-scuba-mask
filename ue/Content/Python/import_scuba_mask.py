@@ -176,57 +176,10 @@ def make_label(name, assets, chunk_id, priority):
     return label
 
 
-def main():
-    config = json.loads(MANIFEST.read_text(encoding="utf-8-sig"))
-    engine = unreal.SystemLibrary.get_engine_version()
-    require(engine.startswith(config["expected_engine"] + "."),
-            "Expected stock UE4.26.x; actual engine: " + engine)
-    actual_project = unreal.Paths.convert_relative_path_to_full(unreal.Paths.project_dir())
-    require(Path(actual_project).resolve() == PROJECT,
-            "Run this script only with its isolated SB.uproject")
-    fbx = (MANIFEST.parent / config["fbx"]).resolve()
-    require(fbx.is_file(), "Fitted FBX not found: " + str(fbx))
-    mesh_package = config["mesh_package"]
-    require(mesh_package.startswith(ASSET_ROOT + "/Models/"), "Mesh must remain in custom mod namespace")
+def import_mesh(config, mesh_spec, mesh_report):
+    fbx = Path(mesh_report["fbx"])
+    mesh_package = mesh_spec["mesh_package"]
     skeleton_path = config["original_skeleton"]
-    expected_skeleton = "/Game/Art/Character/PC/00_ACC/ACC_GLA_03/ACC_GLA_03M_Skeleton.ACC_GLA_03M_Skeleton"
-    require(skeleton_path == expected_skeleton, "Unexpected original glasses skeleton path")
-    require(config["expected_bones"] == ["Root"], "This build targets the rigid vanilla glasses Root rig")
-    require(0 < config["chunk_id"] < 2147483647, "Invalid custom chunk ID")
-    materials = config["materials"]
-    expected_material_count = config["expected_material_count"]
-    require(len(materials) == expected_material_count
-            and len({s["source_name"] for s in materials}) == expected_material_count,
-            "Material slots differ from the revision's declared count")
-    require(config.get("material_mode") == "game_material_instances",
-            "Stellar Blade requires game-compatible MI children; custom UMaterial shaders are not supported here")
-    reference_path = (MANIFEST.parent / config["material_reference"]).resolve()
-    reference = json.loads(reference_path.read_text(encoding="utf-8-sig"))
-    for key, parent_spec in config["material_parents"].items():
-        require(parent_spec["path"] == reference[key]["asset"], "Unverified parent reference")
-        require(not reference[key]["bHasStaticPermutationResource"]
-                and not reference[key]["static_overrides"], "Choose a parent without a static override")
-    source_manifest = (MANIFEST.parent / config["source_manifest"]).resolve()
-    source = json.loads(source_manifest.read_text(encoding="utf-8-sig"))
-    require(source["material_slots"] == [m["source_name"] for m in materials],
-            "Final Blender export manifest material slots differ from importer manifest")
-    require(source["skeleton_path"] == skeleton_path and source["bone"] == "Root"
-            and source["units"] == "centimetres", "Final Blender export rig/units differ")
-    # Both manifests use portable relative FBX paths.
-    require(source["mesh_name"] == mesh_package.rsplit("/", 1)[1]
-            and Path(source["fbx_path"]).name == fbx.name, "Final Blender export filename differs")
-    REPORT.update(engine=engine, fbx=str(fbx), fbx_sha256=hashlib.sha256(fbx.read_bytes()).hexdigest(),
-                  manifest_sha256=hashlib.sha256(MANIFEST.read_bytes()).hexdigest(),
-                  source_manifest=str(source_manifest),
-                  source_manifest_sha256=hashlib.sha256(source_manifest.read_bytes()).hexdigest(),
-                  material_reference=str(reference_path),
-                  material_reference_sha256=hashlib.sha256(reference_path.read_bytes()).hexdigest(),
-                  material_mode=config["material_mode"],
-                  chunk_id=config["chunk_id"], expected_bones=config["expected_bones"])
-
-    # Python commandlets do not wait for the editor's usual background asset scan.
-    unreal.AssetRegistryHelpers.get_asset_registry().scan_paths_synchronous(
-        ["/Game", "/Engine/EngineMaterials", "/Engine/EngineResources"], True)
     existing_skeleton = LIB.load_asset(skeleton_path) if LIB.does_asset_exist(skeleton_path) else None
     if existing_skeleton:
         require(isinstance(existing_skeleton, unreal.Skeleton), "Dummy skeleton path is not a Skeleton")
@@ -243,8 +196,8 @@ def main():
         shutil.copy2(str(package_file), str(backup / package_file.name))
         require(LIB.delete_loaded_asset(old_mesh), "Could not replace generated skeletal mesh")
         require(not LIB.does_asset_exist(mesh_package), "Old generated skeletal mesh still exists")
-        REPORT["previous_generated_mesh_backup"] = str(backup / package_file.name)
-    REPORT["mesh_import_mode"] = "fresh generated mesh; original-path dummy skeleton retained"
+        mesh_report["previous_generated_mesh_backup"] = str(backup / package_file.name)
+    mesh_report["mesh_import_mode"] = "fresh generated mesh; original-path dummy skeleton retained"
     options = unreal.FbxImportUI()
     settings = {
         "automated_import_should_detect_type": False, "import_mesh": True,
@@ -266,8 +219,8 @@ def main():
     }
     for name, value in import_settings.items():
         set_prop(skeletal, name, value)
-    REPORT["import_settings"] = {name: str(value) for name, value in import_settings.items()}
-    REPORT["fbx_contract"] = "One weighted Root bone, no leaf bones, no armature wrapper bone, fitted vanilla glasses local coordinates"
+    mesh_report["import_settings"] = {name: str(value) for name, value in import_settings.items()}
+    mesh_report["fbx_contract"] = "One weighted Root bone, no leaf bones, no armature wrapper bone, fitted vanilla glasses local coordinates"
     task = unreal.AssetImportTask()
     for name, value in {
         "filename": str(fbx), "destination_path": mesh_package.rsplit("/", 1)[0],
@@ -277,7 +230,7 @@ def main():
         set_prop(task, name, value)
     TOOLS.import_asset_tasks([task])
     imported_paths = list(task.get_editor_property("imported_object_paths"))
-    REPORT["imported_paths"] = imported_paths
+    mesh_report["imported_paths"] = imported_paths
     mesh = LIB.load_asset(mesh_package)
     require(isinstance(mesh, unreal.SkeletalMesh), "No skeletal mesh at expected output path")
     require(sum(isinstance(LIB.load_asset(p), unreal.SkeletalMesh) for p in imported_paths) == 1,
@@ -288,8 +241,8 @@ def main():
     bones = [str(probe.get_bone_name(i)) for i in range(probe.get_num_bones())]
     require(bones == config["expected_bones"], "Imported FBX skeleton differs: " + repr(bones))
     root_position = probe.get_ref_pose_position(0)
-    REPORT["imported_bones"] = bones
-    REPORT["root_reference_position_cm"] = [root_position.x, root_position.y, root_position.z]
+    mesh_report["imported_bones"] = bones
+    mesh_report["root_reference_position_cm"] = [root_position.x, root_position.y, root_position.z]
     skeleton = mesh.get_editor_property("skeleton")
     require(isinstance(skeleton, unreal.Skeleton), "Imported mesh has no skeleton")
     old_skeleton = package_of(skeleton)
@@ -303,12 +256,12 @@ def main():
     save(skeleton)
     save(mesh)
 
-    specs = {m["source_name"]: m for m in materials}
-    parents = {}
-    for key, parent_spec in config["material_parents"].items():
-        parent_materials = [spec for spec in materials if spec["parent_key"] == key]
-        parents[key] = make_dummy_parent(parent_spec, reference[key], parent_materials)
-    built = {name: make_material_instance(spec, parents[spec["parent_key"]]) for name, spec in specs.items()}
+    mesh_report.update(mesh=path_of(mesh), skeleton=path_of(skeleton),
+                       old_dummy_skeleton_package=old_skeleton)
+    return mesh, skeleton
+
+
+def bind_materials(mesh, materials, specs, parents, built):
     slots = list(mesh.get_editor_property("materials"))
     require(len(slots) == len(materials), "Imported material-slot count differs from manifest")
     imported_order = [str(slot.get_editor_property("imported_material_slot_name")) for slot in slots]
@@ -331,26 +284,124 @@ def main():
     set_prop(mesh, "materials", slots)
     save(mesh)
 
-    # A higher-priority explicit label isolates the dummy skeleton in chunk 0.
-    # Only the custom chunk is a deliverable; never ship chunk 0 or global.utoc.
+    return slot_report
+
+
+def main():
+    config = json.loads(MANIFEST.read_text(encoding="utf-8-sig"))
+    engine = unreal.SystemLibrary.get_engine_version()
+    require(engine.startswith(config["expected_engine"] + "."),
+            "Expected stock UE4.26.x; actual engine: " + engine)
+    actual_project = unreal.Paths.convert_relative_path_to_full(unreal.Paths.project_dir())
+    require(Path(actual_project).resolve() == PROJECT,
+            "Run this script only with its isolated SB.uproject")
+    skeleton_path = config["original_skeleton"]
+    require(skeleton_path == "/Game/Art/Character/PC/00_ACC/ACC_GLA_03/ACC_GLA_03M_Skeleton.ACC_GLA_03M_Skeleton",
+            "Unexpected original glasses skeleton path")
+    require(config["expected_bones"] == ["Root"], "This build targets the rigid vanilla glasses Root rig")
+    require(0 < config["chunk_id"] < 2147483647, "Invalid custom chunk ID")
+    materials = config["materials"]
+    expected_material_count = config["expected_material_count"]
+    require(len(materials) == expected_material_count
+            and len({m["source_name"] for m in materials}) == expected_material_count
+            and len({m["asset_name"] for m in materials}) == expected_material_count,
+            "Material slots or unique assets differ from the declared count")
+    require(config.get("material_mode") == "game_material_instances",
+            "Stellar Blade requires game-compatible MI children")
+    reference_path = (MANIFEST.parent / config["material_reference"]).resolve()
+    reference = json.loads(reference_path.read_text(encoding="utf-8-sig"))
+    for key, parent_spec in config["material_parents"].items():
+        require(parent_spec["path"] == reference[key]["asset"], "Unverified parent reference")
+        require(not reference[key]["bHasStaticPermutationResource"]
+                and not reference[key]["static_overrides"], "Choose a parent without a static override")
+
+    mesh_specs = config.get("meshes")
+    if mesh_specs is None:
+        mesh_specs = [{key: config[key] for key in ("fbx", "source_manifest", "mesh_package")}]
+    require(isinstance(mesh_specs, list) and mesh_specs, "No mesh variants declared")
+    for key in ("fbx", "source_manifest", "mesh_package"):
+        if key in config:
+            require(config[key] == mesh_specs[0][key], "Legacy first-mesh alias differs: " + key)
+    require(len({m["mesh_package"] for m in mesh_specs}) == len(mesh_specs),
+            "Duplicate mesh package in manifest")
+    require(len({m["fbx"] for m in mesh_specs}) == len(mesh_specs),
+            "Duplicate FBX in manifest")
+    mesh_reports = []
+    for mesh_spec in mesh_specs:
+        fbx = (MANIFEST.parent / mesh_spec["fbx"]).resolve()
+        source_manifest = (MANIFEST.parent / mesh_spec["source_manifest"]).resolve()
+        require(fbx.is_file() and source_manifest.is_file(), "Missing mesh export or source manifest")
+        mesh_package = mesh_spec["mesh_package"]
+        require(mesh_package.startswith(ASSET_ROOT + "/Models/")
+                and "." not in mesh_package and ".." not in mesh_package,
+                "Mesh must remain in custom mod namespace")
+        source = json.loads(source_manifest.read_text(encoding="utf-8-sig"))
+        require(source["material_slots"] == [m["source_name"] for m in materials],
+                "Final Blender material slots differ from importer manifest")
+        require(source["skeleton_path"] == skeleton_path and source["bone"] == "Root"
+                and source["units"] == "centimetres", "Final Blender export rig/units differ")
+        require(source["mesh_name"] == mesh_package.rsplit("/", 1)[1]
+                and Path(source["fbx_path"]).name == fbx.name, "Final Blender export filename differs")
+        fbx_sha256 = hashlib.sha256(fbx.read_bytes()).hexdigest()
+        require(source.get("fbx_sha256") == fbx_sha256, "Source manifest does not bind the current FBX")
+        require(sum(source["material_triangle_counts"].values()) == source["triangle_count"]
+                and set(source["material_triangle_counts"]) == set(source["material_slots"])
+                and all(n > 0 for n in source["material_triangle_counts"].values()),
+                "Source section triangle counts are invalid")
+        mesh_reports.append({
+            "mesh_package": mesh_package, "fbx": str(fbx), "fbx_sha256": fbx_sha256,
+            "source_manifest": str(source_manifest),
+            "source_manifest_sha256": hashlib.sha256(source_manifest.read_bytes()).hexdigest(),
+            "expected_triangles": source["triangle_count"],
+            "expected_material_triangle_counts": source["material_triangle_counts"],
+        })
+    REPORT.update(engine=engine, manifest_sha256=hashlib.sha256(MANIFEST.read_bytes()).hexdigest(),
+                  material_reference=str(reference_path),
+                  material_reference_sha256=hashlib.sha256(reference_path.read_bytes()).hexdigest(),
+                  material_mode=config["material_mode"], chunk_id=config["chunk_id"],
+                  expected_bones=config["expected_bones"], meshes=mesh_reports)
+
+    # The commandlet must see both imports before one shared label is finalized.
+    unreal.AssetRegistryHelpers.get_asset_registry().scan_paths_synchronous(
+        ["/Game", "/Engine/EngineMaterials", "/Engine/EngineResources"], True)
+    meshes = []
+    for mesh_spec, mesh_report in zip(mesh_specs, mesh_reports):
+        mesh, skeleton = import_mesh(config, mesh_spec, mesh_report)
+        meshes.append(mesh)
+
+    specs = {m["source_name"]: m for m in materials}
+    parents = {}
+    for key, parent_spec in config["material_parents"].items():
+        parents[key] = make_dummy_parent(parent_spec, reference[key],
+                                         [m for m in materials if m["parent_key"] == key])
+    built = {name: make_material_instance(spec, parents[spec["parent_key"]])
+             for name, spec in specs.items()}
+    for mesh, mesh_report in zip(meshes, mesh_reports):
+        mesh_report["material_slots"] = bind_materials(mesh, materials, specs, parents, built)
+
+    # Keep original-path placeholders in chunk 0, outside the deliverable.
     excluded_assets = [skeleton] + list(parents.values())
     for texture_path in sorted({p for spec in materials for p in spec["texture_parameters"].values()}):
         excluded_assets.append(material_texture(texture_path))
     dummy_label = make_label("PAL_OriginalAssets_Chunk0", excluded_assets, 0, 100)
-    assets = [mesh] + [built[spec["source_name"]] for spec in materials]
-    label = make_label("PAL_CodexScubaMask", assets, config["chunk_id"], 1)
+    assets = meshes + [built[spec["source_name"]] for spec in materials]
+    require(len(assets) == len(meshes) + expected_material_count
+            and len({package_of(a) for a in assets}) == len(assets),
+            "Custom asset inventory is not unique")
     require(all(package_of(a).startswith(ASSET_ROOT + "/") for a in assets),
             "Custom label contains an original game asset")
+    label = make_label("PAL_CodexScubaMask", assets, config["chunk_id"], 1)
+    # First-mesh aliases keep existing single-mesh tooling readable.
+    REPORT.update(mesh_reports[0])
     REPORT.update(
-        success=True, mesh=path_of(mesh), skeleton=path_of(skeleton),
-        old_dummy_skeleton_package=old_skeleton, material_slots=slot_report,
+        success=True, mesh_count=len(meshes), expected_custom_package_count=len(assets),
         explicit_custom_assets=[path_of(a) for a in assets],
         excluded_original_assets=[path_of(a) for a in excluded_assets],
         custom_label=path_of(label), dummy_label=path_of(dummy_label),
-        bone_validation="Imported mesh checked: Root only. Confirm cooked reference quaternion/bounds by re-export before release.",
-        archive_validation="Required: mesh plus {} MaterialInstanceConstants only; no UMaterial/shader graphs, static overrides, dummy parents, dummy textures, original skeleton or other game assets.".format(expected_material_count),
+        bone_validation="Every imported mesh checked: Root only. Confirm cooked reference quaternion/bounds by re-export before release.",
+        archive_validation="Required: {} meshes plus {} MaterialInstanceConstants only; no UMaterial/shader graphs, static overrides, dummy parents, textures, original skeleton or other game assets.".format(len(meshes), expected_material_count),
     )
-    unreal.log("SCUBA_IMPORT_SUCCESS " + path_of(mesh))
+    unreal.log("SCUBA_IMPORT_SUCCESS " + ", ".join(path_of(mesh) for mesh in meshes))
 
 
 try:

@@ -1,0 +1,151 @@
+{
+  "passed": true,
+  "revision": 16,
+  "version": "1.2.0",
+  "blender_version": "5.2.1 LTS",
+  "source": "full_face_mask.blend",
+  "fbx": "SK_CodexGasMask.fbx",
+  "glb": "SK_CodexGasMask.glb",
+  "mesh_name": "SK_CodexGasMask",
+  "source_sha256": "3966bccdb5ea8499cf97a64d30300219de55a4d0a3620bad7d4e4c1b2d5dc35e",
+  "fbx_sha256": "054f5d32fc40fb10d6612509b9db1996273a0274e2ea6a1ffefcda4f745449dc",
+  "glb_sha256": "d18676d281100d1e00bed6e7c0890992305c57eef3794bac2210e7c3c6e6a56b",
+  "source_mesh_objects": 36,
+  "source_images": 0,
+  "source_linked_libraries": 0,
+  "source_text_blocks": 0,
+  "export_meshes": 1,
+  "bones": [
+    "Root"
+  ],
+  "source_nonempty_weak_library_references": 0,
+  "source_raw_private_path_match_count": 0,
+  "all_vertices_rigid_weight_Root": true,
+  "triangles": 113702,
+  "source_vertices": 57225,
+  "fbx_imported_vertices": 57225,
+  "material_triangle_counts": {
+    "M_Scuba_Silicone": 8080,
+    "M_Scuba_Polymer": 2172,
+    "M_Scuba_Teal": 882,
+    "M_Scuba_TealAccent": 2204,
+    "M_Scuba_Steel": 992,
+    "M_Scuba_Vent": 2204,
+    "M_Scuba_RubberDetail": 1560,
+    "M_Scuba_NasalCup": 23348,
+    "M_Scuba_Visor": 11450,
+    "M_Scuba_ValveAccent": 1200,
+    "M_Scuba_ValveVent": 702,
+    "M_Scuba_LatexHood": 49404,
+    "M_GasMask_FilterBody": 3904,
+    "M_GasMask_FilterAccent": 5600
+  },
+  "glb_alpha": {
+    "M_Scuba_Silicone": 1,
+    "M_Scuba_Polymer": 1,
+    "M_Scuba_Teal": 1,
+    "M_Scuba_TealAccent": 1,
+    "M_Scuba_Steel": 1,
+    "M_Scuba_Vent": 1,
+    "M_Scuba_RubberDetail": 1,
+    "M_Scuba_NasalCup": 0.20000000298023224,
+    "M_Scuba_Visor": 0.10000000149011612,
+    "M_Scuba_ValveAccent": 1,
+    "M_Scuba_ValveVent": 1,
+    "M_Scuba_LatexHood": 1,
+    "M_GasMask_FilterBody": 1,
+    "M_GasMask_FilterAccent": 1
+  },
+  "cup_toggle": {
+    "cup_material_index": 7,
+    "always_visible_visor_material_index": 8,
+    "cup_triangles": 23348,
+    "always_visible_visor_triangles": 11450,
+    "cup_off_visible_triangles": 31446,
+    "visibility_scope": "Hood and optional side components Off (default)",
+    "outer_visor_connected_components": 1,
+    "outer_visor_boundary_edges": 0,
+    "outer_visor_nonmanifold_edges": 0,
+    "cns_default_cup_visible": true
+  },
+  "valve_toggle": {
+    "material_indices": [
+      1,
+      4,
+      9,
+      10
+    ],
+    "valve_triangles": 5066,
+    "valve_off_visible_triangles": 49728,
+    "cup_and_valve_off_visible_triangles": 26380,
+    "visibility_scope": "Hood and optional side components Off (default)",
+    "frame_trim_and_gasket_remain_visible": true,
+    "existing_cup_and_visor_indices_preserved": true,
+    "cns_visible_controller": "Valve",
+    "cns_default_valve_visible": true
+  },
+  "hood_toggle": {
+    "material_index": 11,
+    "hood_triangles": 49404,
+    "cns_visible_controller": "Hood",
+    "cns_default_hood_visible": false,
+    "hood_off_visible_triangles": 54794,
+    "all_sections_visible_triangles": 113702,
+    "toggle_combination_scope": "Optional side components Off",
+    "hood_boundary_edges": 0,
+    "hood_nonmanifold_edges": 0,
+    "toggle_combination_visible_triangles": {
+      "hood_0_cup_0_valve_0": 26380,
+      "hood_0_cup_0_valve_1": 31446,
+      "hood_0_cup_1_valve_0": 49728,
+      "hood_0_cup_1_valve_1": 54794,
+      "hood_1_cup_0_valve_0": 75784,
+      "hood_1_cup_0_valve_1": 80850,
+      "hood_1_cup_1_valve_0": 99132,
+      "hood_1_cup_1_valve_1": 104198
+    }
+  },
+  "side_components": {
+    "filter_material_indices": [
+      12,
+      13
+    ],
+    "side_valve_material_indices": [],
+    "filter_triangles": 9504,
+    "side_valve_triangles": 0,
+    "cns_default_side_filters_visible": false,
+    "side_valve_control_present": false,
+    "upper_exterior_side_valves_absent": true
+  },
+  "maximum_fbx_section_vertex_error_mm": {
+    "M_Scuba_Silicone": 2.384185791015625e-05,
+    "M_Scuba_Teal": 2.384185791015625e-05,
+    "M_Scuba_TealAccent": 2.384185791015625e-05,
+    "M_Scuba_Vent": 2.3481507014366798e-05,
+    "M_Scuba_RubberDetail": 2.1324806311895372e-05,
+    "M_Scuba_Polymer": 3.3717478231665154e-06,
+    "M_Scuba_Steel": 2.6656007889869215e-06,
+    "M_Scuba_ValveVent": 2.6656007889869215e-06,
+    "M_Scuba_ValveAccent": 2.2268795873969793e-06,
+    "M_Scuba_Visor": 2.3481507014366798e-05,
+    "M_Scuba_LatexHood": 2.9802322387695312e-05,
+    "M_GasMask_FilterBody": 1.719260808386025e-05,
+    "M_GasMask_FilterAccent": 1.719260808386025e-05,
+    "M_Scuba_NasalCup": 1.385807991027832e-05
+  },
+  "maximum_fbx_vertex_error_mm": 2.9802322387695312e-05,
+  "Root_rest_rotation_error_degrees": 0.0,
+  "Root_rest_position_error_mm": 0.0,
+  "bounding_box_cm": [
+    [
+      -12.15999984741211,
+      -9.059760093688965,
+      -4.215742111206055
+    ],
+    [
+      7.550682544708252,
+      9.059762001037598,
+      18.27873420715332
+    ]
+  ]
+}

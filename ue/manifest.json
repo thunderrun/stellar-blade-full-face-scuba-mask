@@ -393,6 +393,66 @@
         "Basecolor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
         "BakedNormal": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
       }
+    },
+    {
+      "source_name": "M_GasMask_FilterBody",
+      "asset_name": "MI_13_FilterBody",
+      "base_color": [
+        0.018,
+        0.023,
+        0.028
+      ],
+      "metallic": 0.12,
+      "roughness": 0.34,
+      "parent_key": "opaque",
+      "scalar_parameters": {
+        "Metallic": 0.12,
+        "GlobalRoughness": 0.34,
+        "Baked Normal intensity": 0.0,
+        "Brightness": 1.0
+      },
+      "vector_parameters": {
+        "Base Color Tint": [
+          0.018,
+          0.023,
+          0.028,
+          1.0
+        ]
+      },
+      "texture_parameters": {
+        "Basecolor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
+        "BakedNormal": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
+      }
+    },
+    {
+      "source_name": "M_GasMask_FilterAccent",
+      "asset_name": "MI_14_FilterAccent",
+      "base_color": [
+        0.11,
+        0.14,
+        0.15
+      ],
+      "metallic": 0.65,
+      "roughness": 0.3,
+      "parent_key": "opaque",
+      "scalar_parameters": {
+        "Metallic": 0.65,
+        "GlobalRoughness": 0.3,
+        "Baked Normal intensity": 0.0,
+        "Brightness": 1.0
+      },
+      "vector_parameters": {
+        "Base Color Tint": [
+          0.11,
+          0.14,
+          0.15,
+          1.0
+        ]
+      },
+      "texture_parameters": {
+        "Basecolor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
+        "BakedNormal": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
+      }
     }
   ],
   "material_mode": "game_material_instances",
@@ -406,24 +466,26 @@
       "translucent": true
     }
   },
-  "design_revision": 14,
-  "expected_material_count": 12,
+  "design_revision": 16,
+  "expected_material_count": 14,
   "translucent_section_order": [
     "M_Scuba_NasalCup",
     "M_Scuba_Visor"
   ],
-  "revision_change": "Version 1.1.9: append a fitted glossy latex hood in section 11 for the default-Off CNS Hood toggle. Original mask sections 0-10, all prior materials, controls and Root rig are exact.",
+  "revision_change": "Version 1.2.0: optional paired side filters and two named cup variants; the larger gas-mask cup includes paired inlet valves beneath the visor. Upper exterior valves removed. Original defaults and controls retained.",
   "removed_empty_slots": [
     "M_Scuba_InnerValves"
   ],
   "variant": "integrated-valve-oronasal-cup",
-  "variant_revision": 3,
-  "base_design_revision": 13,
-  "version": "1.1.9",
+  "variant_revision": 5,
+  "base_design_revision": 14,
+  "version": "1.2.0",
   "appended_opaque_section_order": [
     "M_Scuba_ValveAccent",
     "M_Scuba_ValveVent",
-    "M_Scuba_LatexHood"
+    "M_Scuba_LatexHood",
+    "M_GasMask_FilterBody",
+    "M_GasMask_FilterAccent"
   ],
   "valve_toggle_material_indices": [
     1,
@@ -431,5 +493,21 @@
     9,
     10
   ],
-  "hood_toggle_material_index": 11
+  "hood_toggle_material_index": 11,
+  "side_filter_material_indices": [
+    12,
+    13
+  ],
+  "meshes": [
+    {
+      "fbx": "../assets/SK_CodexScubaMask.fbx",
+      "source_manifest": "../assets/asset_manifest.json",
+      "mesh_package": "/Game/OutfitMods/CodexScubaMask/Models/SK_CodexScubaMask"
+    },
+    {
+      "fbx": "../assets/SK_CodexGasMask.fbx",
+      "source_manifest": "../assets/gasmask_variant_manifest.json",
+      "mesh_package": "/Game/OutfitMods/CodexScubaMask/Models/SK_CodexGasMask"
+    }
+  ]
 }
