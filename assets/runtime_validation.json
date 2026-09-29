@@ -1,0 +1,94 @@
+{
+  "version": "1.1.9",
+  "geometry_revision": 14,
+  "tested_at_utc": "2026-09-29T05:23:41.592961+00:00",
+  "game_version_displayed": "2.1",
+  "cns_version_displayed": "2.2",
+  "method": "Direct observation and interaction in the running game, followed by a complete process exit, relaunch, Continue, and CNS configuration readback.",
+  "scope": "Existing camp save, CNS close-up and rear cameras, normal gameplay idle; no broad combat or extreme-pose sweep.",
+  "passed": true,
+  "source_sha256": "1646e0ae27fd527ac19defba38d9a010408925ebb2c02862e71aad334c30cad3",
+  "fbx_sha256": "6a3f9221a82ea3ee9384f1672b08251208e8d6f1ba1a966121ea35538e863dd7",
+  "installed_payload": [
+    {
+      "name": "CodexCNS-ScubaMask-947.pak",
+      "bytes": 339,
+      "sha256": "5d0cee22e6903f8582abbec84d9b3e822749c23ad9b321719afc9a498d424ac3"
+    },
+    {
+      "name": "CodexCNS-ScubaMask-947.ucas",
+      "bytes": 5021072,
+      "sha256": "449000c60bbf72b59bf8dae6455e5492fd15dcede4e03bf8a2e700a9f542f7c0"
+    },
+    {
+      "name": "CodexCNS-ScubaMask-947.utoc",
+      "bytes": 2665,
+      "sha256": "ce5e7016657d4c7005b8716b02253046aee35a69fff53deef580e1425e73bd8b"
+    },
+    {
+      "name": "CodexCNS-ScubaMask.dekcns.json",
+      "bytes": 6832,
+      "sha256": "3753d9c42c1fbf2fe6b445387b910f14a1596a8c0e8341c5243226990d30b473"
+    }
+  ],
+  "checks": {
+    "mask_frame_valve_visor_and_cup_render": true,
+    "hood_on_off": true,
+    "valve_on_off_independent_of_hood_and_cup": true,
+    "cup_on_off_independent_of_hood_and_valve": true,
+    "hood_on_with_valve_and_cup_off": true,
+    "visor_opacity_010_to_099_to_010": true,
+    "independent_cyan_visor_and_yellow_cup_presets": true,
+    "hood_crown_ears_sides_and_rear_coverage_visually_checked": true,
+    "menu_reopen_and_full_restart_persistence": true
+  },
+  "restart_readback": {
+    "hood": "On",
+    "valve": "Off",
+    "inner_nasal_cup": "Off",
+    "visor_opacity": 0.1,
+    "cup_opacity": 0.2,
+    "glass_color": "cyan",
+    "inner_cup_color": "black",
+    "matches_before_restart": true
+  },
+  "observations": [
+    "Hood has a smooth glossy black crown and covers the ears, sides and rear. The face opening follows the existing mask seal.",
+    "Valve Off removes the raised external assembly; the existing visor valve port remains visible. Cup and its molded collar are separately controlled.",
+    "Hair and hairpin were temporarily hidden through CNS for coverage inspection. No hair assets or automatic hair-hiding behavior are included in the mod.",
+    "The original CNS save was backed up before testing and restored byte-for-byte after the game closed. The game remains closed.",
+    "Game progress saves were not rolled back; normal game save writes during the test were retained."
+  ],
+  "limitations": [
+    "Limited camp/idle visual and controls test; no exhaustive combat, facial-animation, extreme-neck-motion or alternate-head validation.",
+    "The hood shares the rigid glasses Root attachment. Its short neck cuff does not deform with neck motion.",
+    "Hair intersections are outside scope; hair remains unchanged by the mod.",
+    "All eight toggle combinations passed static section checks; the live test sampled independent toggles and combined-off states, not an exhaustive eight-state screenshot matrix."
+  ],
+  "screenshots": [
+    {
+      "file": "media/runtime-1.1.9/01-hood-off-valve-on.png",
+      "sha256": "202596b8a72b0c2f758b9b5a3cd6c7fae81a1d5e76cabae20dd60412e4a0ba3b"
+    },
+    {
+      "file": "media/runtime-1.1.9/02-hood-on-valve-and-cup-off.png",
+      "sha256": "d2a3212efb2f8c1f3c2744bb9f73940010ca51c88b349375938e8891fbeba51c"
+    },
+    {
+      "file": "media/runtime-1.1.9/03-independent-colors.png",
+      "sha256": "8bdba04131fa22808a52fee203a7e70b20388b112535f9dd2ca9aac1058a6a32"
+    },
+    {
+      "file": "media/cns-hood-valve-in-game.png",
+      "sha256": "361976057d4ef02dd3a8b9596d93e3fabe34f039446db03060b9fc891087346e"
+    },
+    {
+      "file": "media/runtime-1.1.9/05-hood-coverage-rear.png",
+      "sha256": "a27488b30f41d80ec1635ef1c9861381e3e86bb6e92cfccd52ac9fbb4b49f2b6"
+    },
+    {
+      "file": "media/runtime-1.1.9/06-restart-persistence.png",
+      "sha256": "7e6c919692fe9699458c4676b9384111ed7f7fa529dcafa51b29e1e4d7f7a961"
+    }
+  ]
+}

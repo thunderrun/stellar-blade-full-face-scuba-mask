@@ -303,6 +303,96 @@
         "BaseColor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
         "Baked NormalMap": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
       }
+    },
+    {
+      "source_name": "M_Scuba_ValveAccent",
+      "asset_name": "MI_10_ValveAccent",
+      "base_color": [
+        0.028,
+        0.028,
+        0.028
+      ],
+      "metallic": 0.3,
+      "roughness": 0.28,
+      "parent_key": "opaque",
+      "scalar_parameters": {
+        "Metallic": 0.3,
+        "GlobalRoughness": 0.28,
+        "Baked Normal intensity": 0.0,
+        "Brightness": 1.0
+      },
+      "vector_parameters": {
+        "Base Color Tint": [
+          0.028,
+          0.028,
+          0.028,
+          1.0
+        ]
+      },
+      "texture_parameters": {
+        "Basecolor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
+        "BakedNormal": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
+      }
+    },
+    {
+      "source_name": "M_Scuba_ValveVent",
+      "asset_name": "MI_11_ValveVent",
+      "base_color": [
+        0.003,
+        0.003,
+        0.003
+      ],
+      "metallic": 0.0,
+      "roughness": 0.62,
+      "parent_key": "opaque",
+      "scalar_parameters": {
+        "Metallic": 0.0,
+        "GlobalRoughness": 0.62,
+        "Baked Normal intensity": 0.0,
+        "Brightness": 1.0
+      },
+      "vector_parameters": {
+        "Base Color Tint": [
+          0.003,
+          0.003,
+          0.003,
+          1.0
+        ]
+      },
+      "texture_parameters": {
+        "Basecolor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
+        "BakedNormal": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
+      }
+    },
+    {
+      "source_name": "M_Scuba_LatexHood",
+      "asset_name": "MI_12_LatexHood",
+      "base_color": [
+        0.006,
+        0.008,
+        0.01
+      ],
+      "metallic": 0.0,
+      "roughness": 0.2,
+      "parent_key": "opaque",
+      "scalar_parameters": {
+        "Metallic": 0.0,
+        "GlobalRoughness": 0.2,
+        "Baked Normal intensity": 0.0,
+        "Brightness": 1.0
+      },
+      "vector_parameters": {
+        "Base Color Tint": [
+          0.006,
+          0.008,
+          0.01,
+          1.0
+        ]
+      },
+      "texture_parameters": {
+        "Basecolor": "/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture",
+        "BakedNormal": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.Base_Flat_N"
+      }
     }
   ],
   "material_mode": "game_material_instances",
@@ -316,18 +406,30 @@
       "translucent": true
     }
   },
-  "design_revision": 12,
-  "expected_material_count": 9,
+  "design_revision": 14,
+  "expected_material_count": 12,
   "translucent_section_order": [
     "M_Scuba_NasalCup",
     "M_Scuba_Visor"
   ],
-  "revision_change": "Version 1.1.6: replace the exposed vertical pipe with a broad molded lower cup and direct short valve collar; preserve 39 under-chin seal points and opaque sections 0-6; enlarge only the concealed visor valve aperture; retain all CNS controls.",
+  "revision_change": "Version 1.1.9: append a fitted glossy latex hood in section 11 for the default-Off CNS Hood toggle. Original mask sections 0-10, all prior materials, controls and Root rig are exact.",
   "removed_empty_slots": [
     "M_Scuba_InnerValves"
   ],
   "variant": "integrated-valve-oronasal-cup",
-  "variant_revision": 1,
-  "base_design_revision": 11,
-  "version": "1.1.6"
+  "variant_revision": 3,
+  "base_design_revision": 13,
+  "version": "1.1.9",
+  "appended_opaque_section_order": [
+    "M_Scuba_ValveAccent",
+    "M_Scuba_ValveVent",
+    "M_Scuba_LatexHood"
+  ],
+  "valve_toggle_material_indices": [
+    1,
+    4,
+    9,
+    10
+  ],
+  "hood_toggle_material_index": 11
 }

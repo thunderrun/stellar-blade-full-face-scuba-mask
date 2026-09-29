@@ -99,5 +99,42 @@
     "preview_transmission": 1,
     "recommended_game_opacity": 0.1,
     "preview_alpha": 0.1
+  },
+  "M_Scuba_ValveAccent": {
+    "base_color_linear": [
+      0.035,
+      0.04,
+      0.043
+    ],
+    "metallic": 0.2,
+    "roughness": 0.27,
+    "preview_transmission": 0,
+    "recommended_game_opacity": 1
+  },
+  "M_Scuba_ValveVent": {
+    "base_color_linear": [
+      0.004,
+      0.005,
+      0.006
+    ],
+    "metallic": 0,
+    "roughness": 0.5,
+    "preview_transmission": 0,
+    "recommended_game_opacity": 1
+  },
+  "M_Scuba_LatexHood": {
+    "base_color_linear": [
+      0.006,
+      0.008,
+      0.01
+    ],
+    "metallic": 0.0,
+    "roughness": 0.2,
+    "preview_ior": 1.48,
+    "preview_coat_weight": 0.3,
+    "preview_coat_roughness": 0.13,
+    "preview_transmission": 0,
+    "recommended_game_opacity": 1,
+    "description": "Opaque glossy black latex. Native game material uses GlobalRoughness 0.20; preview coat approximates its finish."
   }
 }

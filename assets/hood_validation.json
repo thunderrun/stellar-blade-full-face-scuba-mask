@@ -1,0 +1,283 @@
+{
+  "passed": true,
+  "revision": 14,
+  "version": "1.1.9",
+  "source": "full_face_mask.blend",
+  "source_sha256": "1646e0ae27fd527ac19defba38d9a010408925ebb2c02862e71aad334c30cad3",
+  "reviewed_candidate_sha256": "432b621b1dd285ad0c431b29225979e0a9bd00690552824d1d7c294ae706c85e",
+  "baseline_source_sha256": "ca780e68e6f194e24358b9ae6a9f3d1458ce88044325071555c4091677f35e84",
+  "metadata_only_change_after_candidate_review": true,
+  "all_mesh_geometry_hashes_before_metadata_save": {
+    "01 | Slim hollow silicone face seal": "f265b0b13c3bc73b4670a6f06b28a0c83cd5859df4b4b954ccc78178c0136397",
+    "02 | Rear soft face-contact lip": "ae3534842c6f8c1cdcc1cb8a5ac51ba6fd05f14c43e3e0fe14a73f204a4af003",
+    "03 | Inner clear sealing bead": "d53b54dd3343cbeb607ebfde7407c0466758b19749f5ae38cba589c51ea7afe0",
+    "04 | Continuous glossy black oval frame": "688cbe59d17613518d862e45aabd5c81138e41dfc0e9e576af36bcb5e411efbb",
+    "05 | Narrow satin outer trim": "22c8fb64bb23781452175628db64f8acc950c83f80ea93f3c43db109b63164fe",
+    "06 | Shield retention gasket": "47bc5eb83b64d7c9faad9f5157797cb7227c400a73b2961d8df231e86d41422a",
+    "08 | Continuous outer visor with valve port": "69d6cd84aa551aa1dc092c385531d6827e1acbd697c967e7e71294447defb68e",
+    "09 | Side channel -1 0": "7a56ddeb534154fc43d9dd65ff9b416e6ae8a7ee63b5034b18367cf43d777092",
+    "09 | Side channel -1 1": "580da028c92430824f3b8b3fe8650ebfcf5026dd85bf4b0d4f1afa307247e2aa",
+    "09 | Side channel -1 2": "295f1324b2cd00ccb97e540d37eef656708e18d82cda8df4803b9e4a9ee88bef",
+    "09 | Side channel 1 0": "5f977140bdcb7481f1a5edd7f37c08316384da11b2a0e08fc6ddb4364f2efc8b",
+    "09 | Side channel 1 1": "7f1096e7b90b5b07fee2453efddec77b5b900cc8551c6e1591fac2879bb90a82",
+    "09 | Side channel 1 2": "88ea784317db8d7d537845dcd351aaa4345c6738df179e27f7743788e1e13a25",
+    "10 | Under-chin cup with directly molded valve collar": "9df25ff217d254662302fded939c998567d808480d99e8a9b2911d1f05b6f6a4",
+    "15 | Flush chin exhaust housing": "e6aa55c12f62039b65f7514b7952de7080db0c078af1eb5e41c8506f42659a26",
+    "16 | Chin exhaust satin rim": "aeca6610b3e8a492f84a33d8ab4745ce38bf3a60757bbe46c89f82f5c0db280d",
+    "17 | Chin exhaust recessed dark disc": "f87fd1de55a01c43914243229d05d64d2ebad3bc7ea64510fc55bfc477c8a58d",
+    "18 | Small centre purge button": "627a93ce2ae191ea3258296182b3f346188fcc25dce6c50b622d216595aa6a31",
+    "19 | Purge button hairline": "97eaf12f6b748c1603f03d2a2add66480f5cdf9929cc9e4c11be6ad7f2c72fdf",
+    "20 | Exhaust grille bridge 00": "8b6136cd10c36c38974add25fa5b1f5eba74632960e1f8e7388be4aa2e42d9cd",
+    "20 | Exhaust grille bridge 01": "e5e727807353a4e9907ceed9b6b75c36ede30bcf17723101fa0f3918342ad37f",
+    "20 | Exhaust grille bridge 02": "cdeee769a96f02c1b1e4a6fe2bba44169ad92818a06f370b08eba681253532e5",
+    "20 | Exhaust grille bridge 03": "82112180d5b1fee1876858ad53b9447db44144c527d01ef9ba8afc10050b6add",
+    "20 | Exhaust grille bridge 04": "8e98e2c1f1bc39a09817d032c1f039ae8983c751c78ab2c72d7a779db3d44a37",
+    "20 | Exhaust grille bridge 05": "4a50ff0c25e658d49f11bda69d1195c7d8df61c83fb283fd807e28cdf02de71b",
+    "20 | Exhaust grille bridge 06": "44fe54e42ecda941ffd89b026329ce7a894d1a3d060072f19dc7bf7caea0ce7a",
+    "20 | Exhaust grille bridge 07": "9eb6ff1f6c36e3701a89a2c29299086c29432b626ab3d92de858ef8c7d5a48d7",
+    "21 | Integrated chin valve mounting saddle": "1f0a02ab45cdc97cdf0afc69f4c957e719ece64aa87bf1f979e762c559c927df",
+    "22 | Silicone cheek transition -1": "9db8be4ee80bebca1251d7fd45a90101eca9a31f4bfe23cff7e4ae88859ed6b3",
+    "22 | Silicone cheek transition 1": "52dc6c17bb0e1549481d512100733bc12b688a2eb73ba3df59552a752e140cba",
+    "23 | Fitted glossy latex scuba hood": "2c2e535257fc0725c84e92fb8683bb9245e4670271e04b05602f177764417a7f",
+    "SK_CodexScubaMask": "22236c6f20b7955686c96468a33b35959b9c1b3e2c62f6d6a7a80e06b583cbda"
+  },
+  "all_mesh_geometry_hashes_after_metadata_save": {
+    "01 | Slim hollow silicone face seal": "f265b0b13c3bc73b4670a6f06b28a0c83cd5859df4b4b954ccc78178c0136397",
+    "02 | Rear soft face-contact lip": "ae3534842c6f8c1cdcc1cb8a5ac51ba6fd05f14c43e3e0fe14a73f204a4af003",
+    "03 | Inner clear sealing bead": "d53b54dd3343cbeb607ebfde7407c0466758b19749f5ae38cba589c51ea7afe0",
+    "04 | Continuous glossy black oval frame": "688cbe59d17613518d862e45aabd5c81138e41dfc0e9e576af36bcb5e411efbb",
+    "05 | Narrow satin outer trim": "22c8fb64bb23781452175628db64f8acc950c83f80ea93f3c43db109b63164fe",
+    "06 | Shield retention gasket": "47bc5eb83b64d7c9faad9f5157797cb7227c400a73b2961d8df231e86d41422a",
+    "08 | Continuous outer visor with valve port": "69d6cd84aa551aa1dc092c385531d6827e1acbd697c967e7e71294447defb68e",
+    "09 | Side channel -1 0": "7a56ddeb534154fc43d9dd65ff9b416e6ae8a7ee63b5034b18367cf43d777092",
+    "09 | Side channel -1 1": "580da028c92430824f3b8b3fe8650ebfcf5026dd85bf4b0d4f1afa307247e2aa",
+    "09 | Side channel -1 2": "295f1324b2cd00ccb97e540d37eef656708e18d82cda8df4803b9e4a9ee88bef",
+    "09 | Side channel 1 0": "5f977140bdcb7481f1a5edd7f37c08316384da11b2a0e08fc6ddb4364f2efc8b",
+    "09 | Side channel 1 1": "7f1096e7b90b5b07fee2453efddec77b5b900cc8551c6e1591fac2879bb90a82",
+    "09 | Side channel 1 2": "88ea784317db8d7d537845dcd351aaa4345c6738df179e27f7743788e1e13a25",
+    "10 | Under-chin cup with directly molded valve collar": "9df25ff217d254662302fded939c998567d808480d99e8a9b2911d1f05b6f6a4",
+    "15 | Flush chin exhaust housing": "e6aa55c12f62039b65f7514b7952de7080db0c078af1eb5e41c8506f42659a26",
+    "16 | Chin exhaust satin rim": "aeca6610b3e8a492f84a33d8ab4745ce38bf3a60757bbe46c89f82f5c0db280d",
+    "17 | Chin exhaust recessed dark disc": "f87fd1de55a01c43914243229d05d64d2ebad3bc7ea64510fc55bfc477c8a58d",
+    "18 | Small centre purge button": "627a93ce2ae191ea3258296182b3f346188fcc25dce6c50b622d216595aa6a31",
+    "19 | Purge button hairline": "97eaf12f6b748c1603f03d2a2add66480f5cdf9929cc9e4c11be6ad7f2c72fdf",
+    "20 | Exhaust grille bridge 00": "8b6136cd10c36c38974add25fa5b1f5eba74632960e1f8e7388be4aa2e42d9cd",
+    "20 | Exhaust grille bridge 01": "e5e727807353a4e9907ceed9b6b75c36ede30bcf17723101fa0f3918342ad37f",
+    "20 | Exhaust grille bridge 02": "cdeee769a96f02c1b1e4a6fe2bba44169ad92818a06f370b08eba681253532e5",
+    "20 | Exhaust grille bridge 03": "82112180d5b1fee1876858ad53b9447db44144c527d01ef9ba8afc10050b6add",
+    "20 | Exhaust grille bridge 04": "8e98e2c1f1bc39a09817d032c1f039ae8983c751c78ab2c72d7a779db3d44a37",
+    "20 | Exhaust grille bridge 05": "4a50ff0c25e658d49f11bda69d1195c7d8df61c83fb283fd807e28cdf02de71b",
+    "20 | Exhaust grille bridge 06": "44fe54e42ecda941ffd89b026329ce7a894d1a3d060072f19dc7bf7caea0ce7a",
+    "20 | Exhaust grille bridge 07": "9eb6ff1f6c36e3701a89a2c29299086c29432b626ab3d92de858ef8c7d5a48d7",
+    "21 | Integrated chin valve mounting saddle": "1f0a02ab45cdc97cdf0afc69f4c957e719ece64aa87bf1f979e762c559c927df",
+    "22 | Silicone cheek transition -1": "9db8be4ee80bebca1251d7fd45a90101eca9a31f4bfe23cff7e4ae88859ed6b3",
+    "22 | Silicone cheek transition 1": "52dc6c17bb0e1549481d512100733bc12b688a2eb73ba3df59552a752e140cba",
+    "23 | Fitted glossy latex scuba hood": "2c2e535257fc0725c84e92fb8683bb9245e4670271e04b05602f177764417a7f",
+    "SK_CodexScubaMask": "22236c6f20b7955686c96468a33b35959b9c1b3e2c62f6d6a7a80e06b583cbda"
+  },
+  "existing_sections_exact_including_corner_normals_uvs_weights": {
+    "0": true,
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true
+  },
+  "existing_materials_unchanged": true,
+  "rig_unchanged": true,
+  "object_world_transform_unchanged": true,
+  "section_summaries": {
+    "0": {
+      "triangles": 8080,
+      "corner_data_sha256": "3558da4883d4fdc76f3bccbe891bd69cf77b29c04c5db1e62d43d7f4e818bbcf"
+    },
+    "2": {
+      "triangles": 882,
+      "corner_data_sha256": "4da1cd9a9562aed01dfd8803c7f53a8fb34e795078e61d8390643c3465d8f3ca"
+    },
+    "3": {
+      "triangles": 2204,
+      "corner_data_sha256": "582afcd3e5e936151d54f90482c9e1bc1bd09a8f8d74e84a57fa420741a5a2dd"
+    },
+    "5": {
+      "triangles": 2204,
+      "corner_data_sha256": "85627aa76c050c668b9320841ef2ea8c4f0fe1172e215c100d8b8a3a911e22b7"
+    },
+    "6": {
+      "triangles": 1560,
+      "corner_data_sha256": "bebf77e27cca6fe297091d5fbea885cd865460984fe8348bfa792429c0ca877e"
+    },
+    "1": {
+      "triangles": 2172,
+      "corner_data_sha256": "b4cf33764fdb5f05ff80f61d3de9f79796f7758321ec1881f05ddd5edd5513e2"
+    },
+    "4": {
+      "triangles": 992,
+      "corner_data_sha256": "44b3cbb6299b5c2a061796debcc37b8b81900ea1b0270b2dc36a405b6960b6a2"
+    },
+    "10": {
+      "triangles": 702,
+      "corner_data_sha256": "b1414422692125bc72f5d1a67b3a3f36d10204362ffda57cbae732ad1c5c57f1"
+    },
+    "9": {
+      "triangles": 1200,
+      "corner_data_sha256": "20f2d0204e73759c832b27a32fe1f1e3d07e2d73c7b40b8d4a59643b473a4bcf"
+    },
+    "7": {
+      "triangles": 16948,
+      "corner_data_sha256": "22b0d5573e5f2215430b8246b41069a3a9fd1d1ca40c59a87b165702e4d219d7"
+    },
+    "8": {
+      "triangles": 11450,
+      "corner_data_sha256": "d5ecefed6e4140d8dc7cbf65357d3cfcd9dcfae85487b9fe8531f1c29376db6f"
+    },
+    "11": {
+      "triangles": 49404,
+      "corner_data_sha256": "6944e67251a88eafc680a837969249508c03af41fb75854aace4a4f52f24c286"
+    }
+  },
+  "hood_topology": {
+    "vertices": 24702,
+    "triangles": 49404,
+    "bounds_cm": [
+      [
+        -8.56346607208252,
+        7.550682544708252
+      ],
+      [
+        -8.299925804138184,
+        8.277209281921387
+      ],
+      [
+        -4.215743064880371,
+        18.27873420715332
+      ]
+    ],
+    "finite_coordinates": true,
+    "minimum_triangle_area_cm2": 0.00019590547086596844,
+    "degenerate_triangles": 0,
+    "total_area_cm2": 1710.3468508708029,
+    "signed_volume_cm3": 21.29268716333588,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "inconsistent_winding_edges": 0,
+    "connected_component_triangle_counts": [
+      49404
+    ],
+    "boundary_components": []
+  },
+  "hood_self_intersections": {
+    "nonadjacent_bvh_pairs": 0,
+    "strict_intersection_pairs": 0,
+    "examples": [],
+    "example_bounds": []
+  },
+  "neutral_skin_fit": {
+    "skin_triangles": 17538,
+    "skin_material_indices": [
+      0,
+      3
+    ],
+    "bvh_overlap_pairs": 0,
+    "strict_triangle_intersection_pairs": 0,
+    "intersection_examples": [],
+    "intersection_bounds_cm": null,
+    "minimum_hood_vertex_to_skin_distance_cm": 0.03999687358736992,
+    "coverage": {
+      "crown": {
+        "skin_samples": 160,
+        "hood_hits_within_3cm": 160,
+        "coverage_fraction": 1.0,
+        "minimum_clearance_cm": 0.005400809925049543,
+        "maximum_clearance_cm": 0.6058361530303955
+      },
+      "back": {
+        "skin_samples": 131,
+        "hood_hits_within_3cm": 131,
+        "coverage_fraction": 1.0,
+        "minimum_clearance_cm": 0.16554909944534302,
+        "maximum_clearance_cm": 0.8766964673995972
+      },
+      "left_ear": {
+        "skin_samples": 289,
+        "hood_hits_within_3cm": 289,
+        "coverage_fraction": 1.0,
+        "minimum_clearance_cm": 0.3082910180091858,
+        "maximum_clearance_cm": 1.7542170286178589
+      },
+      "right_ear": {
+        "skin_samples": 281,
+        "hood_hits_within_3cm": 281,
+        "coverage_fraction": 1.0,
+        "minimum_clearance_cm": 0.3001020550727844,
+        "maximum_clearance_cm": 1.6459259986877441
+      },
+      "left_side": {
+        "skin_samples": 515,
+        "hood_hits_within_3cm": 515,
+        "coverage_fraction": 1.0,
+        "minimum_clearance_cm": 0.2720370590686798,
+        "maximum_clearance_cm": 2.632906198501587
+      },
+      "right_side": {
+        "skin_samples": 515,
+        "hood_hits_within_3cm": 515,
+        "coverage_fraction": 1.0,
+        "minimum_clearance_cm": 0.28002816438674927,
+        "maximum_clearance_cm": 2.6252267360687256
+      },
+      "under_chin": {
+        "skin_samples": 196,
+        "hood_hits_within_3cm": 101,
+        "coverage_fraction": 0.5153061224489796,
+        "minimum_clearance_cm": 0.13949568569660187,
+        "maximum_clearance_cm": 1.2559388875961304
+      }
+    },
+    "coverage_note": "Static exterior skin vertex rays in explicit anatomical regions, 3cm limit; inspect renders for aperture continuity and unsampled areas. Hair excluded."
+  },
+  "static_geometry_checks_passed": true,
+  "neutral_fit_visual_review_passed": true,
+  "reviewed_image_sha256": {
+    "matte10-underchin.png": "9d07c112a9af4d05585e009522dc82441345f0381049a69bbba9ea1c262c77a9",
+    "candidate10-mask-back.png": "68be4f05b45d1e7989139ff055a85dda6e175d373571a7dbe579b81ff69e902d",
+    "candidate10-aperture-front.png": "28b8ea2fd9c601f8c6b9b2a7cf5fefdfb611ccf601843ae29c16fbfc3cb4294a",
+    "matte10-front.png": "06deb40244ef1bd09ea0b033a2d916ae6ba0165a7a266910bb6c883262469d1a",
+    "candidate10-mask-underchin.png": "070343fa7b56809311ce96aae1e8bf61c4a82cc4a8866daf065b0dee59ac4acc",
+    "candidate10-aperture-quarter.png": "5b400d44e99ca86f2a2995f29f2176d7edbdb3b37c75eed979c21506ba711339",
+    "candidate10-mask-front.png": "2a819db99d870ba1394509be4c020aed1090001ca29ccddb2694cf858e59466f",
+    "matte10-underside.png": "c5083e940a0ab5ae4e2a655ab7f0163d2be5203566a423053ef8b175034b88e9",
+    "candidate10-mask-side.png": "46093cfaca98c2caf7259a6f04121d2965550971131086c849555c2ab8780d02"
+  },
+  "visual_findings": [
+    "Front, side, rear, low-angle, and hood-only views inspected. Crown, ears, sides, back and short neck are covered; face opening sits beneath existing mask seal.",
+    "The visible horizontal rings from candidate6 are removed; crown and rear silhouette are rounded and continuous under glossy lighting.",
+    "Matte blue hood with matte orange skin shows no exposed skin slits at either outer ear or beneath the chin; brown patches in glossy views are reflections.",
+    "Under-chin material forms a continuous bridge into the short neck opening; forward chin remains within the intended facial aperture.",
+    "Anatomical exterior-ray probes cover crown/back/both ears/both sides completely. The broad downward under-chin probe includes the intentional forward facial aperture, so its 51.5 percent hit rate is not treated as a blanket coverage failure."
+  ],
+  "limitations": [
+    "Neutral private head reference only; no facial animation, other heads, extreme poses or in-game shader/CNS toggle test.",
+    "The single Root attachment follows the glasses head bone. Neck is intentionally short; runtime neck articulation remains untested.",
+    "Vertex-to-skin minimum distance is about 0.4 mm, but sampled skin-to-hood face clearance is tighter at the crown, approximately 0.054 mm. No strict skin triangle intersections were found."
+  ],
+  "existing_cns_controls_unchanged": true,
+  "hood_default_visible": false,
+  "hood_material_index": 11,
+  "hood_triangles": 49404,
+  "total_triangles": 97798,
+  "hood_off_visible_triangles": 48394,
+  "hair_unchanged": true,
+  "in_game_tested": false,
+  "private_reference_assets_exported": false,
+  "source_images": 0,
+  "source_linked_libraries": 0,
+  "source_text_blocks": 0,
+  "report_scope": "Historical static and neutral-fit validation performed before live testing. in_game_tested applies only to this report stage.",
+  "subsequent_runtime_report": "runtime_validation.json"
+}

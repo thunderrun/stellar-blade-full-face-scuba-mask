@@ -80,15 +80,110 @@ def validate_cup_toggle(mesh, manifest, counts):
     require(components == 1, "The always-visible visor must be connected")
     config = json.loads((REPO / "cns/CodexCNS-ScubaMask.dekcns.json").read_text(encoding="utf-8-sig"))
     toggles = config[0]["UserConfigs"]["MaterialToggles"]
-    require(len(toggles) == 1 and toggles[0]["MaterialIndex"] == cup
+    require(toggles[0]["MaterialIndex"] == cup and "ControlledBy" not in toggles[0]
             and toggles[0]["Value"] is True, "CNS cup toggle binding/default differs")
     return {"cup_material_index": cup, "always_visible_visor_material_index": visor,
             "cup_triangles": counts["M_Scuba_NasalCup"],
             "always_visible_visor_triangles": counts["M_Scuba_Visor"],
-            "cup_off_visible_triangles": sum(counts.values()) - counts["M_Scuba_NasalCup"],
+            "cup_off_visible_triangles": sum(counts.values()) - counts.get("M_Scuba_LatexHood", 0)
+                                         - counts["M_Scuba_NasalCup"],
+            "visibility_scope": "Hood Off (default)",
             "outer_visor_connected_components": components,
             "outer_visor_boundary_edges": 0, "outer_visor_nonmanifold_edges": 0,
             "cns_default_cup_visible": True}
+
+
+def validate_valve_toggle(mesh, manifest, counts):
+    """Verify all linked valve sections while preserving the frame and cup."""
+    indices = manifest.get("valve_toggle_material_indices")
+    if indices is None:
+        return {}
+    require(indices == [1, 4, 9, 10], "Unexpected valve section mapping")
+    expected = {1: ("M_Scuba_Polymer", 2172), 4: ("M_Scuba_Steel", 992),
+                9: ("M_Scuba_ValveAccent", 1200), 10: ("M_Scuba_ValveVent", 702)}
+    for index, (name, triangles) in expected.items():
+        require(mesh.data.materials[index].name == name and counts[name] == triangles,
+                "Valve section identity or triangle count differs")
+    require(counts["M_Scuba_TealAccent"] == 2204 and counts["M_Scuba_Vent"] == 2204,
+            "The independent outer trim and retention gasket must remain visible")
+    for p in mesh.data.polygons:
+        if p.material_index in indices:
+            for i in p.vertices:
+                v = mesh.matrix_world @ mesh.data.vertices[i].co
+                require(-11.2 < v.x < -9.5 and abs(v.y) < 1.3 and -.6 < v.z < 1.8,
+                        "A valve toggle section contains geometry outside the chin valve")
+    config = json.loads((REPO / "cns/CodexCNS-ScubaMask.dekcns.json").read_text(encoding="utf-8-sig"))
+    toggles = config[0]["UserConfigs"]["MaterialToggles"]
+    require(len(toggles) == (6 if "hood_toggle_material_index" in manifest else 5),
+            "Unexpected cup, valve and optional hood toggle rows")
+    rows = toggles[1:5]
+    require([row["MaterialIndex"] for row in rows] == indices
+            and all(row["Value"] is True for row in rows), "Valve binding/default differs")
+    require(rows[0]["DisplayName"] == "Valve" and "ControlledBy" not in rows[0]
+            and all(row.get("ControlledBy") == "Valve" for row in rows[1:]),
+            "Valve sections must have one visible controller")
+    total = sum(counts.values()) - counts.get("M_Scuba_LatexHood", 0)
+    require(total == 48394, "Original mask geometry count changed")
+    hidden = sum(counts[expected[i][0]] for i in indices)
+    require(hidden == manifest["valve_triangle_count"] == 5066, "Valve triangle count differs")
+    require(total - hidden == manifest["valve_off_visible_triangles"] == 43328,
+            "Valve Off visible geometry differs")
+    require(total - hidden - counts["M_Scuba_NasalCup"]
+            == manifest["cup_and_valve_off_visible_triangles"] == 26380,
+            "Combined cup and valve Off visible geometry differs")
+    return {"material_indices": indices, "valve_triangles": hidden,
+            "valve_off_visible_triangles": total - hidden,
+            "cup_and_valve_off_visible_triangles": total - hidden - counts["M_Scuba_NasalCup"],
+            "visibility_scope": "Hood Off (default)",
+            "frame_trim_and_gasket_remain_visible": True,
+            "existing_cup_and_visor_indices_preserved": True,
+            "cns_visible_controller": "Valve", "cns_default_valve_visible": True}
+
+
+def validate_hood_toggle(mesh, manifest, counts):
+    """Check the appended hood section and all independent toggle combinations."""
+    if "hood_toggle_material_index" not in manifest:
+        return {}
+    require(manifest["hood_toggle_material_index"] == 11 and len(mesh.data.materials) == 12
+            and mesh.data.materials[11].name == "M_Scuba_LatexHood", "Hood slot contract differs")
+    baseline = {"M_Scuba_Silicone": 8080, "M_Scuba_Polymer": 2172, "M_Scuba_Teal": 882,
+                "M_Scuba_TealAccent": 2204, "M_Scuba_Steel": 992, "M_Scuba_Vent": 2204,
+                "M_Scuba_RubberDetail": 1560, "M_Scuba_NasalCup": 16948, "M_Scuba_Visor": 11450,
+                "M_Scuba_ValveAccent": 1200, "M_Scuba_ValveVent": 702}
+    require({name: counts[name] for name in baseline} == baseline,
+            "An original mask section triangle count changed")
+    hood_count = counts["M_Scuba_LatexHood"]
+    require(hood_count == manifest["hood_triangle_count"] == 49404, "Hood triangle count differs")
+    config = json.loads((REPO / "cns/CodexCNS-ScubaMask.dekcns.json").read_text(encoding="utf-8-sig"))
+    toggles = config[0]["UserConfigs"]["MaterialToggles"]
+    row = toggles[-1]
+    require(len(toggles) == 6 and row["DisplayName"] == "Hood" and row["MaterialIndex"] == 11
+            and row["Value"] is False and "ControlledBy" not in row,
+            "Hood must be independently controlled and default Off")
+    edge_counts = Counter()
+    hood_polygons = [p for p in mesh.data.polygons if p.material_index == 11]
+    for p in hood_polygons:
+        require(len(p.vertices) == 3, "Hood must be triangulated")
+        a, b, c = (mesh.data.vertices[i].co for i in p.vertices)
+        require((b - a).cross(c - a).length_squared > 1e-14, "Degenerate hood triangle")
+        edge_counts.update(tuple(sorted(edge)) for edge in p.edge_keys)
+    require(edge_counts and all(count == 2 for count in edge_counts.values()),
+            "Thin hood shell must have closed face and neck edge walls")
+    visible = {}
+    for hood in (False, True):
+        for cup in (False, True):
+            for valve in (False, True):
+                key = "hood_{}_cup_{}_valve_{}".format(int(hood), int(cup), int(valve))
+                visible[key] = 48394 + (hood_count if hood else 0) - (0 if cup else 16948) - (0 if valve else 5066)
+    require(visible["hood_0_cup_1_valve_1"] == manifest["hood_off_visible_triangles"]
+            == manifest["default_visible_triangles"] == 48394, "Default visible mask changed")
+    require(visible["hood_1_cup_1_valve_1"] == sum(counts.values()) == 97798,
+            "Combined hood and mask count differs")
+    return {"material_index": 11, "hood_triangles": hood_count,
+            "cns_visible_controller": "Hood", "cns_default_hood_visible": False,
+            "hood_off_visible_triangles": 48394, "all_sections_visible_triangles": 97798,
+            "hood_boundary_edges": 0, "hood_nonmanifold_edges": 0,
+            "toggle_combination_visible_triangles": visible}
 
 
 def export_public_fbx(filepath):
@@ -163,6 +258,8 @@ def main():
         material_counts[slots[triangle.material_index]] += 1
     require(all(material_counts.values()), "Every material section must contain geometry")
     toggle_checks = validate_cup_toggle(mesh, manifest, material_counts)
+    valve_checks = validate_valve_toggle(mesh, manifest, material_counts)
+    hood_checks = validate_hood_toggle(mesh, manifest, material_counts)
     coords = [mesh.matrix_world @ vertex.co for vertex in mesh.data.vertices]
     root = rig.matrix_world @ rig.data.bones["Root"].matrix_local
     mesh_count = len([obj for obj in bpy.data.objects if obj.type == "MESH"])
@@ -238,6 +335,8 @@ def main():
         "source_vertices": len(coords), "fbx_imported_vertices": len(imported_coords),
         "material_triangle_counts": material_counts, "glb_alpha": alphas,
         "cup_toggle": toggle_checks,
+        "valve_toggle": valve_checks,
+        "hood_toggle": hood_checks,
         "maximum_fbx_vertex_error_mm": error_mm,
         "Root_rest_rotation_error_degrees": rotation_error,
         "Root_rest_position_error_mm": position_error,
