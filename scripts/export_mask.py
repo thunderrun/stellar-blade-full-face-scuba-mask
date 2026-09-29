@@ -114,6 +114,32 @@ def section_signatures(mesh):
 
 
 def validate_side_toggles(mesh, manifest, counts):
+    if manifest.get("revision", 0) >= 18:
+        require("side_filter_material_indices" not in manifest
+                and "side_valve_material_indices" not in manifest,
+                "Side filters and exterior side valves are removed from revision 18 onward")
+        require(len(mesh.data.materials) == len(counts) == 12,
+                "Revision 18 requires only the original twelve material sections")
+        require(not any("filter" in material.name.lower() or "sidevalve" in material.name.lower()
+                        for material in bpy.data.materials),
+                "Public source retains a removed side component material")
+        config = json.loads(CNS_CONFIG.read_text(encoding="utf-8-sig"))
+        controls = config[0]["UserConfigs"]
+        rows = controls["MaterialToggles"]
+        require([row["MaterialIndex"] for row in rows] == [7, 1, 4, 9, 10, 11],
+                "Only the existing cup, chin valve and hood toggles may remain")
+        for group in controls.values():
+            for row in group:
+                if not isinstance(row, dict):
+                    continue
+                require("MaterialIndex" not in row or 0 <= row["MaterialIndex"] < 12,
+                        "CNS still targets a removed material section")
+                names = (row.get("DisplayName", ""), row.get("ControlledBy", ""))
+                require(not any("side filters" in name.lower() or "side valves" in name.lower()
+                                for name in names), "CNS retains a removed side component control")
+        return {"side_filters_absent": True, "filter_triangles": 0,
+                "side_valve_triangles": 0, "side_valve_control_present": False,
+                "upper_exterior_side_valves_absent": True}
     if "side_filter_material_indices" not in manifest:
         require("side_valve_material_indices" not in manifest, "Incomplete side component contract")
         return {}
@@ -260,7 +286,10 @@ def validate_hood_toggle(mesh, manifest, counts):
     require({name: counts[name] for name in baseline} == baseline,
             "An original mask section triangle count changed")
     hood_count = counts["M_Scuba_LatexHood"]
-    require(hood_count == manifest["hood_triangle_count"] == 49404, "Hood triangle count differs")
+    require(hood_count == manifest["hood_triangle_count"] and hood_count > 0,
+            "Hood triangle count differs")
+    if manifest.get("revision", 0) < 18:
+        require(hood_count == 49404, "Original hood triangle count differs")
     config = json.loads(CNS_CONFIG.read_text(encoding="utf-8-sig"))
     toggles = config[0]["UserConfigs"]["MaterialToggles"]
     row = toggles[5]

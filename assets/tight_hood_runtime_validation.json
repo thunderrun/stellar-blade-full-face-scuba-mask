@@ -1,0 +1,133 @@
+{
+  "passed": true,
+  "tested_on": "2026-09-29",
+  "source_sha256": "e9492e44db1718189275db5f66e1354cf5ceb961f03c6c5bd29bcaf9ff27a1f9",
+  "scope": "Targeted live Stellar Blade camp idle and CNS 2.2 checks after a fresh process launch with the installed revision 18 archive. Both cup variants rendered. Hood Off/On comparisons used the existing brown ponytail/bangs hairstyle and Noble Elegance. Energetic Bangs was additionally inspected with Hood On only.",
+  "checks": {
+    "fresh_launch_and_both_named_variants_render": true,
+    "side_filter_option_absent": true,
+    "hair_visible_hood_off_on_comparison": true,
+    "gas_cup_and_two_inlets_toggle_together": true,
+    "chin_valve_toggles_independently": true,
+    "cup_opacity_changes_rendered_cup": true,
+    "menu_reopen_retains_selected_state": true,
+    "normal_world_simulation_resumed_after_pose_comparison": true,
+    "installed_payload_hashes_unchanged_after_test": true,
+    "original_cns_save_restored_after_game_exit": true
+  },
+  "observations": [
+    "The Side Filters row is absent from the mask cog without resetting the existing configuration. No side filter geometry appears on either named variant.",
+    "In the same-camera Hood On/Off pair for the existing hairstyle, the ear and temple covering hugs the head and the surrounding locks remain visible. The previous broad padding is reduced. Noble Elegance also keeps its silhouette and face-framing strands with the hood enabled in the tested view.",
+    "The Large oral-nasal cup shows its retained continuous shell and two cup-mounted inlet discs. Inner Nasal Cup Off hides the shell and both inlets together while the chin valve remains visible. The independent Valve control removes/restores the projecting chin valve; its established base/collar remains.",
+    "Cup Opacity was raised from 0.25 to 0.97 and visibly changed the cup. After closing CNS to gameplay and reopening it, the Large oral-nasal cup selection, Cup On, Valve Off, Hood On, Visor Opacity 0.25 and Cup Opacity 0.97 were retained.",
+    "Switching back to Scuba cup rendered the original smaller cup. Normal camp rendering continued after CNS closed; no crash occurred during this targeted session.",
+    "The comparison pose initially used CNS World pause, which produced background NPC/cloth stretching in some captures. Normal World simulation was resumed; those background artifacts cleared before the later Noble Elegance and control tests. The pause behavior is not attributed to the mod.",
+    "After exiting the game, only the original pre-test CNS settings save was restored from a hash-bound backup. Other game-save writes were preserved."
+  ],
+  "limitations": [
+    "This is a camp/CNS fit and control test, not a combat, extreme-animation or all-hairstyle certification. Hair assets were not altered; individual strands or other hairstyles can still intersect a rigid head attachment.",
+    "Menu reopen persistence was verified. Persistence of newly selected values across a full process restart was not tested because the original CNS settings were restored after testing.",
+    "The old-release side view and the new-release views are not a matched-camera before/after pair. Only screenshots 02/03 and 09/10 are Hood On/Off comparisons within this build. Idle movement and hair simulation can differ between captures.",
+    "Screenshots 02/03 were captured with World simulation paused for pose comparison and crop the crown. They are evidence for local ear/temple fit, not for animation behavior. Later captures show resumed simulation."
+  ],
+  "full_restart_persistence_verified": false,
+  "screenshot_captions": {
+    "01-before-hood-on-side.jpg": "Historical v1.2.1 side view with the original hood; camera differs from new-build captures.",
+    "02-tight-hood-on-current-hair.jpg": "Revision 18: fitted hood on, existing hairstyle, paused-pose ear/temple view.",
+    "03-tight-hood-off-current-hair.jpg": "Revision 18: same camera with hood off and hair unchanged.",
+    "05-noble-elegance-normal-physics.jpg": "Noble Elegance with hood on after normal World simulation resumed.",
+    "06-gas-cup-and-inlets-on.jpg": "Large cup and paired cup-mounted inlets on; retained controls and no Side Filters row.",
+    "07-gas-cup-and-inlets-off.jpg": "Cup and both inlets off while the chin valve stays on.",
+    "08-chin-valve-off.jpg": "Independent chin valve off with its established base/collar retained.",
+    "09-noble-elegance-hood-off.jpg": "Noble Elegance, hood off, large cup on and chin valve off.",
+    "10-noble-elegance-hood-on.jpg": "Same camera with fitted hood on; hair remains visible.",
+    "11-large-cup-variant-selected.jpg": "Large oral-nasal cup selected in the CNS list.",
+    "12-menu-reopen-state-retained.jpg": "Mask controls after closing CNS to gameplay and reopening.",
+    "13-scuba-cup-variant-selected.jpg": "Original Scuba cup selected again after testing the gas cup.",
+    "14-energetic-bangs-hood-on.jpg": "Additional Hood On check with Energetic Bangs; no paired Hood Off test for this style."
+  },
+  "version": "1.2.2",
+  "geometry_revision": 18,
+  "fbx_sha256": {
+    "SK_CodexScubaMask": "f265f16471dc10612f00ec9b00d355b15bc3c761a019e07f67f6cf1aa384273f",
+    "SK_CodexGasMask": "6fb97be1644d9c711dd6eb04a0339e4dd71457fb9c7281d53e7f0a3e80878b71"
+  },
+  "cooked_audit_summary_sha256": "148adc7121c936d756182b04be794dafb2f783821200e504bbc7a5d510a6f315",
+  "installed_payload": [
+    {
+      "name": "CodexCNS-ScubaMask-947.pak",
+      "bytes": 339,
+      "sha256": "2ac5e1efefd1f74f7700bdaa234d2d36e7d3ba3c6cb7f2a5c434b86307474ec9"
+    },
+    {
+      "name": "CodexCNS-ScubaMask-947.ucas",
+      "bytes": 11418224,
+      "sha256": "ac7e45e50c7db50566f84153e022f7060b3bccedd4209e396cbcd4b5292360d5"
+    },
+    {
+      "name": "CodexCNS-ScubaMask-947.utoc",
+      "bytes": 3935,
+      "sha256": "9870c703ee8f652e08d1c0cbade6b0cf9da65c22d2191f7779d88733f9821014"
+    },
+    {
+      "name": "CodexCNS-ScubaMask.dekcns.json",
+      "bytes": 7025,
+      "sha256": "31f7950a8814e7793496159bd74ee8e8485c0f56b0aaecf5d086715ddd6186f6"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "media/runtime-1.2.2/01-before-hood-on-side.jpg",
+      "sha256": "c1562c242978caa8934bb8d5cabff7e8a6ec58645e124d34a9797a3d12c6177e"
+    },
+    {
+      "file": "media/runtime-1.2.2/02-tight-hood-on-current-hair.jpg",
+      "sha256": "15afb0d24d3f486999aac823213cda6295f01259818e037dad3dfbb049cce214"
+    },
+    {
+      "file": "media/runtime-1.2.2/03-tight-hood-off-current-hair.jpg",
+      "sha256": "490af57880176b29b3eb2b7360766d68646c0f31d9a080e557dd427e8bf03de0"
+    },
+    {
+      "file": "media/runtime-1.2.2/05-noble-elegance-normal-physics.jpg",
+      "sha256": "7d26abaa2e74b686490abb8dbd962021cc0ac7c439973dfd39d6d234c9844f81"
+    },
+    {
+      "file": "media/runtime-1.2.2/06-gas-cup-and-inlets-on.jpg",
+      "sha256": "12478c5421f70e4fc5fad37e11f55e81aa80e0fcee4b93a793c6e52aca9abf84"
+    },
+    {
+      "file": "media/runtime-1.2.2/07-gas-cup-and-inlets-off.jpg",
+      "sha256": "7358dc586f8317d5c61e62e9c7ff48f8909bfced836980b763c5afd4c3e1e9e1"
+    },
+    {
+      "file": "media/runtime-1.2.2/08-chin-valve-off.jpg",
+      "sha256": "a4f96e84fe7dffc5452702187c1f52c472e2af24d3dfce40978b498690e585c9"
+    },
+    {
+      "file": "media/runtime-1.2.2/09-noble-elegance-hood-off.jpg",
+      "sha256": "a82fb1459955bd68ed3739f21f173d587235d925749fff08f0b4d69a0c242ed0"
+    },
+    {
+      "file": "media/runtime-1.2.2/10-noble-elegance-hood-on.jpg",
+      "sha256": "87472dda7c8ff3f7665ee91839f260d81627b3e7df722241377f05615260d383"
+    },
+    {
+      "file": "media/runtime-1.2.2/11-large-cup-variant-selected.jpg",
+      "sha256": "138168be6cf7f75f9df8334a25e56fe1340aa11d90905f491b03cbefc7738204"
+    },
+    {
+      "file": "media/runtime-1.2.2/12-menu-reopen-state-retained.jpg",
+      "sha256": "149172fb62300c7897ca3a1b7c956d6337910aeb14066ec4ddf9a20750436df9"
+    },
+    {
+      "file": "media/runtime-1.2.2/13-scuba-cup-variant-selected.jpg",
+      "sha256": "508c80987b51e20fa9eb19516532c6e9427ee923a8db47488e0ea077db1662ef"
+    },
+    {
+      "file": "media/runtime-1.2.2/14-energetic-bangs-hood-on.jpg",
+      "sha256": "2f44fed3c06210e2ee1046480a1ec14b67143b4a9646887937feb2f3ad7bb9dd"
+    }
+  ],
+  "original_cns_settings_restored": true
+}

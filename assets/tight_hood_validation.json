@@ -1,0 +1,340 @@
+{
+  "version": "1.2.2",
+  "revision": 18,
+  "passed": true,
+  "source_sha256": "e9492e44db1718189275db5f66e1354cf5ceb961f03c6c5bd29bcaf9ff27a1f9",
+  "baseline_version": "1.2.1",
+  "baseline_source_sha256": "e120d94932a0cdf020925a139819e2b41d28ebfe93c725ff0fa368fe974a831b",
+  "hood_donor_sha256": "9ecfb47cd45b0b5c6799ae85fc15abf09bb2208117cf98406d4cff26e629cd87",
+  "material_count": 12,
+  "triangles_by_mesh": {
+    "SK_CodexScubaMask": 97798,
+    "SK_CodexGasMask": 127646
+  },
+  "both_mask_sections_0_to_10_exact": true,
+  "both_hood_sections_identical": true,
+  "side_filter_geometry_materials_and_cns_option_removed": true,
+  "two_gas_cup_inlet_valves_preserved": true,
+  "chin_valve_and_original_scuba_cup_preserved": true,
+  "surviving_cns_controls_and_identity_preserved": true,
+  "hood_topology": {
+    "vertices": 24702,
+    "triangles": 49404,
+    "bounds_cm": [
+      [
+        -8.39079761505127,
+        7.4172749519348145
+      ],
+      [
+        -8.061904907226562,
+        8.038115501403809
+      ],
+      [
+        -4.215743064880371,
+        18.27873420715332
+      ]
+    ],
+    "finite_coordinates": true,
+    "minimum_triangle_area_cm2": 0.00019590547086596844,
+    "degenerate_triangles": 0,
+    "total_area_cm2": 1647.5194012745424,
+    "signed_volume_cm3": 10.97648172130629,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "inconsistent_winding_edges": 0,
+    "connected_component_triangle_counts": [
+      49404
+    ],
+    "boundary_components": []
+  },
+  "independent_geometry_checks": {
+    "source_hash_stable": true,
+    "finite": true,
+    "nondegenerate": true,
+    "closed_manifold": true,
+    "consistent_winding": true,
+    "one_component": true,
+    "positive_material_volume": true,
+    "smooth_shading": true,
+    "no_self_intersections": true,
+    "no_skin_intersections": true,
+    "sampled_minimum_gap_positive": true
+  },
+  "strict_skin_intersections": 0,
+  "strict_self_intersections": 0,
+  "seven_point_triangle_skin_sampling": {
+    "samples_including_duplicates": 345828,
+    "minimum_unsigned_distance_mm": 0.08589050732553005
+  },
+  "sampled_coverage": {
+    "crown": {
+      "skin_samples": 160,
+      "hood_hits_within_3cm": 160,
+      "coverage_fraction": 1.0,
+      "minimum_clearance_cm": 0.005400809925049543,
+      "maximum_clearance_cm": 0.15050232410430908
+    },
+    "back": {
+      "skin_samples": 131,
+      "hood_hits_within_3cm": 131,
+      "coverage_fraction": 1.0,
+      "minimum_clearance_cm": 0.0521789975464344,
+      "maximum_clearance_cm": 0.1090606078505516
+    },
+    "left_ear": {
+      "skin_samples": 289,
+      "hood_hits_within_3cm": 289,
+      "coverage_fraction": 1.0,
+      "minimum_clearance_cm": 0.06659922748804092,
+      "maximum_clearance_cm": 1.1398361921310425
+    },
+    "right_ear": {
+      "skin_samples": 281,
+      "hood_hits_within_3cm": 281,
+      "coverage_fraction": 1.0,
+      "minimum_clearance_cm": 0.06445716321468353,
+      "maximum_clearance_cm": 1.0630375146865845
+    },
+    "left_side": {
+      "skin_samples": 515,
+      "hood_hits_within_3cm": 515,
+      "coverage_fraction": 1.0,
+      "minimum_clearance_cm": 0.05773806571960449,
+      "maximum_clearance_cm": 2.2073307037353516
+    },
+    "right_side": {
+      "skin_samples": 515,
+      "hood_hits_within_3cm": 515,
+      "coverage_fraction": 1.0,
+      "minimum_clearance_cm": 0.05685930699110031,
+      "maximum_clearance_cm": 2.204289436340332
+    },
+    "under_chin": {
+      "skin_samples": 196,
+      "hood_hits_within_3cm": 101,
+      "coverage_fraction": 0.5153061224489796,
+      "minimum_clearance_cm": 0.13949568569660187,
+      "maximum_clearance_cm": 1.2559388875961304
+    }
+  },
+  "regional_nearest_surface_clearance_before_mm": {
+    "upper_temple": {
+      "samples": 1861,
+      "minimum_mm": 2.3175179958343506,
+      "median_mm": 3.4015217423439026,
+      "p95_mm": 5.661032199859619,
+      "maximum_mm": 7.282536029815674
+    },
+    "ear_level": {
+      "samples": 2462,
+      "minimum_mm": 2.6821568608283997,
+      "median_mm": 8.009073138237,
+      "p95_mm": 13.799864053726196,
+      "maximum_mm": 15.826761722564697
+    },
+    "lower_side": {
+      "samples": 475,
+      "minimum_mm": 4.530058801174164,
+      "median_mm": 9.28672969341278,
+      "p95_mm": 13.932485580444336,
+      "maximum_mm": 15.60757040977478
+    },
+    "crown": {
+      "samples": 4801,
+      "minimum_mm": 0.3999687358736992,
+      "median_mm": 1.289314478635788,
+      "p95_mm": 3.2965561747550964,
+      "maximum_mm": 4.0774911642074585
+    },
+    "back": {
+      "samples": 4456,
+      "minimum_mm": 1.7924585938453674,
+      "median_mm": 3.5927316546440125,
+      "p95_mm": 6.502788662910461,
+      "maximum_mm": 7.023810148239136
+    }
+  },
+  "regional_nearest_surface_clearance_after_mm": {
+    "upper_temple": {
+      "samples": 1948,
+      "minimum_mm": 0.5787312611937523,
+      "median_mm": 0.8094755560159683,
+      "p95_mm": 0.9218698740005493,
+      "maximum_mm": 0.9947632253170013
+    },
+    "ear_level": {
+      "samples": 2303,
+      "minimum_mm": 0.705471858382225,
+      "median_mm": 1.8071554601192474,
+      "p95_mm": 4.347948133945465,
+      "maximum_mm": 7.3748087882995605
+    },
+    "lower_side": {
+      "samples": 135,
+      "minimum_mm": 1.0960761457681656,
+      "median_mm": 1.9447371363639832,
+      "p95_mm": 3.6557963490486145,
+      "maximum_mm": 3.8308754563331604
+    },
+    "crown": {
+      "samples": 4824,
+      "minimum_mm": 0.3999687358736992,
+      "median_mm": 0.7830020412802696,
+      "p95_mm": 1.3915860652923584,
+      "maximum_mm": 1.6460995376110077
+    },
+    "back": {
+      "samples": 3963,
+      "minimum_mm": 0.5768341943621635,
+      "median_mm": 0.8128025382757187,
+      "p95_mm": 0.9291116893291473,
+      "maximum_mm": 0.9897611290216446
+    }
+  },
+  "regional_outer_lateral_ray_clearance_after_mm": {
+    "upper_temple": {
+      "samples": 950,
+      "minimum_mm": 0.7808399200439453,
+      "median_mm": 0.9204483032226562,
+      "p95_mm": 0.9891891479492188,
+      "maximum_mm": 1.048593521118164
+    },
+    "ear_level": {
+      "samples": 960,
+      "minimum_mm": 0.6565570831298828,
+      "median_mm": 2.2089576721191406,
+      "p95_mm": 12.987127304077148,
+      "maximum_mm": 21.81025505065918
+    },
+    "lower_side": {
+      "samples": 15,
+      "minimum_mm": 1.821737289428711,
+      "median_mm": 2.864093780517578,
+      "p95_mm": 3.408632278442383,
+      "maximum_mm": 3.409452438354492
+    },
+    "crown": {
+      "samples": 862,
+      "minimum_mm": 0.7598495483398438,
+      "median_mm": 1.1091136932373047,
+      "p95_mm": 2.4904251098632812,
+      "maximum_mm": 4.5318603515625
+    },
+    "back": {
+      "samples": 444,
+      "minimum_mm": 1.0590744018554688,
+      "median_mm": 1.3041973114013672,
+      "p95_mm": 1.8384742736816406,
+      "maximum_mm": 2.538013458251953
+    }
+  },
+  "construction": "Original hood surface conformed to measured head radius with narrow local ear-rim envelope; original aperture, cuff, lower chin and crown cap pinned. Hair unchanged.",
+  "original_topology_exact": true,
+  "original_boundary_vertices_exact": true,
+  "maximum_inward_movement_mm": 21.60872797573139,
+  "visual_review": {
+    "passed": true,
+    "source_sha256": "9ecfb47cd45b0b5c6799ae85fc15abf09bb2208117cf98406d4cff26e629cd87",
+    "baseline_sha256": "e120d94932a0cdf020925a139819e2b41d28ebfe93c725ff0fa368fe974a831b",
+    "reviewed_image_hashes": {
+      "preview-after02/front.png": "8a8a2ced6e71071d2c36e5162e5ede4f950e7fd65d3c416f2dbd77aee6c2f51e",
+      "preview-after02/three-quarter.png": "810659f257e331e9f780c2da28f7ba5f9e04679af117929e1732fb3a3717b95d",
+      "preview-after02/profile.png": "fab6250d81a00a1323f782457d4e895b2d275b22357addc02a6fdb815a38f6af",
+      "preview-after02/rear.png": "4f62f54c4aea972ea091b4704a45b3e81e1f1ab198f41ec073c2b8bfc08af992",
+      "preview-after02/temple.png": "392651bed773318230c0d814f5adbe6976112e245ca4816bfbdff1bc6dc18db5",
+      "preview-after02/temple-matte.png": "e3edff355e5ce58e081aed1cf6371a6119e94350aa0446227e27f177b64f3070",
+      "preview-before/three-quarter.png": "0011cafcc7beeecaf803a53d1dca5344a000ad88e7f8a6cd2936935089f233c6"
+    },
+    "scope": "Independent visual review of private neutral-head renders; source geometry separately audited. Hair and runtime tests remain pending.",
+    "findings": [
+      "Temple, scalp and rear follow the head closely; the previous broad side padding is removed.",
+      "The lower side/back transition now flows into the short cuff without the candidate01 horizontal ridge.",
+      "Local wrapped-ear contours retain full ear coverage; front/profile/three-quarter/rear images show no visible neutral skin pinholes or gap between the hood aperture and unchanged mask.",
+      "Glossy and matte temple views agree on the tighter surface. Mild existing crown facets remain; no redesign is required for this scoped fit correction.",
+      "Both cups and their inlet details are outside this donor-only visual scope; integration preservation checks must verify them."
+    ],
+    "limitations": [
+      "No matching hair mesh was available, so actual hairstyle overlap requires live hair-visible comparison.",
+      "Small positive crown clearance remains: seven-point triangle sampling minimum approximately0.086 mm and skin-ray minimum approximately0.054 mm.",
+      "Rigid head attachment and short cuff remain; motion and other heads are not certified."
+    ]
+  },
+  "independent_preservation_checks": {
+    "released_root_rig_exact": true,
+    "one_root_bone": true,
+    "centimetre_scale_unchanged": true,
+    "no_images_libraries_texts": true,
+    "no_nonempty_weak_library_metadata": true,
+    "only_mesh_and_armature_objects": true,
+    "no_filter_or_exterior_valve_datablocks": true,
+    "cns_only_filter_controls_removed": true,
+    "SK_CodexScubaMask_section_inventory": true,
+    "SK_CodexScubaMask_protected_corner_data_exact": true,
+    "SK_CodexScubaMask_materials_exact": true,
+    "SK_CodexScubaMask_transform_uv_and_attachment_exact": true,
+    "SK_CodexScubaMask_rigid_finite_vertices": true,
+    "SK_CodexGasMask_section_inventory": true,
+    "SK_CodexGasMask_protected_corner_data_exact": true,
+    "SK_CodexGasMask_materials_exact": true,
+    "SK_CodexGasMask_transform_uv_and_attachment_exact": true,
+    "SK_CodexGasMask_rigid_finite_vertices": true,
+    "new_variants_noncup_sections_exact": true,
+    "released_cup_counts_exact": true,
+    "hood_changed_in_both_variants": true,
+    "same_changed_hood_both_variants": true,
+    "raw_private_path_tails_absent": true,
+    "inputs_unchanged_during_audit": true
+  },
+  "source_privacy": {
+    "raw_private_path_match_count": 0,
+    "images": 0,
+    "linked_libraries": 0,
+    "text_blocks": 0,
+    "nonempty_weak_references": 0
+  },
+  "toggle_groups": {
+    "cup": [
+      7
+    ],
+    "chin_valve": [
+      1,
+      4,
+      9,
+      10
+    ],
+    "hood": [
+      11
+    ]
+  },
+  "static_visibility_combinations": {
+    "SK_CodexScubaMask": {
+      "cup_0_chin_valve_0_hood_0": 26380,
+      "cup_0_chin_valve_0_hood_1": 75784,
+      "cup_0_chin_valve_1_hood_0": 31446,
+      "cup_0_chin_valve_1_hood_1": 80850,
+      "cup_1_chin_valve_0_hood_0": 43328,
+      "cup_1_chin_valve_0_hood_1": 92732,
+      "cup_1_chin_valve_1_hood_0": 48394,
+      "cup_1_chin_valve_1_hood_1": 97798
+    },
+    "SK_CodexGasMask": {
+      "cup_0_chin_valve_0_hood_0": 26380,
+      "cup_0_chin_valve_0_hood_1": 75784,
+      "cup_0_chin_valve_1_hood_0": 31446,
+      "cup_0_chin_valve_1_hood_1": 80850,
+      "cup_1_chin_valve_0_hood_0": 73176,
+      "cup_1_chin_valve_0_hood_1": 122580,
+      "cup_1_chin_valve_1_hood_0": 78242,
+      "cup_1_chin_valve_1_hood_1": 127646
+    }
+  },
+  "private_reference_exported": false,
+  "hair_modified_or_hidden_by_mod": false,
+  "in_game_tested_at_this_stage": false,
+  "limitations": [
+    "Static fitting uses the neutral base head; live hair evidence is recorded separately.",
+    "Nearest surface and regional ray clearances are sampled distances, not global continuous minima.",
+    "The aperture, chin bridge and cuff are retained. Under-chin ray coverage is partial by the established aperture test; no full ray coverage claim is made there.",
+    "The hood retains its rigid glasses attachment. Other heads, all hairstyles and extreme poses require separate testing."
+  ]
+}

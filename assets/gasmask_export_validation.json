@@ -1,16 +1,16 @@
 {
   "passed": true,
-  "revision": 17,
-  "version": "1.2.1",
+  "revision": 18,
+  "version": "1.2.2",
   "blender_version": "5.2.1 LTS",
   "source": "full_face_mask.blend",
   "fbx": "SK_CodexGasMask.fbx",
   "glb": "SK_CodexGasMask.glb",
   "mesh_name": "SK_CodexGasMask",
-  "source_sha256": "e120d94932a0cdf020925a139819e2b41d28ebfe93c725ff0fa368fe974a831b",
-  "fbx_sha256": "e036a75b8bac1b7bf0e2b0edb4bd6664067a9007f94b6c26a5cc617b142bc741",
-  "glb_sha256": "1dc08a91f5679f5233bd2561e5f09af03362ffb735fbd839b6952642d2f6ceb1",
-  "source_mesh_objects": 36,
+  "source_sha256": "e9492e44db1718189275db5f66e1354cf5ceb961f03c6c5bd29bcaf9ff27a1f9",
+  "fbx_sha256": "6fb97be1644d9c711dd6eb04a0339e4dd71457fb9c7281d53e7f0a3e80878b71",
+  "glb_sha256": "59a922ac7c996de3dfcf25bb06f0ebcaf753771e5b8f6a63f8878fb0188c3bc8",
+  "source_mesh_objects": 34,
   "source_images": 0,
   "source_linked_libraries": 0,
   "source_text_blocks": 0,
@@ -21,9 +21,9 @@
   "source_nonempty_weak_library_references": 0,
   "source_raw_private_path_match_count": 0,
   "all_vertices_rigid_weight_Root": true,
-  "triangles": 137150,
-  "source_vertices": 68949,
-  "fbx_imported_vertices": 68949,
+  "triangles": 127646,
+  "source_vertices": 63981,
+  "fbx_imported_vertices": 63981,
   "material_triangle_counts": {
     "M_Scuba_Silicone": 8080,
     "M_Scuba_Polymer": 2172,
@@ -36,9 +36,7 @@
     "M_Scuba_Visor": 11450,
     "M_Scuba_ValveAccent": 1200,
     "M_Scuba_ValveVent": 702,
-    "M_Scuba_LatexHood": 49404,
-    "M_GasMask_FilterBody": 3904,
-    "M_GasMask_FilterAccent": 5600
+    "M_Scuba_LatexHood": 49404
   },
   "glb_alpha": {
     "M_Scuba_Silicone": 1,
@@ -52,9 +50,7 @@
     "M_Scuba_Visor": 0.10000000149011612,
     "M_Scuba_ValveAccent": 1,
     "M_Scuba_ValveVent": 1,
-    "M_Scuba_LatexHood": 1,
-    "M_GasMask_FilterBody": 1,
-    "M_GasMask_FilterAccent": 1
+    "M_Scuba_LatexHood": 1
   },
   "cup_toggle": {
     "cup_material_index": 7,
@@ -90,7 +86,7 @@
     "cns_visible_controller": "Hood",
     "cns_default_hood_visible": false,
     "hood_off_visible_triangles": 78242,
-    "all_sections_visible_triangles": 137150,
+    "all_sections_visible_triangles": 127646,
     "toggle_combination_scope": "Optional side components Off",
     "hood_boundary_edges": 0,
     "hood_nonmanifold_edges": 0,
@@ -106,14 +102,9 @@
     }
   },
   "side_components": {
-    "filter_material_indices": [
-      12,
-      13
-    ],
-    "side_valve_material_indices": [],
-    "filter_triangles": 9504,
+    "side_filters_absent": true,
+    "filter_triangles": 0,
     "side_valve_triangles": 0,
-    "cns_default_side_filters_visible": false,
     "side_valve_control_present": false,
     "upper_exterior_side_valves_absent": true
   },
@@ -128,10 +119,8 @@
     "M_Scuba_ValveVent": 2.6656007889869215e-06,
     "M_Scuba_ValveAccent": 2.2268795873969793e-06,
     "M_Scuba_Visor": 2.3481507014366798e-05,
-    "M_Scuba_LatexHood": 2.9802322387695312e-05,
-    "M_GasMask_FilterBody": 1.719260808386025e-05,
-    "M_GasMask_FilterAccent": 1.719260808386025e-05,
-    "M_Scuba_NasalCup": 1.385807991027832e-05
+    "M_Scuba_NasalCup": 1.385807991027832e-05,
+    "M_Scuba_LatexHood": 2.9802322387695312e-05
   },
   "maximum_fbx_vertex_error_mm": 2.9802322387695312e-05,
   "Root_rest_rotation_error_degrees": 0.0,
@@ -139,12 +128,12 @@
   "bounding_box_cm": [
     [
       -12.15999984741211,
-      -9.059760093688965,
+      -8.061903953552246,
       -4.215742111206055
     ],
     [
-      7.550682544708252,
-      9.059762001037598,
+      7.4172749519348145,
+      8.038116455078125,
       18.27873420715332
     ]
   ]

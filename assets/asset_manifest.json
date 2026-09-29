@@ -1,5 +1,5 @@
 {
-  "revision": 17,
+  "revision": 18,
   "mesh_name": "SK_CodexScubaMask",
   "fbx_path": "SK_CodexScubaMask.fbx",
   "skeleton_path": "/Game/Art/Character/PC/00_ACC/ACC_GLA_03/ACC_GLA_03M_Skeleton.ACC_GLA_03M_Skeleton",
@@ -15,25 +15,23 @@
     "M_Scuba_Visor",
     "M_Scuba_ValveAccent",
     "M_Scuba_ValveVent",
-    "M_Scuba_LatexHood",
-    "M_GasMask_FilterBody",
-    "M_GasMask_FilterAccent"
+    "M_Scuba_LatexHood"
   ],
   "units": "centimetres",
   "bone": "Root",
   "transparent_cup_material": "M_Scuba_NasalCup",
-  "triangle_count": 107302,
-  "change": "Original Scuba cup, mask, hood and optional paired filters preserved exactly from 1.2.0. The separately selected Large oral-nasal cup has smoother continuous curves.",
+  "triangle_count": 97798,
+  "change": "Close fitting thin latex hood in section 11; side filters removed. All mask and cup geometry in sections 0-10 preserved exactly from 1.2.1.",
   "transparent_valve_materials": [],
   "requested_opacity": {
     "M_Scuba_Visor": 0.1,
     "M_Scuba_NasalCup": 0.2
   },
   "variant": "integrated-valve-oronasal-cup",
-  "variant_revision": 6,
+  "variant_revision": 7,
   "cup_toggle_material_index": 7,
   "always_visible_visor_material_index": 8,
-  "version": "1.2.1",
+  "version": "1.2.2",
   "material_triangle_counts": {
     "M_Scuba_Silicone": 8080,
     "M_Scuba_Polymer": 2172,
@@ -46,9 +44,7 @@
     "M_Scuba_Visor": 11450,
     "M_Scuba_ValveAccent": 1200,
     "M_Scuba_ValveVent": 702,
-    "M_Scuba_LatexHood": 49404,
-    "M_GasMask_FilterBody": 3904,
-    "M_GasMask_FilterAccent": 5600
+    "M_Scuba_LatexHood": 49404
   },
   "valve_toggle_material_indices": [
     1,
@@ -67,12 +63,6 @@
   "hood_on_valve_off_visible_triangles": 92732,
   "hood_on_cup_off_visible_triangles": 80850,
   "hood_on_cup_and_valve_off_visible_triangles": 75784,
-  "side_filter_material_indices": [
-    12,
-    13
-  ],
-  "side_filter_default_visible": false,
-  "side_filter_triangle_count": 9504,
   "additional_variants": [
     {
       "manifest": "gasmask_variant_manifest.json",
@@ -80,5 +70,5 @@
     }
   ],
   "cup_inlet_valve_count": 0,
-  "fbx_sha256": "468cf84a1e8c737d848ea73ab7534153dd91e1190d08547a307704246fa34e01"
+  "fbx_sha256": "f265f16471dc10612f00ec9b00d355b15bc3c761a019e07f67f6cf1aa384273f"
 }
