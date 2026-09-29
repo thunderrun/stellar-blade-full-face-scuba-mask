@@ -1,0 +1,63 @@
+{
+  "version": "1.2.3-GlassOnly.1",
+  "geometry_revision": 21,
+  "evidence_date": "2026-09-29",
+  "evidence_type": "user_provided_in_game_screenshot",
+  "screenshot_sha256": "b196f5032c8f99d157f422ec7785de6b224c49377531bfa2489d2a62d0883427",
+  "source_sha256": "9dc4ccd222b3135380ef5d724eaf6e334ff485868a07e8b3156c9055f45edb30",
+  "source_review_sha256": "ce2de12441b2b6be4669d4cbca3d280e197d51affe6075eca7fab93d2080df31",
+  "cooked_audit_summary_sha256": "50149be1ffd7ac9c02dc40bd87743d8283dd747ea790af5875bc28501ba9ad9f",
+  "static_validation_passed": true,
+  "local_installation_verified": true,
+  "save_files_unchanged_during_installation": true,
+  "user_runtime_render_ui_confirmed": true,
+  "runtime_confirmation_scope": "User screenshot confirms the Glass Only accessory renders and its CNS item and controls are displayed. It is not an independent control-change, movement or persistence test.",
+  "observed": {
+    "cns_item": "Full Face Scuba Mask - Glass Only",
+    "accessory_rendered": true,
+    "hood_displayed": "On",
+    "visor_opacity_displayed": 0.2,
+    "glass_color_control_visible": true,
+    "cup_controls_absent": true,
+    "valve_controls_absent": true
+  },
+  "shipped_defaults": {
+    "hood": false,
+    "visor_opacity": 0.1,
+    "glass_color_rgba": [0.12, 0.12, 0.12, 1.0]
+  },
+  "independently_runtime_tested": {
+    "control_changes": false,
+    "idle_or_head_motion": false,
+    "combat_or_extreme_poses": false,
+    "all_hairstyles": false,
+    "menu_reopen_persistence": false,
+    "full_restart_persistence": false
+  },
+  "tested_payload_files": [
+    {
+      "name": "CodexCNS-ScubaMask-947.pak",
+      "bytes": 339,
+      "sha256": "bfcc6bb9ae94d30231386c03792e255cd019771b1b6982fe0e19a20d9e363f0e"
+    },
+    {
+      "name": "CodexCNS-ScubaMask-947.ucas",
+      "bytes": 3870624,
+      "sha256": "11acd8af4becd983aef09885eced94ec7ebb8e88886c36cedf321dde6121c8f8"
+    },
+    {
+      "name": "CodexCNS-ScubaMask-947.utoc",
+      "bytes": 1910,
+      "sha256": "c26ab4be03d371064755f3c5eb283a213ba9c6614231321da219562334a41882"
+    },
+    {
+      "name": "CodexCNS-ScubaMask.dekcns.json",
+      "bytes": 3403,
+      "sha256": "2205dbf40a0337a677caa5755ce6be19e2b58f825867e11ee8486572a5f45746"
+    }
+  ],
+  "notes": [
+    "The pictured opacity of 0.20 is the user's setting; the shipped default remains 0.10.",
+    "The accessory retains its rigid glasses Root attachment. The short hood cuff does not deform with neck motion or facial expressions."
+  ]
+}

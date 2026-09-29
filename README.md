@@ -1,5 +1,7 @@
 # Full Face Scuba Mask
 
+**Glass Only optional release:** [Full-face glass and fitted optional hood, version 1.2.3-GlassOnly.1](variants/glass-only/README.md) is available without an inner cup or valve. It requires CNS 2.2 and replaces the regular Scuba or companion package; keep only one installed Scuba payload. The regular 1.2.2 source and instructions below remain separate.
+
 ![Version 1.2.2 with the tighter hood and hair visible in Stellar Blade 2.1 and CNS 2.2](media/tight-hood-in-game.jpg)
 
 The optional hood now fits closer beneath hair. The mod neither modifies nor hides hair.

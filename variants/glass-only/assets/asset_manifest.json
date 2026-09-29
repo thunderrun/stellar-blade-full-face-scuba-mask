@@ -1,0 +1,47 @@
+{
+  "revision": 21,
+  "mesh_name": "SK_CodexScubaMask",
+  "fbx_path": "SK_CodexScubaMask.fbx",
+  "skeleton_path": "/Game/Art/Character/PC/00_ACC/ACC_GLA_03/ACC_GLA_03M_Skeleton.ACC_GLA_03M_Skeleton",
+  "material_slots": [
+    "M_Scuba_Silicone",
+    "M_Scuba_Teal",
+    "M_Scuba_TealAccent",
+    "M_Scuba_Vent",
+    "M_Scuba_RubberDetail",
+    "M_Scuba_Visor",
+    "M_Scuba_LatexHood"
+  ],
+  "units": "centimetres",
+  "bone": "Root",
+  "triangle_count": 75314,
+  "change": "Restored full-face continuous curved glass and original tight optional hood. Inner cups, valves and filters are absent.",
+  "requested_opacity": {
+    "M_Scuba_Visor": 0.1
+  },
+  "always_visible_visor_material_index": 5,
+  "version": "1.2.3-GlassOnly.1",
+  "material_triangle_counts": {
+    "M_Scuba_Silicone": 8080,
+    "M_Scuba_Teal": 882,
+    "M_Scuba_TealAccent": 2204,
+    "M_Scuba_Vent": 2204,
+    "M_Scuba_RubberDetail": 1560,
+    "M_Scuba_Visor": 10980,
+    "M_Scuba_LatexHood": 49404
+  },
+  "hood_toggle_material_index": 6,
+  "hood_triangle_count": 49404,
+  "hood_default_visible": false,
+  "hood_off_visible_triangles": 25910,
+  "default_visible_triangles": 25910,
+  "exterior_chin_valve_removed": true,
+  "visor_through_port_removed": true,
+  "visor_euler_characteristic": 2,
+  "variant": "full-face-glass-and-hood",
+  "variant_revision": 1,
+  "hood_euler_characteristic": 0,
+  "cup_free_compatibility": true,
+  "inner_cup_removed": true,
+  "fbx_sha256": "b3efe74ac4cdd1bbeb0ecafba01fc8817ae7de0c41416ada53f6542af5b9c361"
+}

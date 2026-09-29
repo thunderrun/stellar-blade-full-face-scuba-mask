@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "version": "1.2.3-GlassOnly.1",
+  "revision": 21,
+  "scope": "Static source, export and cooked-asset validation. User runtime evidence is recorded separately.",
+  "source_sha256": "9dc4ccd222b3135380ef5d724eaf6e334ff485868a07e8b3156c9055f45edb30",
+  "source_baseline_sha256": "aaf730c044288e5beb9d6241224709d33b0472eaa97c7daa76ae5b86f8467961",
+  "source_fbx_sha256": "b3efe74ac4cdd1bbeb0ecafba01fc8817ae7de0c41416ada53f6542af5b9c361",
+  "source_glb_sha256": "0baffe66d273ce362f126408fcf00d135ede5d86d7ea93b752e514230dd9786e",
+  "export_validation_sha256": "80147e7e335dfaab4a5eefb3d492ea7170896d2d61a3c43cc42a7990b5178960",
+  "asset_manifest_sha256": "4f673be955fb2711c0370e933c219d914845b1f58ed68c2062f877f8cfe9ac3d",
+  "cns_sha256": "2205dbf40a0337a677caa5755ce6be19e2b58f825867e11ee8486572a5f45746",
+  "cooked_audit_summary_sha256": "50149be1ffd7ac9c02dc40bd87743d8283dd747ea790af5875bc28501ba9ad9f",
+  "independent_source_review_sha256": "ce2de12441b2b6be4669d4cbca3d280e197d51affe6075eca7fab93d2080df31",
+  "build_contract_sha256": "cc18aa3a9fa3a025773656dd9cb00db80edd7f9d6519a0c187077c4c4360d5a9",
+  "audit_reports": [
+    {
+      "type": "native_container_sha1",
+      "passed": true,
+      "sha256": "c4021bb43165bd55b81493fe7733bdf39040860ec77fa99b143d24d17fbf3ce5"
+    },
+    {
+      "type": "cooked_package_material_mesh",
+      "passed": true,
+      "sha256": "679a95439e023539c045fae1fbcd72958c768234e779628d36cddb6dbce4c949"
+    },
+    {
+      "type": "source_preservation_and_privacy",
+      "passed": true,
+      "sha256": "8ccb10f51b87d9c38d7cc4d125bcf10696a7e3f25ffba8f966807446e0a24cef"
+    },
+    {
+      "type": "cooked_geometry_and_rig",
+      "passed": true,
+      "sha256": "f7439fd6ac10d57432f87d8907b47d624502bee153056aff7af9a91b4e669ebb"
+    },
+    {
+      "type": "cooked_topology_and_winding",
+      "passed": true,
+      "sha256": "a3debfcd353f173771257c452599adfa5deae35e604071ee182b02b88fd68ad6"
+    }
+  ],
+  "mesh_name": "SK_CodexScubaMask",
+  "mesh_count": 1,
+  "source_vertices": 37723,
+  "triangles": 75314,
+  "material_count": 7,
+  "custom_package_count": 8,
+  "native_chunk_count": 9,
+  "material_triangle_counts": {
+    "M_Scuba_Silicone": 8080,
+    "M_Scuba_Teal": 882,
+    "M_Scuba_TealAccent": 2204,
+    "M_Scuba_Vent": 2204,
+    "M_Scuba_RubberDetail": 1560,
+    "M_Scuba_Visor": 10980,
+    "M_Scuba_LatexHood": 49404
+  },
+  "hood_off_visible_triangles": 25910,
+  "hood_default_visible": false,
+  "visor_material_index": 5,
+  "hood_material_index": 6,
+  "cup_free": true,
+  "preservation": {
+    "all_seven_retained_sections_exact": true,
+    "material_definitions_exact": true,
+    "root_rig_exact": true,
+    "transforms_uv_and_attachment_exact": true,
+    "hood_exact": true,
+    "continuous_glass_exact": true
+  },
+  "privacy": {
+    "raw_private_path_match_count": 0,
+    "source_images": 0,
+    "source_linked_libraries": 0,
+    "source_text_blocks": 0,
+    "source_nonempty_weak_library_references": 0
+  },
+  "cooked_geometry": {
+    "bones": [
+      "Root"
+    ],
+    "all_vertices_rigid_weight_Root": true,
+    "max_cooked_to_source_vertex_distance_mm": 2.9802322387695312e-05,
+    "max_source_to_cooked_vertex_distance_mm": 2.9802322387695312e-05,
+    "root_rotation_error_degrees": 0.0,
+    "root_position_error_mm": 0.0,
+    "triangle_connectivity_all_sections_matches": true,
+    "oriented_triangle_winding_all_sections_matches": true,
+    "exact_position_mapping_bijective": true,
+    "actual_cooked_topology_all_sections_matches": true
+  },
+  "glass_topology": {
+    "vertices": 5492,
+    "edges": 16470,
+    "faces": 10980,
+    "euler_characteristic": 2,
+    "genus_sum_if_closed_orientable": 0,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "inconsistent_winding_edges": 0,
+    "degenerate_triangles": 0,
+    "connected_components": 1
+  },
+  "hood_topology": {
+    "vertices": 24702,
+    "edges": 74106,
+    "faces": 49404,
+    "euler_characteristic": 0,
+    "genus_sum_if_closed_orientable": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "inconsistent_winding_edges": 0,
+    "degenerate_triangles": 0,
+    "connected_components": 1
+  },
+  "runtime_verified_by_this_report": false
+}

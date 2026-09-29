@@ -1,0 +1,12 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "4.26",
+  "Category": "",
+  "Description": "Isolated cook project for the CNS full-face scuba mask.",
+  "Plugins": [
+    {"Name": "PythonScriptPlugin", "Enabled": true, "WhitelistTargets": ["Editor"]},
+    {"Name": "EditorScriptingUtilities", "Enabled": true, "WhitelistTargets": ["Editor"]},
+    {"Name": "SteamVR", "Enabled": true, "BlacklistTargets": ["Editor"]},
+    {"Name": "OculusVR", "Enabled": true, "BlacklistTargets": ["Editor"]}
+  ]
+}

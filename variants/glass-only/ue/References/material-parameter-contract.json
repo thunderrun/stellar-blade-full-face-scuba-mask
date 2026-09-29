@@ -1,0 +1,71 @@
+{
+  "opaque": {
+    "asset": "/Game/Art/Character/PC/00_ACC/Materials/MI_ACC_GLA_01.MI_ACC_GLA_01",
+    "bHasStaticPermutationResource": false,
+    "static_overrides": {},
+    "scalars": {
+      "Baked Normal intensity": 1.0,
+      "Brightness": 1.0,
+      "GlobalRoughness": 0.338095,
+      "Metallic": 1.0
+    },
+    "vectors": {
+      "Base Color Tint": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "FFFFFF"
+      }
+    },
+    "textures": {
+      "BakedNormal": {
+        "ObjectName": "Texture2D'ACC_GLA_01_N'",
+        "ObjectPath": "/Game/Art/Character/PC/00_ACC/Textures/ACC_GLA_01_N.0"
+      },
+      "Basecolor": {
+        "ObjectName": "Texture2D'ACC_GLA_01_A'",
+        "ObjectPath": "/Game/Art/Character/PC/00_ACC/Textures/ACC_GLA_01_A.0"
+      }
+    }
+  },
+  "visor": {
+    "asset": "/Game/Art/Character/PC/00_ACC/Materials/MI_ACC_Glass_Base.MI_ACC_Glass_Base",
+    "bHasStaticPermutationResource": false,
+    "static_overrides": {},
+    "scalars": {
+      "Fresnel_Pow": 2.0,
+      "GlassColor Fresnel": 0.2,
+      "HDR_Intensity": 2.0,
+      "Opacity Fresnel": 1.0,
+      "Opacity Inner": 0.0,
+      "Opacity Out": 1.0
+    },
+    "vectors": {
+      "GlassColor In": {
+        "R": 0.078125,
+        "G": 0.078125,
+        "B": 0.078125,
+        "A": 1.0,
+        "Hex": "4F4F4F"
+      },
+      "GlassColor Out": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "000000"
+      }
+    },
+    "textures": {
+      "Baked NormalMap": {
+        "ObjectName": "Texture2D'Base_Flat_N'",
+        "ObjectPath": "/Game/Art/Character/Generic/GlobalTexture/Base_Flat_N.0"
+      },
+      "BaseColor": {
+        "ObjectName": "Texture2D'Base_uvgrid01'",
+        "ObjectPath": "/Game/Art/Character/Generic/GlobalTexture/Base_uvgrid01.0"
+      }
+    }
+  }
+}

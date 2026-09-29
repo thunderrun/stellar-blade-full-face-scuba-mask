@@ -26,3 +26,14 @@ ue/Content/**/*.ubulk
 # Local renders and optional working directories
 previews/
 work/
+
+# Optional variants use the same isolated UE recipe layout.
+**/ue/Build/
+**/ue/Saved/
+**/ue/Intermediate/
+**/ue/DerivedDataCache/
+**/ue/Binaries/
+**/ue/.vs/
+**/ue/Content/**/*.uasset
+**/ue/Content/**/*.uexp
+**/ue/Content/**/*.ubulk
