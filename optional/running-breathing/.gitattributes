@@ -1,0 +1,5 @@
+* text=auto eol=lf
+# Runtime and installer bytes are bound to the published payload hashes.
+mod/Scripts/*.lua -text
+Install.ps1 -text
+source/audio/*.wav binary

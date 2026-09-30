@@ -1,0 +1,11 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "4.26",
+  "Description": "Isolated Codex Running Breath audio asset project.",
+  "Plugins": [
+    {"Name": "PythonScriptPlugin", "Enabled": true, "WhitelistTargets": ["Editor"]},
+    {"Name": "EditorScriptingUtilities", "Enabled": true, "WhitelistTargets": ["Editor"]},
+    {"Name": "SteamVR", "Enabled": true, "BlacklistTargets": ["Editor"]},
+    {"Name": "OculusVR", "Enabled": true, "BlacklistTargets": ["Editor"]}
+  ]
+}

@@ -1,4 +1,6 @@
-# Full Face Scuba Mask
+# Full Face Mask & Breathing Sound
+
+**Optional movement breathing:** [Running, walking, sprint and idle breathing 0.2.9](optional/running-breathing/README.md) is a separate UE4SS add-on. Idle breathing starts only after you walk or run and stop. It works independently of the mask and CNS. [Download the tested ZIP from GitHub](https://github.com/thunderrun/stellar-blade-full-face-scuba-mask/releases/download/breathing-v0.2.9/Codex-Running-Breath-0.2.9.zip). The optional copy on the [Nexus Files page](https://www.nexusmods.com/stellarblade/mods/3872?tab=files) is currently quarantined by Nexus's automated checks and is unavailable there pending review.
 
 **Glass Only optional release:** [Full-face glass and fitted optional hood, version 1.2.3-GlassOnly.1](variants/glass-only/README.md) is available without an inner cup or valve. It requires CNS 2.2 and replaces the regular Scuba or companion package; keep only one installed Scuba payload. The regular 1.2.2 source and instructions below remain separate.
 

@@ -1,0 +1,59 @@
+{
+  "name": "CodexRunningBreath",
+  "version": "0.2.9",
+  "nexus_mod_id": 3872,
+  "nexus_file_id": 16945,
+  "nexus_files_url": "https://www.nexusmods.com/stellarblade/mods/3872?tab=files",
+  "published_zip_sha256": "8a8dd45e3cbee6177a10fb067c90539aff16dde4a2f1107f215b4de597cc02ce",
+  "container_id": "c28a17c96b2fb97b",
+  "sounds": {
+    "walk": {
+      "asset": "/Game/CodexRunningBreath/Audio/SW_WalkBreathingLoop.SW_WalkBreathingLoop",
+      "source_recording": "girl_breathing_hard__#2-1790752335090.wav",
+      "source_recording_sha256": "9b523e88146fb5b3a0b834c72227e352d5c624deff064dcdd642d68940d829c6",
+      "processed_audio_sha256": "3b324c978f23e7fc6d31ef7654a8057ee43b1ecd91f0f70597e0e0dff7bf3c9f",
+      "duration_seconds": 9.85,
+      "sample_rate": 48000,
+      "channels": 2,
+      "looping": true,
+      "prepared_source": "source/audio/walk_breathing_loop.wav",
+      "seam_crossfade_seconds": 0.15,
+      "bits_per_sample": 16
+    },
+    "run": {
+      "asset": "/Game/CodexRunningBreath/Audio/SW_RunBreathingLoop.SW_RunBreathingLoop",
+      "source_recording": "girl_breathing_hard__#3-1790756565238.wav",
+      "source_recording_sha256": "b96fe68395aa8754fadc5088be85f33ea342d8418d01fef6c0f538bc24996ec3",
+      "processed_audio_sha256": "cbbad9082078f716157e9e66795c31f67d843b7c8f136cd078ed079a9ec70632",
+      "duration_seconds": 9.85,
+      "sample_rate": 48000,
+      "channels": 2,
+      "looping": true,
+      "prepared_source": "source/audio/run_breathing_loop.wav",
+      "seam_crossfade_seconds": 0.15,
+      "bits_per_sample": 16
+    }
+  },
+  "runtime_sha256": {
+    "config.lua": "bff7f6b3cef637a85928474b5236c3712c8a9492bcb37a83004bac8fe1506084",
+    "main.lua": "ef43fbdbddc4d2a2a7409cc2b4cc6c275a4dccce1b323260557e71f9b0d764e0",
+    "running_state.lua": "4f7c973239aaceeaddc7742d2610e034dedb2764e0968096e89ca95f9ae4e74c"
+  },
+  "audited_audio_payload": [
+    {
+      "relative_path": "SB/Content/Paks/~mods/CodexRunningBreath/Codex-RunningBreath-19530.pak",
+      "bytes": 339,
+      "sha256": "f6bc1e15e297bf8c3915603ce18a01c45c652b80107d10375cf68b8e2cc87515"
+    },
+    {
+      "relative_path": "SB/Content/Paks/~mods/CodexRunningBreath/Codex-RunningBreath-19530.ucas",
+      "bytes": 479600,
+      "sha256": "3afe274cdbd0b8489f8b5d69fea3e31fe08f9f249db2dda83ea999edcfb2e276"
+    },
+    {
+      "relative_path": "SB/Content/Paks/~mods/CodexRunningBreath/Codex-RunningBreath-19530.utoc",
+      "bytes": 570,
+      "sha256": "2620f61b395f9eaf18455f8a22a842c69651377580b4c72ff8d85364a5989203"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+build/
+checks/*-tests.json
+checks/installer-fixture-*/
+checks/audio-preparation.json
+checks/*-export.json
+checks/cooked-audio-audit.json
+checks/package-readback.json
+audit/bin/
+audit/obj/
+tools/
+.venv/
